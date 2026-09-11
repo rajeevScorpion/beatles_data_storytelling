@@ -1,15 +1,18 @@
 import React, { useState, useMemo } from 'react';
 import { allSongs, getMediaForSong } from '../lib/data';
 import { SongRecord, BeatlesEra, BeatlesMember } from '../types';
-import { Search, Filter, Disc, Play, LayoutGrid, List, RotateCcw, ChevronRight } from 'lucide-react';
+import { Search, Filter, Disc, Play, LayoutGrid, List, RotateCcw, ChevronRight, ListMusic, Plus, Check } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
+import { usePlaylists } from '../context/PlaylistContext';
+import { AddToPlaylistModal } from './AddToPlaylistModal';
 
 interface ExploreLibraryProps {
   onSelectSong: (song: SongRecord) => void;
 }
 
 export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) => {
-  const { playSong } = usePlayer();
+  const { playSong, playPlaylistQueue } = usePlayer();
+  const { playlists, openPlaylistDrawer, createPlaylist } = usePlaylists();
 
   // Filter States
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,9 +21,11 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
   const [memberRole, setMemberRole] = useState<'writer' | 'vocal'>('writer');
   const [typeFilter, setTypeFilter] = useState<'all' | 'original' | 'cover'>('all');
   const [selectedAlbum, setSelectedAlbum] = useState<string>('all');
+  const [selectedPlaylist, setSelectedPlaylist] = useState<string>('all');
   const [onlyPlayable, setOnlyPlayable] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<'year-asc' | 'year-desc' | 'title' | 'words'>('year-asc');
   const [viewMode, setViewMode] = useState<'grid' | 'ledger'>('grid');
+  const [modalSong, setModalSong] = useState<SongRecord | null>(null);
 
   // Distinct albums for dropdown
   const albums = useMemo(() => {
@@ -67,6 +72,14 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
           return false;
         }
 
+        // Playlist filter
+        if (selectedPlaylist !== 'all') {
+          const pl = playlists.find(p => p.id === selectedPlaylist);
+          if (pl && !pl.songIds.includes(song.id)) {
+            return false;
+          }
+        }
+
         // Playable only
         if (onlyPlayable) {
           const media = getMediaForSong(song);
@@ -82,7 +95,45 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
         if (sortBy === 'words') return (b.word_count || 0) - (a.word_count || 0);
         return 0;
       });
-  }, [searchQuery, selectedEra, selectedMember, memberRole, typeFilter, selectedAlbum, onlyPlayable, sortBy]);
+  }, [searchQuery, selectedEra, selectedMember, memberRole, typeFilter, selectedAlbum, selectedPlaylist, playlists, onlyPlayable, sortBy]);
+
+  const playableFilteredSongs = useMemo(() => {
+    return filteredSongs.filter(s => Boolean(getMediaForSong(s)));
+  }, [filteredSongs]);
+
+  const handlePlayFilteredQueue = () => {
+    if (playableFilteredSongs.length === 0) return;
+    const label = selectedPlaylist !== 'all'
+      ? playlists.find(p => p.id === selectedPlaylist)?.name || 'Playlist'
+      : searchQuery.trim()
+      ? `Filter: "${searchQuery}"`
+      : selectedAlbum !== 'all'
+      ? selectedAlbum
+      : selectedEra !== 'all'
+      ? selectedEra
+      : 'Filtered Library';
+    playPlaylistQueue(playableFilteredSongs, 0, label);
+  };
+
+  const handleSaveFilteredPlaylist = () => {
+    if (filteredSongs.length === 0) return;
+    const autoName = searchQuery.trim()
+      ? `Search: "${searchQuery.trim()}"`
+      : selectedAlbum !== 'all'
+      ? `Album: ${selectedAlbum}`
+      : selectedEra !== 'all'
+      ? `${selectedEra}`
+      : selectedMember !== 'all'
+      ? `${selectedMember} (${memberRole})`
+      : `Beatles Curated (${filteredSongs.length} Tracks)`;
+
+    const newId = createPlaylist(
+      autoName,
+      `Curated from Library filters with ${filteredSongs.length} tracks.`,
+      filteredSongs.map(s => s.id)
+    );
+    openPlaylistDrawer(newId);
+  };
 
   const resetFilters = () => {
     setSearchQuery('');
@@ -90,6 +141,7 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
     setSelectedMember('all');
     setTypeFilter('all');
     setSelectedAlbum('all');
+    setSelectedPlaylist('all');
     setOnlyPlayable(false);
     setSortBy('year-asc');
   };
@@ -167,7 +219,7 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
           </div>
 
           {/* Filter Pills and Dropdowns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 font-mono-code text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 font-mono-code text-xs">
             {/* Era Filter */}
             <div>
               <label className="block text-[10px] uppercase font-bold text-[#7A7267] mb-1">
@@ -226,6 +278,35 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
                 {albums.map(alb => (
                   <option key={alb} value={alb}>
                     {alb}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Playlist Filter */}
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <label className="text-[10px] uppercase font-bold text-[#7A7267]">
+                  PLAYLIST
+                </label>
+                {selectedPlaylist !== 'all' && (
+                  <button
+                    onClick={() => openPlaylistDrawer(selectedPlaylist)}
+                    className="text-[9px] uppercase font-bold text-[#C43A2F] underline"
+                  >
+                    manage ↗
+                  </button>
+                )}
+              </div>
+              <select
+                value={selectedPlaylist}
+                onChange={e => setSelectedPlaylist(e.target.value)}
+                className="w-full p-2 bg-[#F6F1E7] border border-[#C8C0B2] text-[#151515] focus:outline-none font-bold"
+              >
+                <option value="all">All Songs (No Playlist)</option>
+                {playlists.map(pl => (
+                  <option key={pl.id} value={pl.id}>
+                    {pl.name} ({pl.songIds.length})
                   </option>
                 ))}
               </select>
@@ -291,8 +372,35 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
               </label>
             </div>
 
-            <div className="text-[11px] text-[#7A7267] font-bold">
-              SHOWING {filteredSongs.length} OF {allSongs.length} SONGS
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="text-[11px] text-[#7A7267] font-bold">
+                SHOWING {filteredSongs.length} OF {allSongs.length} SONGS
+              </div>
+
+              {/* Playlist Batch Controls */}
+              {playableFilteredSongs.length > 0 && (
+                <button
+                  type="button"
+                  onClick={handlePlayFilteredQueue}
+                  className="px-2.5 py-1 bg-[#C43A2F] hover:bg-[#A82D23] text-white font-bold text-[11px] uppercase flex items-center gap-1 transition-all"
+                  title="Queue and play all playable tracks from current filter"
+                >
+                  <Play className="w-3 h-3 fill-current" />
+                  <span>PLAY QUEUE ({playableFilteredSongs.length})</span>
+                </button>
+              )}
+
+              {filteredSongs.length > 0 && (
+                <button
+                  type="button"
+                  onClick={handleSaveFilteredPlaylist}
+                  className="px-2.5 py-1 bg-[#151515] hover:bg-[#333] text-white font-bold text-[11px] uppercase flex items-center gap-1 transition-all"
+                  title="Save current filtered selection into a custom playlist"
+                >
+                  <Plus className="w-3 h-3 text-[#C43A2F]" />
+                  <span>SAVE AS PLAYLIST</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -320,15 +428,25 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
                       >
                         {song.title}
                       </button>
-                      {media && (
+                      <div className="flex items-center gap-1 shrink-0">
+                        {media && (
+                          <button
+                            onClick={() => playSong(song)}
+                            className="p-1 bg-[#151515] hover:bg-[#C43A2F] text-white transition-colors"
+                            title="Play verified audio"
+                          >
+                            <Play className="w-3 h-3 fill-current" />
+                          </button>
+                        )}
                         <button
-                          onClick={() => playSong(song)}
-                          className="p-1 bg-[#151515] hover:bg-[#C43A2F] text-white shrink-0 transition-colors"
-                          title="Play verified audio"
+                          type="button"
+                          onClick={() => setModalSong(song)}
+                          className="p-1 bg-[#EAE1D2] hover:bg-[#151515] text-[#151515] hover:text-white border border-[#151515] transition-colors"
+                          title="Add to a playlist"
                         >
-                          <Play className="w-3 h-3 fill-current" />
+                          <Plus className="w-3 h-3" />
                         </button>
-                      )}
+                      </div>
                     </div>
 
                     <div className="font-mono-code text-[10px] text-[#7A7267] mt-1 truncate">
@@ -390,7 +508,7 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
                       <td className="p-3 text-[#555] truncate max-w-[130px]">{song.lead_vocals_raw}</td>
                       <td className="p-3 text-[#7A7267]">{song.word_count || '—'}</td>
                       <td className="p-3 text-right">
-                        <div className="flex items-center justify-end gap-2">
+                        <div className="flex items-center justify-end gap-1.5">
                           {media && (
                             <button
                               onClick={() => playSong(song)}
@@ -400,6 +518,15 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
                               <span>Play</span>
                             </button>
                           )}
+                          <button
+                            type="button"
+                            onClick={() => setModalSong(song)}
+                            className="px-1.5 py-1 bg-[#EAE1D2] hover:bg-[#151515] text-[#151515] hover:text-white border border-[#151515] text-[10px] uppercase font-bold flex items-center gap-0.5 transition-colors"
+                            title="Add to a playlist"
+                          >
+                            <Plus className="w-2.5 h-2.5" />
+                            <span>List</span>
+                          </button>
                           <button
                             onClick={() => onSelectSong(song)}
                             className="px-2 py-1 bg-[#151515] text-white text-[10px] uppercase font-bold"
@@ -416,6 +543,15 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
           </div>
         )}
       </div>
+
+      {/* Add To Playlist Modal */}
+      {modalSong && (
+        <AddToPlaylistModal
+          song={modalSong}
+          isOpen={Boolean(modalSong)}
+          onClose={() => setModalSong(null)}
+        />
+      )}
     </section>
   );
 };

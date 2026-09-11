@@ -99,3 +99,11 @@ export interface SourceItem {
 }
 
 export type BeatlesMember = 'John Lennon' | 'Paul McCartney' | 'George Harrison' | 'Ringo Starr';
+
+export interface UserPlaylist {
+  id: string;
+  name: string;
+  description?: string;
+  createdAt: number;
+  songIds: string[];
+}

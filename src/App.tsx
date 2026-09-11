@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PlayerProvider } from './context/PlayerContext';
+import { PlaylistProvider } from './context/PlaylistContext';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { EightYearRush } from './components/EightYearRush';
@@ -15,6 +16,7 @@ import { FourVoices } from './components/FourVoices';
 import { ExploreLibrary } from './components/ExploreLibrary';
 import { Coda } from './components/Coda';
 import { SongDrawer } from './components/SongDrawer';
+import { PlaylistDrawer } from './components/PlaylistDrawer';
 import { CreditsModal } from './components/CreditsModal';
 import { ListeningDock } from './components/ListeningDock';
 import { SongRecord } from './types';
@@ -77,51 +79,57 @@ export const App: React.FC = () => {
 
   return (
     <PlayerProvider>
-      <div className="min-h-screen bg-[#F2EBDD] text-[#151515] flex flex-col font-sans selection:bg-[#C43A2F] selection:text-white relative">
-        {/* Persistent Sticky Navigation */}
-        <Navigation
-          onOpenCredits={() => setIsCreditsOpen(true)}
-          activeSection={activeSection}
-        />
-
-        {/* Narrative Flow */}
-        <main className="flex-1">
-          <Hero
-            onStartStory={() => scrollTo('eight-year-rush')}
-            onExplore={() => scrollTo('explore-library')}
-          />
-          <EightYearRush onSelectSong={handleSelectSong} />
-          <CoversDisappear onSelectSong={handleSelectSong} />
-          <AuthorshipStrands onSelectSong={handleSelectSong} />
-          <BandTurnsInward onSelectSong={handleSelectSong} />
-          <ThemeIslands onSelectSong={handleSelectSong} />
-          <LyricLens onSelectSongWithQuery={handleSelectSongWithQuery} />
-          <WordCountParadox />
-          <GenreUniverse onSelectSong={handleSelectSong} />
-          <Studio1967 onSelectSong={handleSelectSong} />
-          <FourVoices onSelectSong={handleSelectSong} />
-          <ExploreLibrary onSelectSong={handleSelectSong} />
-          <Coda
+      <PlaylistProvider>
+        <div className="min-h-screen bg-[#F2EBDD] text-[#151515] flex flex-col font-sans selection:bg-[#C43A2F] selection:text-white relative">
+          {/* Persistent Sticky Navigation */}
+          <Navigation
             onOpenCredits={() => setIsCreditsOpen(true)}
-            onScrollToTop={() => scrollTo('hero')}
+            activeSection={activeSection}
           />
-        </main>
 
-        {/* Global Drawers, Modals, and Player Dock */}
-        <SongDrawer
-          song={selectedSong}
-          onClose={() => setSelectedSong(null)}
-          onSelectSong={handleSelectSong}
-          highlightQuery={highlightQuery}
-        />
+          {/* Narrative Flow */}
+          <main className="flex-1">
+            <Hero
+              onStartStory={() => scrollTo('eight-year-rush')}
+              onExplore={() => scrollTo('explore-library')}
+            />
+            <EightYearRush onSelectSong={handleSelectSong} />
+            <CoversDisappear onSelectSong={handleSelectSong} />
+            <AuthorshipStrands onSelectSong={handleSelectSong} />
+            <BandTurnsInward onSelectSong={handleSelectSong} />
+            <ThemeIslands onSelectSong={handleSelectSong} />
+            <LyricLens onSelectSongWithQuery={handleSelectSongWithQuery} />
+            <WordCountParadox />
+            <GenreUniverse onSelectSong={handleSelectSong} />
+            <Studio1967 onSelectSong={handleSelectSong} />
+            <FourVoices onSelectSong={handleSelectSong} />
+            <ExploreLibrary onSelectSong={handleSelectSong} />
+            <Coda
+              onOpenCredits={() => setIsCreditsOpen(true)}
+              onScrollToTop={() => scrollTo('hero')}
+            />
+          </main>
 
-        <CreditsModal
-          isOpen={isCreditsOpen}
-          onClose={() => setIsCreditsOpen(false)}
-        />
+          {/* Global Drawers, Modals, and Player Dock */}
+          <SongDrawer
+            song={selectedSong}
+            onClose={() => setSelectedSong(null)}
+            onSelectSong={handleSelectSong}
+            highlightQuery={highlightQuery}
+          />
 
-        <ListeningDock />
-      </div>
+          <PlaylistDrawer
+            onSelectSong={handleSelectSong}
+          />
+
+          <CreditsModal
+            isOpen={isCreditsOpen}
+            onClose={() => setIsCreditsOpen(false)}
+          />
+
+          <ListeningDock />
+        </div>
+      </PlaylistProvider>
     </PlayerProvider>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Disc3, Search, Info, Music } from 'lucide-react';
+import { Disc3, Search, Info, Music, ListMusic } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
+import { usePlaylists } from '../context/PlaylistContext';
 
 interface NavigationProps {
   onOpenCredits: () => void;
@@ -9,6 +10,7 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({ onOpenCredits, activeSection }) => {
   const { currentTrack, isDockOpen, openDock } = usePlayer();
+  const { playlists, openPlaylistDrawer } = usePlaylists();
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -91,6 +93,19 @@ export const Navigation: React.FC<NavigationProps> = ({ onOpenCredits, activeSec
           >
             <Search className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">EXPLORE 213</span>
+          </button>
+
+          {/* Playlists Button */}
+          <button
+            onClick={() => openPlaylistDrawer()}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 bg-[#EAE1D2] hover:bg-[#151515] text-[#151515] hover:text-white border border-[#151515] font-mono-code text-[11px] uppercase font-bold tracking-wider print-shadow-sm transition-all group"
+            title="Curated Playlists & Mixtapes"
+          >
+            <ListMusic className="w-3.5 h-3.5 text-[#C43A2F]" />
+            <span className="hidden md:inline">PLAYLISTS</span>
+            <span className="bg-[#151515] group-hover:bg-[#C43A2F] text-white text-[10px] px-1.5 py-0.2 rounded-xs font-bold transition-colors">
+              {playlists.length}
+            </span>
           </button>
 
           {/* Listening Dock Launcher */}

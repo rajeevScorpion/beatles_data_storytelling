@@ -1,10 +1,39 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { usePlayer } from '../context/PlayerContext';
-import { X, ExternalLink, Disc3, ChevronDown, ChevronUp, GripHorizontal, Volume2 } from 'lucide-react';
+import { usePlaylists } from '../context/PlaylistContext';
+import { AddToPlaylistModal } from './AddToPlaylistModal';
+import {
+  X,
+  ExternalLink,
+  Disc3,
+  ChevronDown,
+  ChevronUp,
+  GripHorizontal,
+  Volume2,
+  SkipBack,
+  SkipForward,
+  Plus,
+  ListMusic,
+} from 'lucide-react';
 
 export const ListeningDock: React.FC = () => {
-  const { currentTrack, currentSong, isDockOpen, closeDock } = usePlayer();
+  const {
+    currentTrack,
+    currentSong,
+    isDockOpen,
+    closeDock,
+    playlistQueue,
+    playlistIndex,
+    playlistName,
+    hasNext,
+    hasPrev,
+    playNext,
+    playPrev,
+  } = usePlayer();
+  const { openPlaylistDrawer } = usePlaylists();
+
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   // Position state for dragging
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
@@ -142,6 +171,32 @@ export const ListeningDock: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-1">
+              {currentSong && (
+                <button
+                  type="button"
+                  onClick={e => {
+                    e.stopPropagation();
+                    setIsAddModalOpen(true);
+                  }}
+                  className="p-1 hover:bg-[#27272A] text-[#A1A1AA] hover:text-[#C43A2F] transition-colors"
+                  title="Add this track to a playlist"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                </button>
+              )}
+              {playlistName && (
+                <button
+                  type="button"
+                  onClick={e => {
+                    e.stopPropagation();
+                    openPlaylistDrawer();
+                  }}
+                  className="p-1 hover:bg-[#27272A] text-[#A1A1AA] hover:text-white transition-colors"
+                  title="Open Curated Playlists"
+                >
+                  <ListMusic className="w-3.5 h-3.5" />
+                </button>
+              )}
               <button
                 type="button"
                 onClick={e => {
@@ -166,6 +221,35 @@ export const ListeningDock: React.FC = () => {
               </button>
             </div>
           </div>
+
+          {/* Playlist Queue Banner if playing from a queue */}
+          {playlistName && playlistQueue.length > 1 && (
+            <div className="bg-[#27272A] px-2 py-1 my-1.5 border border-[#3F3F46] flex items-center justify-between text-[10px]">
+              <span className="truncate text-[#D4D4D8] font-bold">
+                QUEUE: {playlistName} ({playlistIndex + 1}/{playlistQueue.length})
+              </span>
+              <div className="flex items-center gap-1 shrink-0 ml-2">
+                <button
+                  type="button"
+                  disabled={!hasPrev}
+                  onClick={playPrev}
+                  className="p-0.5 hover:text-white disabled:opacity-30 transition-opacity"
+                  title="Previous track in playlist"
+                >
+                  <SkipBack className="w-3 h-3" />
+                </button>
+                <button
+                  type="button"
+                  disabled={!hasNext}
+                  onClick={playNext}
+                  className="p-0.5 hover:text-white disabled:opacity-30 transition-opacity"
+                  title="Next track in playlist"
+                >
+                  <SkipForward className="w-3 h-3" />
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Track Title and Context Header */}
           <div className="py-2">
@@ -246,6 +330,15 @@ export const ListeningDock: React.FC = () => {
           )}
         </div>
       </div>
+
+      {/* Quick Add To Playlist Modal */}
+      {currentSong && (
+        <AddToPlaylistModal
+          song={currentSong}
+          isOpen={isAddModalOpen}
+          onClose={() => setIsAddModalOpen(false)}
+        />
+      )}
     </>
   );
 };

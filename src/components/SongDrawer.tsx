@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SongRecord } from '../types';
 import { getMediaForSong, getRelatedSongs, ERA_METADATA } from '../lib/data';
 import { usePlayer } from '../context/PlayerContext';
-import { X, Play, Music, Mic, PenTool, Disc, Sparkles, Tag, ExternalLink } from 'lucide-react';
+import { usePlaylists } from '../context/PlaylistContext';
+import { AddToPlaylistModal } from './AddToPlaylistModal';
+import { X, Play, Music, Mic, PenTool, Disc, Sparkles, Tag, ExternalLink, Plus, ListMusic, Check } from 'lucide-react';
 
 interface SongDrawerProps {
   song: SongRecord | null;
@@ -18,6 +20,8 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
   highlightQuery = '',
 }) => {
   const { playSong, playTrack } = usePlayer();
+  const { playlists, openPlaylistDrawer } = usePlaylists();
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -32,6 +36,7 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
   const media = getMediaForSong(song);
   const relatedSongs = getRelatedSongs(song, 3);
   const eraInfo = ERA_METADATA[song.era];
+  const containingPlaylists = playlists.filter(p => p.songIds.includes(song.id));
 
   // Helper to highlight terms in lyric text
   const renderLyrics = (text: string) => {
@@ -137,20 +142,50 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
               <h2 className="font-display text-4xl sm:text-5xl font-black uppercase tracking-tight text-[#151515] leading-none">
                 {song.title}
               </h2>
-              {media && (
+              <div className="flex items-center gap-2 shrink-0">
+                {media && (
+                  <button
+                    onClick={() => playSong(song)}
+                    className="flex items-center gap-1.5 px-3 py-2 bg-[#C43A2F] hover:bg-[#A82D23] text-white font-mono-code text-xs uppercase font-bold print-shadow-sm transition-all"
+                  >
+                    <Play className="w-3.5 h-3.5 fill-current" />
+                    <span>PLAY</span>
+                  </button>
+                )}
                 <button
-                  onClick={() => playSong(song)}
-                  className="shrink-0 flex items-center gap-1.5 px-3 py-2 bg-[#C43A2F] hover:bg-[#A82D23] text-white font-mono-code text-xs uppercase font-bold print-shadow-sm transition-all"
+                  onClick={() => setIsAddModalOpen(true)}
+                  className="flex items-center gap-1.5 px-3 py-2 bg-[#151515] hover:bg-[#333] text-white font-mono-code text-xs uppercase font-bold print-shadow-sm transition-all"
+                  title="Add to a playlist"
                 >
-                  <Play className="w-3.5 h-3.5 fill-current" />
-                  <span>PLAY</span>
+                  <Plus className="w-3.5 h-3.5 text-[#C43A2F]" />
+                  <span>PLAYLIST</span>
                 </button>
-              )}
+              </div>
             </div>
 
             <p className="font-editorial text-lg text-[#555] italic mt-1.5">
               from <span className="font-bold text-[#151515] not-italic">{song.album}</span> ({song.year_raw})
             </p>
+
+            {containingPlaylists.length > 0 && (
+              <div className="mt-2.5 flex flex-wrap items-center gap-1.5 font-mono-code text-[10px]">
+                <span className="text-[#766E65] uppercase">In Playlists:</span>
+                {containingPlaylists.map(pl => (
+                  <button
+                    key={pl.id}
+                    onClick={() => {
+                      onClose();
+                      openPlaylistDrawer(pl.id);
+                    }}
+                    className="px-2 py-0.5 bg-[#E2D8C7] hover:bg-[#DDD4C3] border border-[#C8C0B2] text-[#151515] font-bold transition-colors flex items-center gap-1"
+                    title={`View "${pl.name}" playlist`}
+                  >
+                    <Check className="w-2.5 h-2.5 text-[#5B824D]" />
+                    <span>{pl.name}</span>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Quick Metrics Grid */}
@@ -285,6 +320,13 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
           )}
         </div>
       </div>
+
+      {/* Add To Playlist Modal */}
+      <AddToPlaylistModal
+        song={song}
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+      />
     </div>
   );
 };
