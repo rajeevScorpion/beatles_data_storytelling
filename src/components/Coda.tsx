@@ -77,12 +77,29 @@ export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#262626] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#777]">
-          <div>
-            EIGHT YEARS THAT CHANGED THE SOUND · THE BEATLES DATA STORY (1962–1970)
+        <div className="pt-8 border-t border-[#262626] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#777]">
+          <div className="flex flex-wrap items-center gap-3">
+            <span>EIGHT YEARS THAT CHANGED THE SOUND · THE BEATLES DATA STORY (1962–1970)</span>
+            <span className="hidden sm:inline text-[#444]">·</span>
+            <div className="flex items-center gap-1.5 text-[#AAA]">
+              <span>Created by <strong className="text-white font-medium">Rajeev Kumar</strong></span>
+              <span className="text-[#444]">|</span>
+              <a
+                href="https://www.linkedin.com/in/rajeevkumarux/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-85 transition-opacity inline-flex items-center"
+                title="Rajeev Kumar on LinkedIn"
+                aria-label="Rajeev Kumar LinkedIn Profile"
+              >
+                <span className="inline-flex items-center justify-center w-4 h-4 bg-white text-[#151515] font-sans font-bold text-[10px] leading-none rounded-xs tracking-tighter hover:bg-[#C43A2F] hover:text-white transition-colors">
+                  in
+                </span>
+              </a>
+            </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 shrink-0">
             <button
               onClick={onOpenCredits}
               className="text-[#BBB] hover:text-white transition-colors"
@@ -92,7 +109,7 @@ export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
 
             <button
               onClick={onScrollToTop}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#262626] hover:bg-[#333] text-white transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-[#262626] hover:bg-[#333] text-white transition-colors font-bold"
             >
               <span>TOP OF PAGE</span>
               <ArrowUp className="w-3.5 h-3.5" />

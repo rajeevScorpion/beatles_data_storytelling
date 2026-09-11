@@ -1,31 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import { PlayerProvider } from './context/PlayerContext';
 import { PlaylistProvider } from './context/PlaylistContext';
-import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { EightYearRush } from './components/EightYearRush';
-import { CoversDisappear } from './components/CoversDisappear';
-import { AuthorshipStrands } from './components/AuthorshipStrands';
-import { BandTurnsInward } from './components/BandTurnsInward';
-import { ThemeIslands } from './components/ThemeIslands';
-import { LyricLens } from './components/LyricLens';
-import { WordCountParadox } from './components/WordCountParadox';
-import { GenreUniverse } from './components/GenreUniverse';
-import { Studio1967 } from './components/Studio1967';
-import { FourVoices } from './components/FourVoices';
-import { ExploreLibrary } from './components/ExploreLibrary';
-import { Coda } from './components/Coda';
+import { Navigation, PageRoute } from './components/Navigation';
+import { StoryPage } from './pages/StoryPage';
+import { ExplorePage } from './pages/ExplorePage';
+import { FindAWordPage } from './pages/FindAWordPage';
 import { SongDrawer } from './components/SongDrawer';
 import { PlaylistDrawer } from './components/PlaylistDrawer';
 import { CreditsModal } from './components/CreditsModal';
 import { ListeningDock } from './components/ListeningDock';
 import { SongRecord } from './types';
 
+const getInitialPage = (): PageRoute => {
+  const hash = window.location.hash.toLowerCase();
+  if (hash.includes('explore')) return 'explore';
+  if (hash.includes('word') || hash.includes('find')) return 'find-a-word';
+  return 'story';
+};
+
 export const App: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState<PageRoute>(getInitialPage);
   const [selectedSong, setSelectedSong] = useState<SongRecord | null>(null);
   const [highlightQuery, setHighlightQuery] = useState<string>('');
   const [isCreditsOpen, setIsCreditsOpen] = useState<boolean>(false);
-  const [activeSection, setActiveSection] = useState<string>('hero');
+  const [activeSection, setActiveSection] = useState<string>('eight-year-rush');
+
+  // Handle URL hash changes (back/forward navigation)
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentPage(getInitialPage());
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handleNavigatePage = (page: PageRoute) => {
+    setCurrentPage(page);
+    window.location.hash = page === 'story' ? '' : page;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleSelectSong = (song: SongRecord) => {
     setHighlightQuery('');
@@ -38,32 +51,39 @@ export const App: React.FC = () => {
   };
 
   const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+    if (currentPage !== 'story') {
+      setCurrentPage('story');
+      window.location.hash = '';
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
-  // Section Observer to highlight active navigation item
+  // Section Observer for Story Dot Navigation
   useEffect(() => {
+    if (currentPage !== 'story') return;
+
     const sectionIds = [
       'hero',
       'eight-year-rush',
-      'covers-disappear',
       'authorship',
-      'band-turns-inward',
       'theme-islands',
-      'lyric-lens',
-      'word-count-paradox',
-      'genre-universe',
       'studio-1967',
       'four-voices',
-      'explore-library',
       'coda',
     ];
 
     const handleScroll = () => {
-      const scrollPos = window.scrollY + 200;
+      const scrollPos = window.scrollY + 260;
       for (let i = sectionIds.length - 1; i >= 0; i--) {
         const el = document.getElementById(sectionIds[i]);
         if (el && el.offsetTop <= scrollPos) {
@@ -74,8 +94,9 @@ export const App: React.FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [currentPage]);
 
   return (
     <PlayerProvider>
@@ -83,31 +104,36 @@ export const App: React.FC = () => {
         <div className="min-h-screen bg-[#F2EBDD] text-[#151515] flex flex-col font-sans selection:bg-[#C43A2F] selection:text-white relative">
           {/* Persistent Sticky Navigation */}
           <Navigation
+            currentPage={currentPage}
+            onNavigatePage={handleNavigatePage}
             onOpenCredits={() => setIsCreditsOpen(true)}
-            activeSection={activeSection}
           />
 
-          {/* Narrative Flow */}
+          {/* Main Pages */}
           <main className="flex-1">
-            <Hero
-              onStartStory={() => scrollTo('eight-year-rush')}
-              onExplore={() => scrollTo('explore-library')}
-            />
-            <EightYearRush onSelectSong={handleSelectSong} />
-            <CoversDisappear onSelectSong={handleSelectSong} />
-            <AuthorshipStrands onSelectSong={handleSelectSong} />
-            <BandTurnsInward onSelectSong={handleSelectSong} />
-            <ThemeIslands onSelectSong={handleSelectSong} />
-            <LyricLens onSelectSongWithQuery={handleSelectSongWithQuery} />
-            <WordCountParadox />
-            <GenreUniverse onSelectSong={handleSelectSong} />
-            <Studio1967 onSelectSong={handleSelectSong} />
-            <FourVoices onSelectSong={handleSelectSong} />
-            <ExploreLibrary onSelectSong={handleSelectSong} />
-            <Coda
-              onOpenCredits={() => setIsCreditsOpen(true)}
-              onScrollToTop={() => scrollTo('hero')}
-            />
+            {currentPage === 'story' && (
+              <StoryPage
+                activeSection={activeSection}
+                onSelectSong={handleSelectSong}
+                onNavigatePage={handleNavigatePage}
+                onOpenCredits={() => setIsCreditsOpen(true)}
+                onScrollToSection={scrollTo}
+              />
+            )}
+
+            {currentPage === 'explore' && (
+              <ExplorePage
+                onSelectSong={handleSelectSong}
+                onOpenCredits={() => setIsCreditsOpen(true)}
+              />
+            )}
+
+            {currentPage === 'find-a-word' && (
+              <FindAWordPage
+                onSelectSongWithQuery={handleSelectSongWithQuery}
+                onOpenCredits={() => setIsCreditsOpen(true)}
+              />
+            )}
           </main>
 
           {/* Global Drawers, Modals, and Player Dock */}

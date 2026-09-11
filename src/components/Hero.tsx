@@ -7,9 +7,10 @@ import { mediaManifest } from '../lib/data';
 interface HeroProps {
   onStartStory: () => void;
   onExplore: () => void;
+  onFindAWord?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onStartStory, onExplore }) => {
+export const Hero: React.FC<HeroProps> = ({ onStartStory, onExplore, onFindAWord }) => {
   const { playTrack } = usePlayer();
   const firstTrack = mediaManifest[0]; // I Want to Hold Your Hand
 
@@ -71,10 +72,19 @@ export const Hero: React.FC<HeroProps> = ({ onStartStory, onExplore }) => {
 
             <button
               onClick={onExplore}
-              className="flex items-center gap-2 px-6 py-3.5 bg-transparent hover:bg-[#EAE1D2] text-[#151515] border-2 border-[#151515] font-mono-code text-xs uppercase font-bold tracking-wider transition-all"
+              className="flex items-center gap-2 px-5 py-3.5 bg-transparent hover:bg-[#EAE1D2] text-[#151515] border-2 border-[#151515] font-mono-code text-xs uppercase font-bold tracking-wider transition-all"
             >
               <span>EXPLORE 213 SONGS</span>
             </button>
+
+            {onFindAWord && (
+              <button
+                onClick={onFindAWord}
+                className="flex items-center gap-2 px-5 py-3.5 bg-transparent hover:bg-[#EAE1D2] text-[#151515] border-2 border-[#151515] font-mono-code text-xs uppercase font-bold tracking-wider transition-all"
+              >
+                <span>FIND A WORD</span>
+              </button>
+            )}
 
             {firstTrack && (
               <button
