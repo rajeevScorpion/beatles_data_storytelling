@@ -1,0 +1,77 @@
+[
+  {
+    "name": "The Beatles — Albums",
+    "url": "https://www.thebeatles.com/albums",
+    "use": "Authoritative release chronology / original catalogue distinction"
+  },
+  {
+    "name": "Please Please Me — official",
+    "url": "https://www.thebeatles.com/please-please-me",
+    "use": "Early recording context and covers/originals context"
+  },
+  {
+    "name": "Revolver — official",
+    "url": "https://www.thebeatles.com/revolver",
+    "use": "1966 experimentation, longer studio period, Harrison compositions"
+  },
+  {
+    "name": "Sgt. Pepper — official",
+    "url": "https://www.thebeatles.com/sgt-peppers-lonely-hearts-club-band-0",
+    "use": "1967 studio-intensive transition"
+  },
+  {
+    "name": "Abbey Road — official",
+    "url": "https://www.thebeatles.com/abbey-road",
+    "use": "Final-recorded album context / late era"
+  },
+  {
+    "name": "Let It Be — official",
+    "url": "https://www.thebeatles.com/let-it-be-0",
+    "use": "Final-release context"
+  },
+  {
+    "name": "Past Masters — official store",
+    "url": "https://usastore.thebeatles.com/products/past-masters-volumes-1-2-2cd",
+    "use": "German-language tracks and singles/EP collection tracklist"
+  },
+  {
+    "name": "The Beatles Red/Blue announcement",
+    "url": "https://www.thebeatles.com/announcement",
+    "use": "Official career-spanning tracklist and Anthology context"
+  },
+  {
+    "name": "MusicBrainz API",
+    "url": "https://musicbrainz.org/doc/MusicBrainz_API",
+    "use": "Structured metadata enrichment; not audio streaming"
+  },
+  {
+    "name": "MusicBrainz Cover Art Archive",
+    "url": "https://musicbrainz.org/doc/Cover_Art_Archive",
+    "use": "Cover-art lookup; rights still need care"
+  },
+  {
+    "name": "YouTube IFrame Player API",
+    "url": "https://developers.google.com/youtube/iframe_api_reference",
+    "use": "In-page playback controls"
+  },
+  {
+    "name": "YouTube Developer Policies",
+    "url": "https://developers.google.com/youtube/terms/developer-policies",
+    "use": "Confirms IFrame playback does not require user authorization"
+  },
+  {
+    "name": "YouTube player requirements",
+    "url": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "use": "Player sizing/visibility/branding constraints"
+  },
+  {
+    "name": "Wikimedia 1963 publicity photo",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_2.jpg",
+    "use": "Early-era archival visual; license/source information"
+  },
+  {
+    "name": "Wikimedia 1965 press conference",
+    "url": "https://commons.wikimedia.org/wiki/File:Beatles_press_conference_1965.jpg",
+    "use": "Mid-era archival visual; CC BY-SA 2.0"
+  }
+]

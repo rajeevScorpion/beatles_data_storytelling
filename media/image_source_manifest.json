@@ -1,0 +1,47 @@
+[
+  {
+    "id": "early-1963-hoffmann",
+    "era": "Early Beatles",
+    "description": "1963 Beatles publicity photograph, Dezo Hoffmann / Capitol Records",
+    "source_page": "https://commons.wikimedia.org/wiki/File:The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_2.jpg",
+    "direct_image": "https://upload.wikimedia.org/wikipedia/commons/4/42/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_2.jpg",
+    "license_note": "Wikimedia marks the underlying work public domain in the United States; page warns rights can differ outside the U.S. Keep source link and credit.",
+    "credit": "Dezo Hoffmann; distributed by Capitol Records; source: Wikimedia Commons"
+  },
+  {
+    "id": "middle-1965-press",
+    "era": "Middle Beatles",
+    "description": "Beatles press conference at Metropolitan Stadium, 21 Aug 1965",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Beatles_press_conference_1965.jpg",
+    "direct_image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Beatles_press_conference_1965.jpg",
+    "license_note": "CC BY-SA 2.0. Attribution and share-alike conditions apply; indicate modifications.",
+    "credit": "Minnesota Historical Society, CC BY-SA 2.0; source: Wikimedia Commons"
+  },
+  {
+    "id": "middle-1966-revolver-reference",
+    "era": "Middle Beatles",
+    "description": "Official Revolver recording-session photography reference",
+    "source_page": "https://www.thebeatles.com/revolver",
+    "direct_image": null,
+    "license_note": "Official-site reference only. Do not assume open license. Prefer source-page backlink or replace with a clearly licensed/local classroom asset.",
+    "credit": "The Beatles / Apple Corps — official site"
+  },
+  {
+    "id": "psychedelic-1967-pepper-reference",
+    "era": "Psychedelic Beatles",
+    "description": "Official Sgt. Pepper studio photography reference",
+    "source_page": "https://www.thebeatles.com/sgt-peppers-lonely-hearts-club-band-0",
+    "direct_image": null,
+    "license_note": "Official-site reference only. Do not assume open license.",
+    "credit": "The Beatles / Apple Corps — official site"
+  },
+  {
+    "id": "late-1969-abbey-road-reference",
+    "era": "Late Beatles",
+    "description": "Official Abbey Road page with crossing/outtake imagery",
+    "source_page": "https://www.thebeatles.com/abbey-road",
+    "direct_image": null,
+    "license_note": "Official-site reference only. Do not assume open license.",
+    "credit": "The Beatles / Apple Corps — official site"
+  }
+]

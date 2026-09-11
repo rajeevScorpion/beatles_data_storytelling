@@ -1,0 +1,381 @@
+{
+  "dataset": {
+    "songs": 213,
+    "original_fields": 16,
+    "lyrics_present": 212,
+    "themes_present": 139,
+    "covers": 25,
+    "original_or_traditional_noncover_flag": 188,
+    "core_timeline_records_1962_1970": 211,
+    "patched_records": [
+      "Komm, gib mir deine Hand",
+      "Sie liebt dich"
+    ]
+  },
+  "era_counts": {
+    "Psychedelic Beatles": 25,
+    "Early Beatles": 69,
+    "Late Beatles": 67,
+    "Middle Beatles": 52
+  },
+  "cover_by_year": {
+    "1967": {
+      "songs": 25,
+      "covers": 0,
+      "cover_share_pct": 0.0
+    },
+    "1964": {
+      "songs": 35,
+      "covers": 9,
+      "cover_share_pct": 25.7
+    },
+    "1963": {
+      "songs": 30,
+      "covers": 12,
+      "cover_share_pct": 40.0
+    },
+    "1968": {
+      "songs": 34,
+      "covers": 0,
+      "cover_share_pct": 0.0
+    },
+    "1965": {
+      "songs": 33,
+      "covers": 3,
+      "cover_share_pct": 9.1
+    },
+    "1966": {
+      "songs": 19,
+      "covers": 0,
+      "cover_share_pct": 0.0
+    },
+    "1962": {
+      "songs": 4,
+      "covers": 0,
+      "cover_share_pct": 0.0
+    },
+    "1969": {
+      "songs": 30,
+      "covers": 1,
+      "cover_share_pct": 3.3
+    },
+    "1970": {
+      "songs": 1,
+      "covers": 0,
+      "cover_share_pct": 0.0
+    }
+  },
+  "member_authorship_presence_by_era": {
+    "Early Beatles": {
+      "John Lennon": 40,
+      "Paul McCartney": 30,
+      "George Harrison": 1,
+      "Ringo Starr": 0
+    },
+    "Middle Beatles": {
+      "John Lennon": 27,
+      "Paul McCartney": 30,
+      "George Harrison": 7,
+      "Ringo Starr": 1
+    },
+    "Psychedelic Beatles": {
+      "John Lennon": 14,
+      "Paul McCartney": 18,
+      "George Harrison": 5,
+      "Ringo Starr": 1
+    },
+    "Late Beatles": {
+      "John Lennon": 32,
+      "Paul McCartney": 31,
+      "George Harrison": 15,
+      "Ringo Starr": 6
+    }
+  },
+  "lead_vocal_presence_by_era": {
+    "Early Beatles": {
+      "John Lennon": 48,
+      "Paul McCartney": 37,
+      "George Harrison": 9,
+      "Ringo Starr": 4
+    },
+    "Middle Beatles": {
+      "John Lennon": 27,
+      "Paul McCartney": 24,
+      "George Harrison": 9,
+      "Ringo Starr": 3
+    },
+    "Psychedelic Beatles": {
+      "John Lennon": 12,
+      "Paul McCartney": 13,
+      "George Harrison": 5,
+      "Ringo Starr": 1
+    },
+    "Late Beatles": {
+      "John Lennon": 31,
+      "Paul McCartney": 32,
+      "George Harrison": 13,
+      "Ringo Starr": 5
+    }
+  },
+  "average_lyric_word_count_by_era": {
+    "Early Beatles": 166.9,
+    "Middle Beatles": 185.1,
+    "Psychedelic Beatles": 186.6,
+    "Late Beatles": 142.7
+  },
+  "top_themes": {
+    "In Love": 46,
+    "Heartache": 28,
+    "Feeling Blue": 26,
+    "Introspection": 20,
+    "Affection/Fondness": 17,
+    "Relationships": 16,
+    "Reflection": 15,
+    "New Love": 13,
+    "Breakup": 13,
+    "Reminiscing": 13,
+    "Regret": 12,
+    "Awareness": 11,
+    "Jealousy": 11,
+    "Playful": 10,
+    "Partying": 10,
+    "Summer": 9,
+    "Late Night": 9,
+    "Yearning": 8,
+    "Hanging Out": 6,
+    "Loss/Grief": 6,
+    "Cool & Cocky": 6,
+    "Biographical": 6,
+    "Starting Out": 6,
+    "The Creative Side": 6,
+    "Passion": 5,
+    "Lifecycle": 5,
+    "Comfort": 5,
+    "Nature": 4,
+    "Birthday": 4,
+    "Family Gatherings": 4,
+    "Romance": 4,
+    "Guys Night Out": 4,
+    "Goodbyes": 4,
+    "Joy": 4,
+    "Religion": 3
+  },
+  "top_themes_by_era": {
+    "Early Beatles": {
+      "In Love": 26,
+      "Heartache": 16,
+      "Feeling Blue": 11,
+      "Relationships": 9,
+      "Affection/Fondness": 9,
+      "Awareness": 8,
+      "New Love": 7,
+      "Partying": 7,
+      "Jealousy": 6,
+      "Introspection": 5,
+      "Summer": 4,
+      "Passion": 4,
+      "Cool & Cocky": 4,
+      "Hanging Out": 4,
+      "TGIF": 3
+    },
+    "Middle Beatles": {
+      "Feeling Blue": 11,
+      "Breakup": 10,
+      "Introspection": 8,
+      "Heartache": 8,
+      "In Love": 8,
+      "Regret": 7,
+      "Reflection": 5,
+      "Playful": 4,
+      "Reminiscing": 4,
+      "Jealousy": 4,
+      "New Love": 3,
+      "Summer": 3,
+      "Loss/Grief": 2,
+      "Affection/Fondness": 2,
+      "Sweet Dreams": 2
+    },
+    "Psychedelic Beatles": {
+      "Reflection": 4,
+      "Playful": 3,
+      "The Creative Side": 3,
+      "Affection/Fondness": 2,
+      "In Love": 2,
+      "Mischievous": 2,
+      "Introspection": 2,
+      "Birthday": 1,
+      "Family Gatherings": 1,
+      "Affirmation": 1,
+      "Late Night": 1,
+      "Night Driving": 1,
+      "Day Driving": 1,
+      "Hanging Out": 1,
+      "Spring": 1
+    },
+    "Late Beatles": {
+      "In Love": 10,
+      "Relationships": 7,
+      "Reminiscing": 7,
+      "Biographical": 6,
+      "Late Night": 6,
+      "Introspection": 5,
+      "Reflection": 5,
+      "Nature": 4,
+      "Affection/Fondness": 4,
+      "Feeling Blue": 4,
+      "Lifecycle": 4,
+      "Starting Out": 4,
+      "Awareness": 3,
+      "Religion": 3,
+      "Politics/Society": 3
+    }
+  },
+  "normalized_genre_tokens": {
+    "Pop/Rock": 209,
+    "Rock": 34,
+    "Rock and Roll": 33,
+    "Psychedelic Rock": 26,
+    "Folk Rock": 18,
+    "Hard Rock": 17,
+    "Blues Rock": 11,
+    "Baroque Pop": 10,
+    "R&B": 9,
+    "Folk": 8,
+    "Music Hall": 8,
+    "Country": 7,
+    "Psychedelic Pop": 7,
+    "Merseybeat": 7,
+    "Psychedelic Folk": 5,
+    "Power Pop": 4,
+    "Experimental Rock": 4,
+    "Raga Rock": 4,
+    "Art Rock": 3,
+    "Jazz": 3,
+    "Soul": 3,
+    "Country Rock": 3,
+    "Rockabilly": 3,
+    "Skiffle": 2,
+    "Blues": 2,
+    "Heavy Metal": 2,
+    "Acid Rock": 2,
+    "Indian Music": 2,
+    "Art Pop": 2,
+    "Electronic": 1,
+    "Stage & Screen": 1,
+    "Circus": 1,
+    "Symphonic Rock": 1,
+    "Instrumental Rock": 1,
+    "Space Rock": 1,
+    "Country Blues": 1,
+    "Sunshine Pop": 1,
+    "Orchestral Pop": 1,
+    "Lullaby": 1,
+    "Jazz Fusion": 1,
+    "Proto-Punk": 1,
+    "Folk Pop": 1,
+    "Soft Rock": 1,
+    "Ragtime": 1,
+    "Folk Blues": 1,
+    "Progressive Rock": 1,
+    "Gospel": 1,
+    "Rock and roll": 1,
+    "Ska": 1,
+    "Swamp Pop": 1,
+    "Roots Rock": 1,
+    "Progressive Pop": 1,
+    "Hard rock": 1,
+    "Acid Rock[": 1,
+    "Electronic Pop/Rock": 1,
+    "Doo Wop": 1,
+    "Jangle Pop": 1,
+    "Avant-Pop": 1,
+    "Country rock": 1,
+    "Jangle pop": 1,
+    "Experimental pop": 1,
+    "Lo-Fi": 1,
+    "Pop Rock": 1,
+    "Indian Classical": 1,
+    "Children's Music": 1,
+    "Comedy Rock": 1,
+    "Avant-Garde": 1,
+    "Novelty": 1,
+    "FolkPop/Rock": 1,
+    "Vaudeville Rock": 1
+  },
+  "genre_family_presence_by_era": {
+    "Early Beatles": {
+      "Pop / Songcraft": 69,
+      "Beat / Rock & Roll": 35,
+      "Heavy / Blues Rock": 11,
+      "Folk / Country": 7,
+      "Psychedelic / Experimental": 1,
+      "Jazz / Other": 1
+    },
+    "Middle Beatles": {
+      "Pop / Songcraft": 48,
+      "Folk / Country": 15,
+      "Psychedelic / Experimental": 14,
+      "Heavy / Blues Rock": 10,
+      "Beat / Rock & Roll": 6,
+      "Other": 2,
+      "Jazz / Other": 1
+    },
+    "Psychedelic Beatles": {
+      "Pop / Songcraft": 25,
+      "Psychedelic / Experimental": 19,
+      "Jazz / Other": 3,
+      "Heavy / Blues Rock": 3,
+      "Beat / Rock & Roll": 1
+    },
+    "Late Beatles": {
+      "Pop / Songcraft": 67,
+      "Heavy / Blues Rock": 33,
+      "Folk / Country": 13,
+      "Psychedelic / Experimental": 9,
+      "Beat / Rock & Roll": 6,
+      "Jazz / Other": 3
+    }
+  },
+  "album_counts": {
+    "Sgt. Pepper's Lonely Hearts Club Band": 13,
+    "A Hard Day's Night": 13,
+    "Please Please Me": 14,
+    "Let It Be": 12,
+    "Help!": 14,
+    "With the Beatles": 14,
+    "Yellow Submarine": 4,
+    "Magical Mystery Tour": 11,
+    "Revolver": 14,
+    "Beatles for Sale": 14,
+    "The Beatles": 28,
+    "Past Masters (Vols. 1 & 2 / Remastered)": 28,
+    "Abbey Road": 17,
+    "Rubber Soul": 14,
+    "Anthology 1": 1,
+    "Anthology 2": 1,
+    "Rock 'n' Roll Music": 1
+  },
+  "data_quality": {
+    "theme_coverage_pct": 65.3,
+    "lyrics_missing": [
+      "Flying"
+    ],
+    "composite_year_records": [
+      {
+        "title": "Free as a bird",
+        "year_raw": "1977/1994"
+      },
+      {
+        "title": "Real love",
+        "year_raw": "1980/1995"
+      }
+    ],
+    "notes": [
+      "Genre casing/punctuation variants were normalized but raw dataset remains included.",
+      "The two German-language tracks had missing metadata and were patched from The Beatles official Past Masters listing plus MusicBrainz recording metadata.",
+      "Themes are absent on roughly one third of records; do not imply thematic exhaustiveness.",
+      "Songwriter/vocal member counts are presence counts, so shared credits can count toward more than one member.",
+      "Past Masters and Anthology are not treated as equivalent to original-era studio albums."
+    ]
+  }
+}
