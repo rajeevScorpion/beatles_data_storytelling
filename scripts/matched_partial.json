@@ -1,0 +1,4400 @@
+{
+  "matched": [
+    {
+      "dataset_id": 1,
+      "song_id": "beatles-001",
+      "title": "A day in the life",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "usNsCeOV4GM",
+      "watch_url": "https://www.youtube.com/watch?v=usNsCeOV4GM",
+      "embed_url": "https://www.youtube.com/embed/usNsCeOV4GM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Remix / 2017 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 2,
+      "song_id": "beatles-002",
+      "title": "A hard day's night",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "zx2TFk0vh1I",
+      "watch_url": "https://www.youtube.com/watch?v=zx2TFk0vh1I",
+      "embed_url": "https://www.youtube.com/embed/zx2TFk0vh1I?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "A Hard Day's Night (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 3,
+      "song_id": "beatles-003",
+      "title": "A taste of honey",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "MkQ1eOcl5ug",
+      "watch_url": "https://www.youtube.com/watch?v=MkQ1eOcl5ug",
+      "embed_url": "https://www.youtube.com/embed/MkQ1eOcl5ug?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "A Taste Of Honey (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 4,
+      "song_id": "beatles-004",
+      "title": "Across the universe",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "we0tO0LxY8Y",
+      "watch_url": "https://www.youtube.com/watch?v=we0tO0LxY8Y",
+      "embed_url": "https://www.youtube.com/embed/we0tO0LxY8Y?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Across The Universe (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 5,
+      "song_id": "beatles-005",
+      "title": "Act naturally",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "yjJd8rZPcAQ",
+      "watch_url": "https://www.youtube.com/watch?v=yjJd8rZPcAQ",
+      "embed_url": "https://www.youtube.com/embed/yjJd8rZPcAQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Act Naturally (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 6,
+      "song_id": "beatles-006",
+      "title": "All I've got to do",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "anMW41uvb_s",
+      "watch_url": "https://www.youtube.com/watch?v=anMW41uvb_s",
+      "embed_url": "https://www.youtube.com/embed/anMW41uvb_s?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "All I've Got To Do (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 7,
+      "song_id": "beatles-007",
+      "title": "All my loving",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "TSpiwK5fig0",
+      "watch_url": "https://www.youtube.com/watch?v=TSpiwK5fig0",
+      "embed_url": "https://www.youtube.com/embed/TSpiwK5fig0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "All My Loving (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 8,
+      "song_id": "beatles-008",
+      "title": "All together now",
+      "album": "Yellow Submarine",
+      "era": "Psychedelic Beatles",
+      "video_id": "73lj5qJbrms",
+      "watch_url": "https://www.youtube.com/watch?v=73lj5qJbrms",
+      "embed_url": "https://www.youtube.com/embed/73lj5qJbrms?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "All Together Now (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 9,
+      "song_id": "beatles-009",
+      "title": "All you need is love",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "1A8sOOKianA",
+      "watch_url": "https://www.youtube.com/watch?v=1A8sOOKianA",
+      "embed_url": "https://www.youtube.com/embed/1A8sOOKianA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "All You Need Is Love (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 10,
+      "song_id": "beatles-010",
+      "title": "And I love her",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "5tc0gLSSU1M",
+      "watch_url": "https://www.youtube.com/watch?v=5tc0gLSSU1M",
+      "embed_url": "https://www.youtube.com/embed/5tc0gLSSU1M?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "And I Love Her (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 11,
+      "song_id": "beatles-011",
+      "title": "And your bird can sing",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "Uq0aeEYLkIE",
+      "watch_url": "https://www.youtube.com/watch?v=Uq0aeEYLkIE",
+      "embed_url": "https://www.youtube.com/embed/Uq0aeEYLkIE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "And Your Bird Can Sing (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 12,
+      "song_id": "beatles-012",
+      "title": "Anna (go to him)",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "b3zNKWyLfus",
+      "watch_url": "https://www.youtube.com/watch?v=b3zNKWyLfus",
+      "embed_url": "https://www.youtube.com/embed/b3zNKWyLfus?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Anna (Go To Him) (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 13,
+      "song_id": "beatles-013",
+      "title": "Another girl",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "EMBYNWr5R_U",
+      "watch_url": "https://www.youtube.com/watch?v=EMBYNWr5R_U",
+      "embed_url": "https://www.youtube.com/embed/EMBYNWr5R_U?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Another Girl (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 14,
+      "song_id": "beatles-014",
+      "title": "Any time at all",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "WuB7F-gRdJo",
+      "watch_url": "https://www.youtube.com/watch?v=WuB7F-gRdJo",
+      "embed_url": "https://www.youtube.com/embed/WuB7F-gRdJo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Any Time At All (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 15,
+      "song_id": "beatles-015",
+      "title": "Ask me why",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "2ttGjtfQ7EA",
+      "watch_url": "https://www.youtube.com/watch?v=2ttGjtfQ7EA",
+      "embed_url": "https://www.youtube.com/embed/2ttGjtfQ7EA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Ask Me Why (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 16,
+      "song_id": "beatles-016",
+      "title": "Baby it's you",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "AWUTlM6hz0g",
+      "watch_url": "https://www.youtube.com/watch?v=AWUTlM6hz0g",
+      "embed_url": "https://www.youtube.com/embed/AWUTlM6hz0g?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Baby It's You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 17,
+      "song_id": "beatles-017",
+      "title": "Baby's in black",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "TJFpUb7JGYo",
+      "watch_url": "https://www.youtube.com/watch?v=TJFpUb7JGYo",
+      "embed_url": "https://www.youtube.com/embed/TJFpUb7JGYo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Baby's In Black (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 18,
+      "song_id": "beatles-018",
+      "title": "Baby, You're A Rich Man",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "i5m-sgtwFck",
+      "watch_url": "https://www.youtube.com/watch?v=i5m-sgtwFck",
+      "embed_url": "https://www.youtube.com/embed/i5m-sgtwFck?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Baby, You're A Rich Man (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 19,
+      "song_id": "beatles-019",
+      "title": "Back in the U.S.S.R.",
+      "album": "The Beatles",
+      "era": "Late Beatles",
+      "video_id": "PnCUOFlNHJI",
+      "watch_url": "https://www.youtube.com/watch?v=PnCUOFlNHJI",
+      "embed_url": "https://www.youtube.com/embed/PnCUOFlNHJI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Back In The U.S.S.R. (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 20,
+      "song_id": "beatles-020",
+      "title": "Bad boy",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "u8hOfWs2Xmw",
+      "watch_url": "https://www.youtube.com/watch?v=u8hOfWs2Xmw",
+      "embed_url": "https://www.youtube.com/embed/u8hOfWs2Xmw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Bad Boy (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 21,
+      "song_id": "beatles-021",
+      "title": "Because",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "hL0tnrl2L_U",
+      "watch_url": "https://www.youtube.com/watch?v=hL0tnrl2L_U",
+      "embed_url": "https://www.youtube.com/embed/hL0tnrl2L_U?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Because (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 22,
+      "song_id": "beatles-022",
+      "title": "Being for the benefit of Mr. Kite!",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "bJVWZy4QOy0",
+      "watch_url": "https://www.youtube.com/watch?v=bJVWZy4QOy0",
+      "embed_url": "https://www.youtube.com/embed/bJVWZy4QOy0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Being For The Benefit Of Mr. Kite! (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 25,
+      "song_id": "beatles-025",
+      "title": "Blue jay way",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "ixmOAb6qzvY",
+      "watch_url": "https://www.youtube.com/watch?v=ixmOAb6qzvY",
+      "embed_url": "https://www.youtube.com/embed/ixmOAb6qzvY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Blue Jay Way (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 26,
+      "song_id": "beatles-026",
+      "title": "Boys",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "Qr8OuW5JJgQ",
+      "watch_url": "https://www.youtube.com/watch?v=Qr8OuW5JJgQ",
+      "embed_url": "https://www.youtube.com/embed/Qr8OuW5JJgQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Boys (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 27,
+      "song_id": "beatles-027",
+      "title": "Can't buy me love",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "TBSpmoA8V78",
+      "watch_url": "https://www.youtube.com/watch?v=TBSpmoA8V78",
+      "embed_url": "https://www.youtube.com/embed/TBSpmoA8V78?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Can't Buy Me Love (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 28,
+      "song_id": "beatles-028",
+      "title": "Carry that weight",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "6B224XDJw6g",
+      "watch_url": "https://www.youtube.com/watch?v=6B224XDJw6g",
+      "embed_url": "https://www.youtube.com/embed/6B224XDJw6g?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Carry That Weight (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 29,
+      "song_id": "beatles-029",
+      "title": "Chains",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "rJOhavaeJYk",
+      "watch_url": "https://www.youtube.com/watch?v=rJOhavaeJYk",
+      "embed_url": "https://www.youtube.com/embed/rJOhavaeJYk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Chains (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 30,
+      "song_id": "beatles-030",
+      "title": "Come together",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "45cYwDMibGo",
+      "watch_url": "https://www.youtube.com/watch?v=45cYwDMibGo",
+      "embed_url": "https://www.youtube.com/embed/45cYwDMibGo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "2019 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 32,
+      "song_id": "beatles-032",
+      "title": "Day tripper",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "psyg1nPT0g8",
+      "watch_url": "https://www.youtube.com/watch?v=psyg1nPT0g8",
+      "embed_url": "https://www.youtube.com/embed/psyg1nPT0g8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Day Tripper (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 34,
+      "song_id": "beatles-034",
+      "title": "Devil in her heart",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "IGe-jfFrxCk",
+      "watch_url": "https://www.youtube.com/watch?v=IGe-jfFrxCk",
+      "embed_url": "https://www.youtube.com/embed/IGe-jfFrxCk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Devil In Her Heart (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 35,
+      "song_id": "beatles-035",
+      "title": "Dig a pony",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "LpdJE7HG8Ls",
+      "watch_url": "https://www.youtube.com/watch?v=LpdJE7HG8Ls",
+      "embed_url": "https://www.youtube.com/embed/LpdJE7HG8Ls?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Dig A Pony (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 36,
+      "song_id": "beatles-036",
+      "title": "Dig it",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "fUUOX6kAIxI",
+      "watch_url": "https://www.youtube.com/watch?v=fUUOX6kAIxI",
+      "embed_url": "https://www.youtube.com/embed/fUUOX6kAIxI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Dig It (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 38,
+      "song_id": "beatles-038",
+      "title": "Do you want to know a secret",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "uRQ7ecvU56k",
+      "watch_url": "https://www.youtube.com/watch?v=uRQ7ecvU56k",
+      "embed_url": "https://www.youtube.com/embed/uRQ7ecvU56k?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Do You Want To Know A Secret (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 39,
+      "song_id": "beatles-039",
+      "title": "Doctor Robert",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "Tb9L3iAUhc0",
+      "watch_url": "https://www.youtube.com/watch?v=Tb9L3iAUhc0",
+      "embed_url": "https://www.youtube.com/embed/Tb9L3iAUhc0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Doctor Robert (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 40,
+      "song_id": "beatles-040",
+      "title": "Don't bother me",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "k03IQbaTcxc",
+      "watch_url": "https://www.youtube.com/watch?v=k03IQbaTcxc",
+      "embed_url": "https://www.youtube.com/embed/k03IQbaTcxc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Don't Bother Me (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 41,
+      "song_id": "beatles-041",
+      "title": "Don't let me down",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "xk7f6i0CNfs",
+      "watch_url": "https://www.youtube.com/watch?v=xk7f6i0CNfs",
+      "embed_url": "https://www.youtube.com/embed/xk7f6i0CNfs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Don't Let Me Down (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 43,
+      "song_id": "beatles-043",
+      "title": "Drive my car",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "kfSQkZuIx84",
+      "watch_url": "https://www.youtube.com/watch?v=kfSQkZuIx84",
+      "embed_url": "https://www.youtube.com/embed/kfSQkZuIx84?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Drive My Car (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 44,
+      "song_id": "beatles-044",
+      "title": "Eight days a week",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "kle2xHhRHg4",
+      "watch_url": "https://www.youtube.com/watch?v=kle2xHhRHg4",
+      "embed_url": "https://www.youtube.com/embed/kle2xHhRHg4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Beatles - Eight Days A Week",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 45,
+      "song_id": "beatles-045",
+      "title": "Eleanor Rigby",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "HuS5NuXRb5Y",
+      "watch_url": "https://www.youtube.com/watch?v=HuS5NuXRb5Y",
+      "embed_url": "https://www.youtube.com/embed/HuS5NuXRb5Y?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Official Video",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 46,
+      "song_id": "beatles-046",
+      "title": "Every little thing",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "jrDikOz8YSU",
+      "watch_url": "https://www.youtube.com/watch?v=jrDikOz8YSU",
+      "embed_url": "https://www.youtube.com/embed/jrDikOz8YSU?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Every Little Thing (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 47,
+      "song_id": "beatles-047",
+      "title": "Everybody's got something to hide except me and my monkey",
+      "album": "The Beatles",
+      "era": "Late Beatles",
+      "video_id": "qCY80SdwBVI",
+      "watch_url": "https://www.youtube.com/watch?v=qCY80SdwBVI",
+      "embed_url": "https://www.youtube.com/embed/qCY80SdwBVI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Something (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 48,
+      "song_id": "beatles-048",
+      "title": "Everybody's trying to be my baby",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "wn7FiAdHcmw",
+      "watch_url": "https://www.youtube.com/watch?v=wn7FiAdHcmw",
+      "embed_url": "https://www.youtube.com/embed/wn7FiAdHcmw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Everybody's Trying To Be My Baby (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 49,
+      "song_id": "beatles-049",
+      "title": "Fixing a hole",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "UPBd8eHQqIw",
+      "watch_url": "https://www.youtube.com/watch?v=UPBd8eHQqIw",
+      "embed_url": "https://www.youtube.com/embed/UPBd8eHQqIw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Fixing A Hole (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 50,
+      "song_id": "beatles-050",
+      "title": "Flying",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "Z1ONJQLdZrk",
+      "watch_url": "https://www.youtube.com/watch?v=Z1ONJQLdZrk",
+      "embed_url": "https://www.youtube.com/embed/Z1ONJQLdZrk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Flying (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 51,
+      "song_id": "beatles-051",
+      "title": "For no one",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "ELlLIwhvknk",
+      "watch_url": "https://www.youtube.com/watch?v=ELlLIwhvknk",
+      "embed_url": "https://www.youtube.com/embed/ELlLIwhvknk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "For No One (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 52,
+      "song_id": "beatles-052",
+      "title": "For you blue",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "TIFHRaZERHg",
+      "watch_url": "https://www.youtube.com/watch?v=TIFHRaZERHg",
+      "embed_url": "https://www.youtube.com/embed/TIFHRaZERHg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "For You Blue (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 54,
+      "song_id": "beatles-054",
+      "title": "From me to you",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "GN-iTB-CEC4",
+      "watch_url": "https://www.youtube.com/watch?v=GN-iTB-CEC4",
+      "embed_url": "https://www.youtube.com/embed/GN-iTB-CEC4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "From Me To You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 55,
+      "song_id": "beatles-055",
+      "title": "Get Back",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "p-E7kt2IbCE",
+      "watch_url": "https://www.youtube.com/watch?v=p-E7kt2IbCE",
+      "embed_url": "https://www.youtube.com/embed/p-E7kt2IbCE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Get Back (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 56,
+      "song_id": "beatles-056",
+      "title": "Getting better",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "EGlo9LzmOME",
+      "watch_url": "https://www.youtube.com/watch?v=EGlo9LzmOME",
+      "embed_url": "https://www.youtube.com/embed/EGlo9LzmOME?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Getting Better (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 57,
+      "song_id": "beatles-057",
+      "title": "Girl",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "-8l3ntDR_lI",
+      "watch_url": "https://www.youtube.com/watch?v=-8l3ntDR_lI",
+      "embed_url": "https://www.youtube.com/embed/-8l3ntDR_lI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Girl (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 59,
+      "song_id": "beatles-059",
+      "title": "Golden slumbers",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "AcQjM7gV6mI",
+      "watch_url": "https://www.youtube.com/watch?v=AcQjM7gV6mI",
+      "embed_url": "https://www.youtube.com/embed/AcQjM7gV6mI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Golden Slumbers (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 60,
+      "song_id": "beatles-060",
+      "title": "Good Morning, Good Morning",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "sjb9AxDkwAQ",
+      "watch_url": "https://www.youtube.com/watch?v=sjb9AxDkwAQ",
+      "embed_url": "https://www.youtube.com/embed/sjb9AxDkwAQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Good Morning Good Morning (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 61,
+      "song_id": "beatles-061",
+      "title": "Good day sunshine",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "6e01nNA02vw",
+      "watch_url": "https://www.youtube.com/watch?v=6e01nNA02vw",
+      "embed_url": "https://www.youtube.com/embed/6e01nNA02vw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Good Day Sunshine (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 63,
+      "song_id": "beatles-063",
+      "title": "Got to get you into my life",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "r95-7zfgtLw",
+      "watch_url": "https://www.youtube.com/watch?v=r95-7zfgtLw",
+      "embed_url": "https://www.youtube.com/embed/r95-7zfgtLw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Got To Get You Into My Life (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 65,
+      "song_id": "beatles-065",
+      "title": "Hello, Goodbye",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "uvTrfMio_fU",
+      "watch_url": "https://www.youtube.com/watch?v=uvTrfMio_fU",
+      "embed_url": "https://www.youtube.com/embed/uvTrfMio_fU?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Hello, Goodbye (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 66,
+      "song_id": "beatles-066",
+      "title": "Help!",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "2Q_ZzBGPdqE",
+      "watch_url": "https://www.youtube.com/watch?v=2Q_ZzBGPdqE",
+      "embed_url": "https://www.youtube.com/embed/2Q_ZzBGPdqE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Remastered 2015",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 68,
+      "song_id": "beatles-068",
+      "title": "Her Majesty",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "Mh1hKt5kQ_4",
+      "watch_url": "https://www.youtube.com/watch?v=Mh1hKt5kQ_4",
+      "embed_url": "https://www.youtube.com/embed/Mh1hKt5kQ_4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Her Majesty (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 69,
+      "song_id": "beatles-069",
+      "title": "Here comes the sun",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "KQetemT1sWc",
+      "watch_url": "https://www.youtube.com/watch?v=KQetemT1sWc",
+      "embed_url": "https://www.youtube.com/embed/KQetemT1sWc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "2019 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 70,
+      "song_id": "beatles-070",
+      "title": "Here, There And Everywhere",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "xdcSFVXd3MU",
+      "watch_url": "https://www.youtube.com/watch?v=xdcSFVXd3MU",
+      "embed_url": "https://www.youtube.com/embed/xdcSFVXd3MU?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Here, There And Everywhere (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 71,
+      "song_id": "beatles-071",
+      "title": "Hey Jude",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "A_MjCqQoLLA",
+      "watch_url": "https://www.youtube.com/watch?v=A_MjCqQoLLA",
+      "embed_url": "https://www.youtube.com/embed/A_MjCqQoLLA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Official Video",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 72,
+      "song_id": "beatles-072",
+      "title": "Hey bulldog",
+      "album": "Yellow Submarine",
+      "era": "Late Beatles",
+      "video_id": "g6DVE305g0s",
+      "watch_url": "https://www.youtube.com/watch?v=g6DVE305g0s",
+      "embed_url": "https://www.youtube.com/embed/g6DVE305g0s?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Hey Bulldog (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 73,
+      "song_id": "beatles-073",
+      "title": "Hold me tight",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "H42Ou13za30",
+      "watch_url": "https://www.youtube.com/watch?v=H42Ou13za30",
+      "embed_url": "https://www.youtube.com/embed/H42Ou13za30?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Hold Me Tight (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 74,
+      "song_id": "beatles-074",
+      "title": "Honey don't",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "XIc-VCw5r0A",
+      "watch_url": "https://www.youtube.com/watch?v=XIc-VCw5r0A",
+      "embed_url": "https://www.youtube.com/embed/XIc-VCw5r0A?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Honey Don't (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 76,
+      "song_id": "beatles-076",
+      "title": "I am the Walrus",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "t1Jm5epJr10",
+      "watch_url": "https://www.youtube.com/watch?v=t1Jm5epJr10",
+      "embed_url": "https://www.youtube.com/embed/t1Jm5epJr10?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Am The Walrus (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 77,
+      "song_id": "beatles-077",
+      "title": "I call your name",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "r5mzQHQxoSg",
+      "watch_url": "https://www.youtube.com/watch?v=r5mzQHQxoSg",
+      "embed_url": "https://www.youtube.com/embed/r5mzQHQxoSg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Call Your Name (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 78,
+      "song_id": "beatles-078",
+      "title": "I don't want to spoil the party",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "zqVDvLDLsjI",
+      "watch_url": "https://www.youtube.com/watch?v=zqVDvLDLsjI",
+      "embed_url": "https://www.youtube.com/embed/zqVDvLDLsjI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Don't Want To Spoil The Party (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 79,
+      "song_id": "beatles-079",
+      "title": "I feel fine",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "zPplqOnlXVs",
+      "watch_url": "https://www.youtube.com/watch?v=zPplqOnlXVs",
+      "embed_url": "https://www.youtube.com/embed/zPplqOnlXVs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Feel Fine (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 80,
+      "song_id": "beatles-080",
+      "title": "I me mine",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "seqaTuXkqFI",
+      "watch_url": "https://www.youtube.com/watch?v=seqaTuXkqFI",
+      "embed_url": "https://www.youtube.com/embed/seqaTuXkqFI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Me Mine (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 81,
+      "song_id": "beatles-081",
+      "title": "I need you",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "6t24nX_sak8",
+      "watch_url": "https://www.youtube.com/watch?v=6t24nX_sak8",
+      "embed_url": "https://www.youtube.com/embed/6t24nX_sak8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Need You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 82,
+      "song_id": "beatles-082",
+      "title": "I saw her standing there",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "oxwAB3SECtc",
+      "watch_url": "https://www.youtube.com/watch?v=oxwAB3SECtc",
+      "embed_url": "https://www.youtube.com/embed/oxwAB3SECtc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Saw Her Standing There (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 83,
+      "song_id": "beatles-083",
+      "title": "I should have known better",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "5en2JMLA8Z0",
+      "watch_url": "https://www.youtube.com/watch?v=5en2JMLA8Z0",
+      "embed_url": "https://www.youtube.com/embed/5en2JMLA8Z0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Should Have Known Better (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 84,
+      "song_id": "beatles-084",
+      "title": "I wanna be your man",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "mnct7Qf3SUQ",
+      "watch_url": "https://www.youtube.com/watch?v=mnct7Qf3SUQ",
+      "embed_url": "https://www.youtube.com/embed/mnct7Qf3SUQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Wanna Be Your Man (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 85,
+      "song_id": "beatles-085",
+      "title": "I want to hold your hand",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "jenWdylTtzs",
+      "watch_url": "https://www.youtube.com/watch?v=jenWdylTtzs",
+      "embed_url": "https://www.youtube.com/embed/jenWdylTtzs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Live on Ed Sullivan",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 86,
+      "song_id": "beatles-086",
+      "title": "I want to tell you",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "7kXusIyqQ2o",
+      "watch_url": "https://www.youtube.com/watch?v=7kXusIyqQ2o",
+      "embed_url": "https://www.youtube.com/embed/7kXusIyqQ2o?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Want To Tell You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 87,
+      "song_id": "beatles-087",
+      "title": "I want you (she's so heavy)",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "tAe2Q_LhY8g",
+      "watch_url": "https://www.youtube.com/watch?v=tAe2Q_LhY8g",
+      "embed_url": "https://www.youtube.com/embed/tAe2Q_LhY8g?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I Want You (She's So Heavy) (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 89,
+      "song_id": "beatles-089",
+      "title": "I'll be back",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "fJSTBNTac6k",
+      "watch_url": "https://www.youtube.com/watch?v=fJSTBNTac6k",
+      "embed_url": "https://www.youtube.com/embed/fJSTBNTac6k?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'll Be Back (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 90,
+      "song_id": "beatles-090",
+      "title": "I'll cry instead",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "zfnkMBOSIUQ",
+      "watch_url": "https://www.youtube.com/watch?v=zfnkMBOSIUQ",
+      "embed_url": "https://www.youtube.com/embed/zfnkMBOSIUQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'll Cry Instead (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 91,
+      "song_id": "beatles-091",
+      "title": "I'll follow the sun",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "28d_A_NuJ7A",
+      "watch_url": "https://www.youtube.com/watch?v=28d_A_NuJ7A",
+      "embed_url": "https://www.youtube.com/embed/28d_A_NuJ7A?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'll Follow The Sun (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 92,
+      "song_id": "beatles-092",
+      "title": "I'll get you",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "nFEHqFUONHY",
+      "watch_url": "https://www.youtube.com/watch?v=nFEHqFUONHY",
+      "embed_url": "https://www.youtube.com/embed/nFEHqFUONHY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'll Get You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 93,
+      "song_id": "beatles-093",
+      "title": "I'm a loser",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "f70Z3cvrQd0",
+      "watch_url": "https://www.youtube.com/watch?v=f70Z3cvrQd0",
+      "embed_url": "https://www.youtube.com/embed/f70Z3cvrQd0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'm A Loser (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 94,
+      "song_id": "beatles-094",
+      "title": "I'm down",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "lOWrScjXMRE",
+      "watch_url": "https://www.youtube.com/watch?v=lOWrScjXMRE",
+      "embed_url": "https://www.youtube.com/embed/lOWrScjXMRE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'm Down (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 96,
+      "song_id": "beatles-096",
+      "title": "I'm looking through you",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "gH6i9JAdJrQ",
+      "watch_url": "https://www.youtube.com/watch?v=gH6i9JAdJrQ",
+      "embed_url": "https://www.youtube.com/embed/gH6i9JAdJrQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'm Looking Through You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 97,
+      "song_id": "beatles-097",
+      "title": "I'm only sleeping",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "BT5j9OQ7Sh0",
+      "watch_url": "https://www.youtube.com/watch?v=BT5j9OQ7Sh0",
+      "embed_url": "https://www.youtube.com/embed/BT5j9OQ7Sh0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I'm Only Sleeping (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 99,
+      "song_id": "beatles-099",
+      "title": "I've got a feeling",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "DbKPZd5oihc",
+      "watch_url": "https://www.youtube.com/watch?v=DbKPZd5oihc",
+      "embed_url": "https://www.youtube.com/embed/DbKPZd5oihc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I've Got A Feeling (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 100,
+      "song_id": "beatles-100",
+      "title": "I've just seen a face",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "m8LbJfC0SYM",
+      "watch_url": "https://www.youtube.com/watch?v=m8LbJfC0SYM",
+      "embed_url": "https://www.youtube.com/embed/m8LbJfC0SYM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "I've Just Seen A Face (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 101,
+      "song_id": "beatles-101",
+      "title": "If I fell",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "F_80s6S_7Vw",
+      "watch_url": "https://www.youtube.com/watch?v=F_80s6S_7Vw",
+      "embed_url": "https://www.youtube.com/embed/F_80s6S_7Vw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "If I Fell (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 102,
+      "song_id": "beatles-102",
+      "title": "If I needed someone",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "Kt5OoWr4v1k",
+      "watch_url": "https://www.youtube.com/watch?v=Kt5OoWr4v1k",
+      "embed_url": "https://www.youtube.com/embed/Kt5OoWr4v1k?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "If I Needed Someone (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 103,
+      "song_id": "beatles-103",
+      "title": "In my life",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "YBcdt6DsLQA",
+      "watch_url": "https://www.youtube.com/watch?v=YBcdt6DsLQA",
+      "embed_url": "https://www.youtube.com/embed/YBcdt6DsLQA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "In My Life (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 104,
+      "song_id": "beatles-104",
+      "title": "It won't be long",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "UVKU6SevefY",
+      "watch_url": "https://www.youtube.com/watch?v=UVKU6SevefY",
+      "embed_url": "https://www.youtube.com/embed/UVKU6SevefY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "It Won't Be Long (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 105,
+      "song_id": "beatles-105",
+      "title": "It's all too much",
+      "album": "Yellow Submarine",
+      "era": "Psychedelic Beatles",
+      "video_id": "2zc3idF_IZ0",
+      "watch_url": "https://www.youtube.com/watch?v=2zc3idF_IZ0",
+      "embed_url": "https://www.youtube.com/embed/2zc3idF_IZ0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "It's All Too Much (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 106,
+      "song_id": "beatles-106",
+      "title": "It's only love",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "OPiKDHYCkjs",
+      "watch_url": "https://www.youtube.com/watch?v=OPiKDHYCkjs",
+      "embed_url": "https://www.youtube.com/embed/OPiKDHYCkjs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "It's Only Love (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 108,
+      "song_id": "beatles-108",
+      "title": "Kansas City / Hey, Hey, Hey, Hey",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "4xvW-Nf9VAw",
+      "watch_url": "https://www.youtube.com/watch?v=4xvW-Nf9VAw",
+      "embed_url": "https://www.youtube.com/embed/4xvW-Nf9VAw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Kansas City / Hey-Hey-Hey-Hey (Medley / Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 109,
+      "song_id": "beatles-109",
+      "title": "Komm, gib mir deine Hand",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "6qAazPVLONM",
+      "watch_url": "https://www.youtube.com/watch?v=6qAazPVLONM",
+      "embed_url": "https://www.youtube.com/embed/6qAazPVLONM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Komm gib mir deine Hand (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 110,
+      "song_id": "beatles-110",
+      "title": "Lady Madonna",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "C56lDvKV8tk",
+      "watch_url": "https://www.youtube.com/watch?v=C56lDvKV8tk",
+      "embed_url": "https://www.youtube.com/embed/C56lDvKV8tk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Lady Madonna (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 111,
+      "song_id": "beatles-111",
+      "title": "Let it be",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "CGj85pVzRJs",
+      "watch_url": "https://www.youtube.com/watch?v=CGj85pVzRJs",
+      "embed_url": "https://www.youtube.com/embed/CGj85pVzRJs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "2021 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 112,
+      "song_id": "beatles-112",
+      "title": "Little child",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "DVMfLIoejTc",
+      "watch_url": "https://www.youtube.com/watch?v=DVMfLIoejTc",
+      "embed_url": "https://www.youtube.com/embed/DVMfLIoejTc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Little Child (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 113,
+      "song_id": "beatles-113",
+      "title": "Long tall Sally",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "w-iA9-D_Mbw",
+      "watch_url": "https://www.youtube.com/watch?v=w-iA9-D_Mbw",
+      "embed_url": "https://www.youtube.com/embed/w-iA9-D_Mbw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Long Tall Sally (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 115,
+      "song_id": "beatles-115",
+      "title": "Love me do",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "XB16AkSGLqk",
+      "watch_url": "https://www.youtube.com/watch?v=XB16AkSGLqk",
+      "embed_url": "https://www.youtube.com/embed/XB16AkSGLqk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Remastered 2009",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 116,
+      "song_id": "beatles-116",
+      "title": "Love you to",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "s1X-q7MweIc",
+      "watch_url": "https://www.youtube.com/watch?v=s1X-q7MweIc",
+      "embed_url": "https://www.youtube.com/embed/s1X-q7MweIc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Love You To (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 117,
+      "song_id": "beatles-117",
+      "title": "Lovely Rita",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "ysDwR5SIR1Q",
+      "watch_url": "https://www.youtube.com/watch?v=ysDwR5SIR1Q",
+      "embed_url": "https://www.youtube.com/embed/ysDwR5SIR1Q?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Lovely Rita (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 118,
+      "song_id": "beatles-118",
+      "title": "Lucy in the Sky with Diamonds",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "naoknj1ebqI",
+      "watch_url": "https://www.youtube.com/watch?v=naoknj1ebqI",
+      "embed_url": "https://www.youtube.com/embed/naoknj1ebqI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Lucy In The Sky With Diamonds (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 119,
+      "song_id": "beatles-119",
+      "title": "Maggie Mae",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "tSn1r9--tq4",
+      "watch_url": "https://www.youtube.com/watch?v=tSn1r9--tq4",
+      "embed_url": "https://www.youtube.com/embed/tSn1r9--tq4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Maggie Mae (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 120,
+      "song_id": "beatles-120",
+      "title": "Magical mystery tour",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "l8WMGBuNaus",
+      "watch_url": "https://www.youtube.com/watch?v=l8WMGBuNaus",
+      "embed_url": "https://www.youtube.com/embed/l8WMGBuNaus?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Magical Mystery Tour (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 122,
+      "song_id": "beatles-122",
+      "title": "Matchbox",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "Brd2v1NcYWg",
+      "watch_url": "https://www.youtube.com/watch?v=Brd2v1NcYWg",
+      "embed_url": "https://www.youtube.com/embed/Brd2v1NcYWg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Matchbox (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 123,
+      "song_id": "beatles-123",
+      "title": "Maxwell's silver hammer",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "mJag19WoAe0",
+      "watch_url": "https://www.youtube.com/watch?v=mJag19WoAe0",
+      "embed_url": "https://www.youtube.com/embed/mJag19WoAe0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Maxwell's Silver Hammer (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 124,
+      "song_id": "beatles-124",
+      "title": "Mean Mr. Mustard",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "oMarHac3VpQ",
+      "watch_url": "https://www.youtube.com/watch?v=oMarHac3VpQ",
+      "embed_url": "https://www.youtube.com/embed/oMarHac3VpQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Mean Mr Mustard (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 125,
+      "song_id": "beatles-125",
+      "title": "Michelle",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "WoBLi5eE-wY",
+      "watch_url": "https://www.youtube.com/watch?v=WoBLi5eE-wY",
+      "embed_url": "https://www.youtube.com/embed/WoBLi5eE-wY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Michelle (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 126,
+      "song_id": "beatles-126",
+      "title": "Misery",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "qhbcN3ew9z0",
+      "watch_url": "https://www.youtube.com/watch?v=qhbcN3ew9z0",
+      "embed_url": "https://www.youtube.com/embed/qhbcN3ew9z0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Misery (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 127,
+      "song_id": "beatles-127",
+      "title": "Money (that's what I want)",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "CeWjEYhk7Xo",
+      "watch_url": "https://www.youtube.com/watch?v=CeWjEYhk7Xo",
+      "embed_url": "https://www.youtube.com/embed/CeWjEYhk7Xo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Money (That's What I Want) (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 129,
+      "song_id": "beatles-129",
+      "title": "Mr. Moonlight",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "FZQ8nWZJrhA",
+      "watch_url": "https://www.youtube.com/watch?v=FZQ8nWZJrhA",
+      "embed_url": "https://www.youtube.com/embed/FZQ8nWZJrhA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Mr Moonlight (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 130,
+      "song_id": "beatles-130",
+      "title": "No reply",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "YgFo9STa70E",
+      "watch_url": "https://www.youtube.com/watch?v=YgFo9STa70E",
+      "embed_url": "https://www.youtube.com/embed/YgFo9STa70E?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "No Reply (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 131,
+      "song_id": "beatles-131",
+      "title": "Norwegian Wood (This Bird Has Flown)",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "Y_V6y1ZCg_8",
+      "watch_url": "https://www.youtube.com/watch?v=Y_V6y1ZCg_8",
+      "embed_url": "https://www.youtube.com/embed/Y_V6y1ZCg_8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Norwegian Wood (This Bird Has Flown) (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 132,
+      "song_id": "beatles-132",
+      "title": "Not a second time",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "Gi8dTDuRCOk",
+      "watch_url": "https://www.youtube.com/watch?v=Gi8dTDuRCOk",
+      "embed_url": "https://www.youtube.com/embed/Gi8dTDuRCOk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Not A Second Time (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 133,
+      "song_id": "beatles-133",
+      "title": "Nowhere man",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "8scSwaKbE64",
+      "watch_url": "https://www.youtube.com/watch?v=8scSwaKbE64",
+      "embed_url": "https://www.youtube.com/embed/8scSwaKbE64?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Nowhere Man (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 134,
+      "song_id": "beatles-134",
+      "title": "Ob-la-di, ob-la-da",
+      "album": "The Beatles",
+      "era": "Late Beatles",
+      "video_id": "9x5WY_jmsko",
+      "watch_url": "https://www.youtube.com/watch?v=9x5WY_jmsko",
+      "embed_url": "https://www.youtube.com/embed/9x5WY_jmsko?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Ob-La-Di, Ob-La-Da (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 135,
+      "song_id": "beatles-135",
+      "title": "Octopus's garden",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "De1LCQvbqV4",
+      "watch_url": "https://www.youtube.com/watch?v=De1LCQvbqV4",
+      "embed_url": "https://www.youtube.com/embed/De1LCQvbqV4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "2019 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 136,
+      "song_id": "beatles-136",
+      "title": "Oh! Darling",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "9BznFjbcBVs",
+      "watch_url": "https://www.youtube.com/watch?v=9BznFjbcBVs",
+      "embed_url": "https://www.youtube.com/embed/9BznFjbcBVs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Oh! Darling (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 137,
+      "song_id": "beatles-137",
+      "title": "Old brown shoe",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "OQ4kZOg1poE",
+      "watch_url": "https://www.youtube.com/watch?v=OQ4kZOg1poE",
+      "embed_url": "https://www.youtube.com/embed/OQ4kZOg1poE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Old Brown Shoe (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 138,
+      "song_id": "beatles-138",
+      "title": "One after 909",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "t8UeWjynWvE",
+      "watch_url": "https://www.youtube.com/watch?v=t8UeWjynWvE",
+      "embed_url": "https://www.youtube.com/embed/t8UeWjynWvE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "One After 909 (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 139,
+      "song_id": "beatles-139",
+      "title": "Only a northern song",
+      "album": "Yellow Submarine",
+      "era": "Psychedelic Beatles",
+      "video_id": "vcvd-L73Cqs",
+      "watch_url": "https://www.youtube.com/watch?v=vcvd-L73Cqs",
+      "embed_url": "https://www.youtube.com/embed/vcvd-L73Cqs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Only A Northern Song (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 140,
+      "song_id": "beatles-140",
+      "title": "P.S. I Love You",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "MA5DkiVKSlM",
+      "watch_url": "https://www.youtube.com/watch?v=MA5DkiVKSlM",
+      "embed_url": "https://www.youtube.com/embed/MA5DkiVKSlM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "P.S. I Love You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 141,
+      "song_id": "beatles-141",
+      "title": "Paperback writer",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "yYvkICbTZIQ",
+      "watch_url": "https://www.youtube.com/watch?v=yYvkICbTZIQ",
+      "embed_url": "https://www.youtube.com/embed/yYvkICbTZIQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Official Video",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 142,
+      "song_id": "beatles-142",
+      "title": "Penny Lane",
+      "album": "Magical Mystery Tour",
+      "era": "Middle Beatles",
+      "video_id": "GEIeHaxcv9M",
+      "watch_url": "https://www.youtube.com/watch?v=GEIeHaxcv9M",
+      "embed_url": "https://www.youtube.com/embed/GEIeHaxcv9M?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Penny Lane (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 145,
+      "song_id": "beatles-145",
+      "title": "Please please me",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "czw8eqepir8",
+      "watch_url": "https://www.youtube.com/watch?v=czw8eqepir8",
+      "embed_url": "https://www.youtube.com/embed/czw8eqepir8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Please Please Me (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 146,
+      "song_id": "beatles-146",
+      "title": "Polythene pam",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "Cb0dTdTeHMU",
+      "watch_url": "https://www.youtube.com/watch?v=Cb0dTdTeHMU",
+      "embed_url": "https://www.youtube.com/embed/Cb0dTdTeHMU?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Polythene Pam (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 147,
+      "song_id": "beatles-147",
+      "title": "Rain",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "UIBEU7JaxF0",
+      "watch_url": "https://www.youtube.com/watch?v=UIBEU7JaxF0",
+      "embed_url": "https://www.youtube.com/embed/UIBEU7JaxF0?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Rain (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 149,
+      "song_id": "beatles-149",
+      "title": "Revolution",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "6MbqzDm1uCo",
+      "watch_url": "https://www.youtube.com/watch?v=6MbqzDm1uCo",
+      "embed_url": "https://www.youtube.com/embed/6MbqzDm1uCo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Revolution (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 150,
+      "song_id": "beatles-150",
+      "title": "Rock and roll music",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "IRF6nmqcbxo",
+      "watch_url": "https://www.youtube.com/watch?v=IRF6nmqcbxo",
+      "embed_url": "https://www.youtube.com/embed/IRF6nmqcbxo?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Rock And Roll Music (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 152,
+      "song_id": "beatles-152",
+      "title": "Roll over Beethoven",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "Hz5jXwOXgKQ",
+      "watch_url": "https://www.youtube.com/watch?v=Hz5jXwOXgKQ",
+      "embed_url": "https://www.youtube.com/embed/Hz5jXwOXgKQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Roll Over Beethoven (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 153,
+      "song_id": "beatles-153",
+      "title": "Run for your life",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "yzHXtxcIkg4",
+      "watch_url": "https://www.youtube.com/watch?v=yzHXtxcIkg4",
+      "embed_url": "https://www.youtube.com/embed/yzHXtxcIkg4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Run For Your Life (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 156,
+      "song_id": "beatles-156",
+      "title": "Sgt. Pepper's Lonely Hearts Club Band",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "VtXl8xAPAtA",
+      "watch_url": "https://www.youtube.com/watch?v=VtXl8xAPAtA",
+      "embed_url": "https://www.youtube.com/embed/VtXl8xAPAtA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Sgt. Pepper's Lonely Hearts Club Band (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 157,
+      "song_id": "beatles-157",
+      "title": "Sgt. Pepper's Lonely Hearts Club Band (reprise)",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "VtXl8xAPAtA",
+      "watch_url": "https://www.youtube.com/watch?v=VtXl8xAPAtA",
+      "embed_url": "https://www.youtube.com/embed/VtXl8xAPAtA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Sgt. Pepper's Lonely Hearts Club Band (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 158,
+      "song_id": "beatles-158",
+      "title": "She came in through the bathroom window",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "NVv7IzEVf3M",
+      "watch_url": "https://www.youtube.com/watch?v=NVv7IzEVf3M",
+      "embed_url": "https://www.youtube.com/embed/NVv7IzEVf3M?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "She Came In Through The Bathroom Window (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 159,
+      "song_id": "beatles-159",
+      "title": "She loves you",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "nGbWU8S3vzs",
+      "watch_url": "https://www.youtube.com/watch?v=nGbWU8S3vzs",
+      "embed_url": "https://www.youtube.com/embed/nGbWU8S3vzs?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "She Loves You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 160,
+      "song_id": "beatles-160",
+      "title": "She said, she said",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "rLzfo59AdEc",
+      "watch_url": "https://www.youtube.com/watch?v=rLzfo59AdEc",
+      "embed_url": "https://www.youtube.com/embed/rLzfo59AdEc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "She Said She Said (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 161,
+      "song_id": "beatles-161",
+      "title": "She's a woman",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "lQomFaLyQ5I",
+      "watch_url": "https://www.youtube.com/watch?v=lQomFaLyQ5I",
+      "embed_url": "https://www.youtube.com/embed/lQomFaLyQ5I?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "She's A Woman (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 162,
+      "song_id": "beatles-162",
+      "title": "She's leaving home",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "VaBPY78D88g",
+      "watch_url": "https://www.youtube.com/watch?v=VaBPY78D88g",
+      "embed_url": "https://www.youtube.com/embed/VaBPY78D88g?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "She's Leaving Home (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 163,
+      "song_id": "beatles-163",
+      "title": "Sie liebt dich",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "YmjnK4zTBhM",
+      "watch_url": "https://www.youtube.com/watch?v=YmjnK4zTBhM",
+      "embed_url": "https://www.youtube.com/embed/YmjnK4zTBhM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Sie liebt dich (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 164,
+      "song_id": "beatles-164",
+      "title": "Slow down",
+      "album": "Rock 'n' Roll Music",
+      "era": "Early Beatles",
+      "video_id": "HbsyDHxca7Y",
+      "watch_url": "https://www.youtube.com/watch?v=HbsyDHxca7Y",
+      "embed_url": "https://www.youtube.com/embed/HbsyDHxca7Y?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Slow Down (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 165,
+      "song_id": "beatles-165",
+      "title": "Something",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "qCY80SdwBVI",
+      "watch_url": "https://www.youtube.com/watch?v=qCY80SdwBVI",
+      "embed_url": "https://www.youtube.com/embed/qCY80SdwBVI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Something (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 166,
+      "song_id": "beatles-166",
+      "title": "Strawberry fields forever",
+      "album": "Magical Mystery Tour",
+      "era": "Middle Beatles",
+      "video_id": "HtUH9z_Oey8",
+      "watch_url": "https://www.youtube.com/watch?v=HtUH9z_Oey8",
+      "embed_url": "https://www.youtube.com/embed/HtUH9z_Oey8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Official Video",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 167,
+      "song_id": "beatles-167",
+      "title": "Sun king",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "6bNMxWGHlTI",
+      "watch_url": "https://www.youtube.com/watch?v=6bNMxWGHlTI",
+      "embed_url": "https://www.youtube.com/embed/6bNMxWGHlTI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Sun King (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 168,
+      "song_id": "beatles-168",
+      "title": "Taxman",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "l0zaebtU-CA",
+      "watch_url": "https://www.youtube.com/watch?v=l0zaebtU-CA",
+      "embed_url": "https://www.youtube.com/embed/l0zaebtU-CA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Taxman (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 169,
+      "song_id": "beatles-169",
+      "title": "Tell me what you see",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "bztiAcsATyI",
+      "watch_url": "https://www.youtube.com/watch?v=bztiAcsATyI",
+      "embed_url": "https://www.youtube.com/embed/bztiAcsATyI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Tell Me What You See (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 170,
+      "song_id": "beatles-170",
+      "title": "Tell me why",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "GVub1QCUCGc",
+      "watch_url": "https://www.youtube.com/watch?v=GVub1QCUCGc",
+      "embed_url": "https://www.youtube.com/embed/GVub1QCUCGc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Tell Me Why (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 171,
+      "song_id": "beatles-171",
+      "title": "Thank you girl",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "cGka0tXQYAI",
+      "watch_url": "https://www.youtube.com/watch?v=cGka0tXQYAI",
+      "embed_url": "https://www.youtube.com/embed/cGka0tXQYAI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Thank You Girl (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 172,
+      "song_id": "beatles-172",
+      "title": "The Long And Winding Road",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "fHqBL0WIRRY",
+      "watch_url": "https://www.youtube.com/watch?v=fHqBL0WIRRY",
+      "embed_url": "https://www.youtube.com/embed/fHqBL0WIRRY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Long And Winding Road (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 173,
+      "song_id": "beatles-173",
+      "title": "The ballad of John and Yoko",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "vzd_DfGGx0I",
+      "watch_url": "https://www.youtube.com/watch?v=vzd_DfGGx0I",
+      "embed_url": "https://www.youtube.com/embed/vzd_DfGGx0I?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Ballad Of John And Yoko (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 175,
+      "song_id": "beatles-175",
+      "title": "The end",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "12R4FzIhdoQ",
+      "watch_url": "https://www.youtube.com/watch?v=12R4FzIhdoQ",
+      "embed_url": "https://www.youtube.com/embed/12R4FzIhdoQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The End (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 176,
+      "song_id": "beatles-176",
+      "title": "The fool on the hill",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "wsRatIMUSu8",
+      "watch_url": "https://www.youtube.com/watch?v=wsRatIMUSu8",
+      "embed_url": "https://www.youtube.com/embed/wsRatIMUSu8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Fool On The Hill (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 177,
+      "song_id": "beatles-177",
+      "title": "The inner light",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Late Beatles",
+      "video_id": "swT6YTPYwgM",
+      "watch_url": "https://www.youtube.com/watch?v=swT6YTPYwgM",
+      "embed_url": "https://www.youtube.com/embed/swT6YTPYwgM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Inner Light (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 178,
+      "song_id": "beatles-178",
+      "title": "The night before",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "7tD40D7jk-Q",
+      "watch_url": "https://www.youtube.com/watch?v=7tD40D7jk-Q",
+      "embed_url": "https://www.youtube.com/embed/7tD40D7jk-Q?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Night Before (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 179,
+      "song_id": "beatles-179",
+      "title": "The word",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "RfBEqiEhCgM",
+      "watch_url": "https://www.youtube.com/watch?v=RfBEqiEhCgM",
+      "embed_url": "https://www.youtube.com/embed/RfBEqiEhCgM?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "The Word (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 180,
+      "song_id": "beatles-180",
+      "title": "There's a Place",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "vTsbYbN8VVI",
+      "watch_url": "https://www.youtube.com/watch?v=vTsbYbN8VVI",
+      "embed_url": "https://www.youtube.com/embed/vTsbYbN8VVI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "There's A Place (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 181,
+      "song_id": "beatles-181",
+      "title": "Things we said today",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "NItAlTsPuQg",
+      "watch_url": "https://www.youtube.com/watch?v=NItAlTsPuQg",
+      "embed_url": "https://www.youtube.com/embed/NItAlTsPuQg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Things We Said Today (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 182,
+      "song_id": "beatles-182",
+      "title": "Think For Yourself",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "vtx5NTxebJk",
+      "watch_url": "https://www.youtube.com/watch?v=vtx5NTxebJk",
+      "embed_url": "https://www.youtube.com/embed/vtx5NTxebJk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Think For Yourself (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 183,
+      "song_id": "beatles-183",
+      "title": "This boy",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Early Beatles",
+      "video_id": "VhuU8KDLdO4",
+      "watch_url": "https://www.youtube.com/watch?v=VhuU8KDLdO4",
+      "embed_url": "https://www.youtube.com/embed/VhuU8KDLdO4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "This Boy (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 184,
+      "song_id": "beatles-184",
+      "title": "Ticket to ride",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "acxfOgPWUls",
+      "watch_url": "https://www.youtube.com/watch?v=acxfOgPWUls",
+      "embed_url": "https://www.youtube.com/embed/acxfOgPWUls?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Ticket To Ride (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 185,
+      "song_id": "beatles-185",
+      "title": "Till there was you",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "SHAqAO7w8M8",
+      "watch_url": "https://www.youtube.com/watch?v=SHAqAO7w8M8",
+      "embed_url": "https://www.youtube.com/embed/SHAqAO7w8M8?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Till There Was You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 186,
+      "song_id": "beatles-186",
+      "title": "Tomorrow never knows",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "m4BuziKGMy4",
+      "watch_url": "https://www.youtube.com/watch?v=m4BuziKGMy4",
+      "embed_url": "https://www.youtube.com/embed/m4BuziKGMy4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Remastered 2009",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 187,
+      "song_id": "beatles-187",
+      "title": "Twist and shout",
+      "album": "Please Please Me",
+      "era": "Early Beatles",
+      "video_id": "2RicaUqd9Hg",
+      "watch_url": "https://www.youtube.com/watch?v=2RicaUqd9Hg",
+      "embed_url": "https://www.youtube.com/embed/2RicaUqd9Hg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Twist And Shout (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 188,
+      "song_id": "beatles-188",
+      "title": "Two of us",
+      "album": "Let It Be",
+      "era": "Late Beatles",
+      "video_id": "cLQox8e9688",
+      "watch_url": "https://www.youtube.com/watch?v=cLQox8e9688",
+      "embed_url": "https://www.youtube.com/embed/cLQox8e9688?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Two Of Us (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 189,
+      "song_id": "beatles-189",
+      "title": "Wait",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "qJngWval8Bc",
+      "watch_url": "https://www.youtube.com/watch?v=qJngWval8Bc",
+      "embed_url": "https://www.youtube.com/embed/qJngWval8Bc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Wait (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 190,
+      "song_id": "beatles-190",
+      "title": "We can work it out",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "o-0if-ca6CE",
+      "watch_url": "https://www.youtube.com/watch?v=o-0if-ca6CE",
+      "embed_url": "https://www.youtube.com/embed/o-0if-ca6CE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "We Can Work It Out (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 191,
+      "song_id": "beatles-191",
+      "title": "What goes on",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "PtC_l4kz7yw",
+      "watch_url": "https://www.youtube.com/watch?v=PtC_l4kz7yw",
+      "embed_url": "https://www.youtube.com/embed/PtC_l4kz7yw?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "What Goes On (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 192,
+      "song_id": "beatles-192",
+      "title": "What you're doing",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "7Sba2LbhkVY",
+      "watch_url": "https://www.youtube.com/watch?v=7Sba2LbhkVY",
+      "embed_url": "https://www.youtube.com/embed/7Sba2LbhkVY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "What You're Doing (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 193,
+      "song_id": "beatles-193",
+      "title": "When I get home",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "TN8odbpRgnU",
+      "watch_url": "https://www.youtube.com/watch?v=TN8odbpRgnU",
+      "embed_url": "https://www.youtube.com/embed/TN8odbpRgnU?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "When I Get Home (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 194,
+      "song_id": "beatles-194",
+      "title": "When I'm sixty-four",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Middle Beatles",
+      "video_id": "HCTunqv1Xt4",
+      "watch_url": "https://www.youtube.com/watch?v=HCTunqv1Xt4",
+      "embed_url": "https://www.youtube.com/embed/HCTunqv1Xt4?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "When I'm Sixty Four (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 195,
+      "song_id": "beatles-195",
+      "title": "While my guitar gently weeps",
+      "album": "The Beatles",
+      "era": "Late Beatles",
+      "video_id": "zOKGcEfSwnY",
+      "watch_url": "https://www.youtube.com/watch?v=zOKGcEfSwnY",
+      "embed_url": "https://www.youtube.com/embed/zOKGcEfSwnY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "2018 Mix",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 198,
+      "song_id": "beatles-198",
+      "title": "With a Little Help from My Friends",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "0C58ttB2-Qg",
+      "watch_url": "https://www.youtube.com/watch?v=0C58ttB2-Qg",
+      "embed_url": "https://www.youtube.com/embed/0C58ttB2-Qg?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "With A Little Help From My Friends (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 199,
+      "song_id": "beatles-199",
+      "title": "Within you without you",
+      "album": "Sgt. Pepper's Lonely Hearts Club Band",
+      "era": "Psychedelic Beatles",
+      "video_id": "HsffxGyY4ck",
+      "watch_url": "https://www.youtube.com/watch?v=HsffxGyY4ck",
+      "embed_url": "https://www.youtube.com/embed/HsffxGyY4ck?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Within You Without You (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 200,
+      "song_id": "beatles-200",
+      "title": "Words of love",
+      "album": "Beatles for Sale",
+      "era": "Early Beatles",
+      "video_id": "no-nuFTHetE",
+      "watch_url": "https://www.youtube.com/watch?v=no-nuFTHetE",
+      "embed_url": "https://www.youtube.com/embed/no-nuFTHetE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Words Of Love (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 201,
+      "song_id": "beatles-201",
+      "title": "Yellow submarine",
+      "album": "Revolver",
+      "era": "Middle Beatles",
+      "video_id": "ZhxJAxa77sE",
+      "watch_url": "https://www.youtube.com/watch?v=ZhxJAxa77sE",
+      "embed_url": "https://www.youtube.com/embed/ZhxJAxa77sE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Yellow Submarine (Remastered 2015)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 203,
+      "song_id": "beatles-203",
+      "title": "Yes it is",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Middle Beatles",
+      "video_id": "acWj7M0-9rY",
+      "watch_url": "https://www.youtube.com/watch?v=acWj7M0-9rY",
+      "embed_url": "https://www.youtube.com/embed/acWj7M0-9rY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Yes It Is (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 204,
+      "song_id": "beatles-204",
+      "title": "Yesterday",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "wXTJBr9tt8Q",
+      "watch_url": "https://www.youtube.com/watch?v=wXTJBr9tt8Q",
+      "embed_url": "https://www.youtube.com/embed/wXTJBr9tt8Q?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Live on Ed Sullivan",
+      "status": "KEEP_VERIFIED_EXISTING"
+    },
+    {
+      "dataset_id": 205,
+      "song_id": "beatles-205",
+      "title": "You Never Give Me Your Money",
+      "album": "Abbey Road",
+      "era": "Late Beatles",
+      "video_id": "BpndGZ71yww",
+      "watch_url": "https://www.youtube.com/watch?v=BpndGZ71yww",
+      "embed_url": "https://www.youtube.com/embed/BpndGZ71yww?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Never Give Me Your Money (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 206,
+      "song_id": "beatles-206",
+      "title": "You can't do that",
+      "album": "A Hard Day's Night",
+      "era": "Early Beatles",
+      "video_id": "6PK21u7YzmI",
+      "watch_url": "https://www.youtube.com/watch?v=6PK21u7YzmI",
+      "embed_url": "https://www.youtube.com/embed/6PK21u7YzmI?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Can't Do That (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 207,
+      "song_id": "beatles-207",
+      "title": "You know my name (look up the number)",
+      "album": "Past Masters (Vols. 1 & 2 / Remastered)",
+      "era": "Psychedelic Beatles",
+      "video_id": "iZndVv-jl-U",
+      "watch_url": "https://www.youtube.com/watch?v=iZndVv-jl-U",
+      "embed_url": "https://www.youtube.com/embed/iZndVv-jl-U?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Know My Name (Look Up The Number) (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 208,
+      "song_id": "beatles-208",
+      "title": "You like me too much",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "ZqCf3D26YlA",
+      "watch_url": "https://www.youtube.com/watch?v=ZqCf3D26YlA",
+      "embed_url": "https://www.youtube.com/embed/ZqCf3D26YlA?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Like Me Too Much (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 209,
+      "song_id": "beatles-209",
+      "title": "You really got a hold on me",
+      "album": "With the Beatles",
+      "era": "Early Beatles",
+      "video_id": "9rokS8Ao4nQ",
+      "watch_url": "https://www.youtube.com/watch?v=9rokS8Ao4nQ",
+      "embed_url": "https://www.youtube.com/embed/9rokS8Ao4nQ?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Really Got A Hold On Me (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 210,
+      "song_id": "beatles-210",
+      "title": "You won't see me",
+      "album": "Rubber Soul",
+      "era": "Middle Beatles",
+      "video_id": "OsjTO0yZQjk",
+      "watch_url": "https://www.youtube.com/watch?v=OsjTO0yZQjk",
+      "embed_url": "https://www.youtube.com/embed/OsjTO0yZQjk?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You Won't See Me (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 211,
+      "song_id": "beatles-211",
+      "title": "You're going to lose that girl",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "vqpEZuv29qE",
+      "watch_url": "https://www.youtube.com/watch?v=vqpEZuv29qE",
+      "embed_url": "https://www.youtube.com/embed/vqpEZuv29qE?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You're Going To Lose That Girl (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 212,
+      "song_id": "beatles-212",
+      "title": "You've got to hide your love away",
+      "album": "Help!",
+      "era": "Middle Beatles",
+      "video_id": "V8nLraecPRY",
+      "watch_url": "https://www.youtube.com/watch?v=V8nLraecPRY",
+      "embed_url": "https://www.youtube.com/embed/V8nLraecPRY?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "You've Got To Hide Your Love Away (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    },
+    {
+      "dataset_id": 213,
+      "song_id": "beatles-213",
+      "title": "Your mother should know",
+      "album": "Magical Mystery Tour",
+      "era": "Psychedelic Beatles",
+      "video_id": "tCXsFjzMKdc",
+      "watch_url": "https://www.youtube.com/watch?v=tCXsFjzMKdc",
+      "embed_url": "https://www.youtube.com/embed/tCXsFjzMKdc?enablejsapi=1",
+      "source_channel": "The Beatles — Official Artist Channel",
+      "version_note": "Your Mother Should Know (Remastered 2009)",
+      "status": "RESOLVED_OFFICIAL"
+    }
+  ],
+  "unmatched": [
+    {
+      "datasetId": 23,
+      "song": {
+        "id": "beatles-023",
+        "source_row": 24,
+        "title": "Birthday",
+        "slug": "birthday",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney, with Lennon",
+        "writer_members": [
+          "John Lennon",
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney, with Lennon",
+        "lead_vocal_members": [
+          "John Lennon",
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Hard Rock",
+          "Rock and Roll",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Beat / Rock & Roll",
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Hard Rock",
+          "Rock & Roll",
+          "Album Rock"
+        ],
+        "themes": [
+          "Birthday",
+          "Partying"
+        ],
+        "theme_clusters": [
+          "Joy & Social Life"
+        ],
+        "moods": [
+          "Energetic",
+          "Exuberant",
+          "Freewheeling",
+          "Fun",
+          "Happy",
+          "Playful",
+          "Rollicking",
+          "Rousing",
+          "Brash",
+          "Cheerful",
+          "Exciting",
+          "Raucous",
+          "Bravado",
+          "Fiery",
+          "Giddy",
+          "Irreverent",
+          "Lively",
+          "Swaggering",
+          "Humorous",
+          "Messy",
+          "Whimsical"
+        ],
+        "word_count": 119,
+        "char_count": 540,
+        "lyrics": "You say it's your birthday It's my birthday too--yeah They say it's your birthday We're gonna have a good time I'm glad it's your birthday Happy birthday to you. Yes we're going to a party party Yes we're going to a party party Yes we're going to a party party. I would like you to dance--Birthday Take a cha-cha-cha-chance-Birthday I would like you to dance--Birthday Dance You say it's your birthday Well it's my birthday too--yeah You say it's your birthday We're gonna have a good time I'm glad it's your birthday Happy birthday to you.",
+        "lyrics_search_text": "you say it s your birthday it s my birthday too yeah they say it s your birthday we re gonna have a good time i m glad it s your birthday happy birthday to you  yes we re going to a party party yes we re going to a party party yes we re going to a party party  i would like you to dance birthday take a cha cha cha chance birthday i would like you to dance birthday dance you say it s your birthday well it s my birthday too yeah you say it s your birthday we re gonna have a good time i m glad it s your birthday happy birthday to you ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 24,
+      "song": {
+        "id": "beatles-024",
+        "source_row": 25,
+        "title": "Blackbird",
+        "slug": "blackbird",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Folk-Rock",
+          "Psychedelic/Garage",
+          "Singer/Songwriter"
+        ],
+        "themes": [
+          "Freedom"
+        ],
+        "theme_clusters": [
+          "Nature / Spiritual / Comfort"
+        ],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Delicate",
+          "Earnest",
+          "Gentle",
+          "Intimate",
+          "Light",
+          "Organic",
+          "Poignant",
+          "Soothing",
+          "Summery",
+          "Sweet",
+          "Warm",
+          "Elegant",
+          "Precious",
+          "Sentimental",
+          "Soft/Quiet",
+          "Springlike",
+          "Wistful"
+        ],
+        "word_count": 124,
+        "char_count": 656,
+        "lyrics": "Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise. Blackbird singing in the dead of night Take these sunken eyes and learn to see All your life You were only waiting for this moment to be free. Blackbird fly Blackbird fly Into the light of the dark black night. Blackbird fly Blackbird fly Into the light of the dark black night. Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise You were only waiting for this moment to arise You were only waiting for this moment to arise.",
+        "lyrics_search_text": "blackbird singing in the dead of night take these broken wings and learn to fly all your life you were only waiting for this moment to arise  blackbird singing in the dead of night take these sunken eyes and learn to see all your life you were only waiting for this moment to be free  blackbird fly blackbird fly into the light of the dark black night  blackbird fly blackbird fly into the light of the dark black night  blackbird singing in the dead of night take these broken wings and learn to fly all your life you were only waiting for this moment to arise you were only waiting for this moment to arise you were only waiting for this moment to arise ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 31,
+      "song": {
+        "id": "beatles-031",
+        "source_row": 32,
+        "title": "Cry baby cry",
+        "slug": "cry-baby-cry",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon, with McCartney",
+        "lead_vocal_members": [
+          "John Lennon",
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Album Rock",
+          "British Psychedelia",
+          "Psychedelic/Garage"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Dreamy",
+          "Eccentric",
+          "Enigmatic",
+          "Lazy",
+          "Precious",
+          "Quirky",
+          "Weary",
+          "Bittersweet",
+          "Literate",
+          "Nocturnal",
+          "Searching",
+          "Whimsical",
+          "Autumnal",
+          "Meandering",
+          "Playful"
+        ],
+        "word_count": 230,
+        "char_count": 1140,
+        "lyrics": "Cry baby cry Make your mother sigh She's old enough to know better. The king of Marigold was in the kitchen Cooking breakfast for the queen The queen was in the parlour Playing piano for the children of the king. Cry baby cry Make your mother sigh She's old enough to know better So cry baby cry. The king was in the garden Picking flowers for a friend who came to play The queen was in the playroom Painting pictures for the childrens holiday. Cry baby cry Make your mother sigh She's old enough to know better So cry baby cry. The duchess of Kircaldy always smiling And arriving late for tea The duke was having problems With a message at the local bird and bee. Cry baby cry Make your mother sigh She's old enough to know better So cry baby cry. At twelve o'clock a meeting round the table For a seance in the dark With voices out of nowhere Put on specially by the children for a lark. Cry baby cry Make your mother sigh She's old enough to know better So cry baby cry cry cry cry baby Make your mother sigh. She's old enough to know better Cry baby cry cry cry cry Make your mother sigh She's old enough to know better So cry baby cry.",
+        "lyrics_search_text": "cry baby cry make your mother sigh she s old enough to know better  the king of marigold was in the kitchen cooking breakfast for the queen the queen was in the parlour playing piano for the children of the king  cry baby cry make your mother sigh she s old enough to know better so cry baby cry  the king was in the garden picking flowers for a friend who came to play the queen was in the playroom painting pictures for the childrens holiday  cry baby cry make your mother sigh she s old enough to know better so cry baby cry  the duchess of kircaldy always smiling and arriving late for tea the duke was having problems with a message at the local bird and bee  cry baby cry make your mother sigh she s old enough to know better so cry baby cry  at twelve o clock a meeting round the table for a seance in the dark with voices out of nowhere put on specially by the children for a lark  cry baby cry make your mother sigh she s old enough to know better so cry baby cry cry cry cry baby make your mother sigh  she s old enough to know better cry baby cry cry cry cry make your mother sigh she s old enough to know better so cry baby cry ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 33,
+      "song": {
+        "id": "beatles-033",
+        "source_row": 34,
+        "title": "Dear prudence",
+        "slug": "dear-prudence",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "British Psychedelia",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Psychedelic/Garage"
+        ],
+        "themes": [
+          "Affection/Fondness"
+        ],
+        "theme_clusters": [
+          "Love & Connection"
+        ],
+        "moods": [
+          "Circular",
+          "Delicate",
+          "Dreamy",
+          "Ethereal",
+          "Intimate",
+          "Poignant",
+          "Spacey",
+          "Trippy",
+          "Wistful",
+          "Precious",
+          "Reflective",
+          "Hypnotic",
+          "Yearning",
+          "Sweet"
+        ],
+        "word_count": 121,
+        "char_count": 592,
+        "lyrics": "Dear Prudence, won't you come out to play Dear Prudence, greet the brand new day The sun is up, the sky is blue It's beautiful and so are you Dear Prudence won't you come out and play Dear Prudence open up your eyes Dear Prudence see the sunny skies The wind is low the birds will sing that you are part of everything Dear Prudence won't you open up your eyes? Look around round Look around round round Look around Dear Prudence let me see you smile Dear Prudence like a little child The clouds will be a daisy chain So let me see you smile again Dear Prudence won't you let me see you smile?",
+        "lyrics_search_text": "dear prudence  won t you come out to play dear prudence  greet the brand new day the sun is up  the sky is blue it s beautiful and so are you dear prudence won t you come out and play dear prudence open up your eyes dear prudence see the sunny skies the wind is low the birds will sing that you are part of everything dear prudence won t you open up your eyes  look around round look around round round look around dear prudence let me see you smile dear prudence like a little child the clouds will be a daisy chain so let me see you smile again dear prudence won t you let me see you smile ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 37,
+      "song": {
+        "id": "beatles-037",
+        "source_row": 38,
+        "title": "Dizzy Miss Lizzie",
+        "slug": "dizzy-miss-lizzie",
+        "year_raw": "1965",
+        "timeline_year": 1965,
+        "secondary_year": null,
+        "album": "Help!",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Williams",
+        "writer_members": [],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": true,
+        "is_instrumental": false,
+        "genres": [
+          "Rock and Roll",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Beat / Rock & Roll",
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "British Invasion",
+          "Contemporary Pop/Rock",
+          "Rock & Roll"
+        ],
+        "themes": [
+          "Partying"
+        ],
+        "theme_clusters": [
+          "Joy & Social Life"
+        ],
+        "moods": [
+          "Energetic",
+          "Fun",
+          "Rollicking",
+          "Rousing",
+          "Raucous",
+          "Exciting",
+          "Fiery",
+          "Passionate",
+          "Rowdy",
+          "Freewheeling"
+        ],
+        "word_count": 180,
+        "char_count": 840,
+        "lyrics": "You make me dizzy, Miss Lizzie, The way you rock'n'roll. You make me dizzy, Miss Lizzie, When we do the stroll. Come on, Miss Lizzie, love me fore I grow too old. Come on, give me fever, Put your little hand in mine. You make me dizzy, Miss Lizzie, Girl, you look so fine. You're just a-rockin' and a-rollin', I sure do wish you were mine. You make me dizzy, Miss Lizzie, When you call my name. O-o-o-o-oh baby, Say you're driving me insane. Come on, come on, come on, baby, I want to be your lover man. Run and tell your mama I want you to be my bride. Run and tell your brother, Baby, don't run and hide. You make me dizzy, Miss Lizzie, And I want to marry you. Come on, give me fever, Put your little hand in mine. You make me dizzy, Miss Lizzie, Girl, you look so fine. You're just a-rockin' and.a-rollin', I sure do wish you were mine.",
+        "lyrics_search_text": "you make me dizzy  miss lizzie  the way you rock n roll  you make me dizzy  miss lizzie  when we do the stroll  come on  miss lizzie  love me fore i grow too old  come on  give me fever  put your little hand in mine  you make me dizzy  miss lizzie  girl  you look so fine  you re just a rockin  and a rollin  i sure do wish you were mine  you make me dizzy  miss lizzie  when you call my name  o o o o oh baby  say you re driving me insane  come on  come on  come on  baby  i want to be your lover man  run and tell your mama i want you to be my bride  run and tell your brother  baby  don t run and hide  you make me dizzy  miss lizzie  and i want to marry you  come on  give me fever  put your little hand in mine  you make me dizzy  miss lizzie  girl  you look so fine  you re just a rockin  and a rollin  i sure do wish you were mine ",
+        "decade": 1960,
+        "era": "Middle Beatles",
+        "story_act": "Act II — The Band Turns Inward",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 42,
+      "song": {
+        "id": "beatles-042",
+        "source_row": 43,
+        "title": "Don't pass me by",
+        "slug": "don-t-pass-me-by",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Starkey",
+        "writer_members": [
+          "Ringo Starr"
+        ],
+        "lead_vocals_raw": "Starkey",
+        "lead_vocal_members": [
+          "Ringo Starr"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Country Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Country-Rock"
+        ],
+        "themes": [
+          "Feeling Blue",
+          "Heartache",
+          "Late Night"
+        ],
+        "theme_clusters": [
+          "Heartbreak & Conflict",
+          "Night / Atmosphere"
+        ],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Freewheeling",
+          "Fun",
+          "Meandering",
+          "Messy",
+          "Nocturnal",
+          "Playful",
+          "Quirky",
+          "Ramshackle",
+          "Rousing"
+        ],
+        "word_count": 186,
+        "char_count": 795,
+        "lyrics": "I listen for your footsteps Coming up the drive Listen for your footsteps But they don't arrive Waiting for your knock dear On my old front door I don't hear it Does it mean you don't love me any more. I hear the clock a'ticking On the mantel shelf See the hands a'moving But I'm by myself I wonder where you are tonight And why I'm by myself I don't see you Does it mean you don't love me any more. Don't pass me by don't make me cry don't make me blue 'Cause you know darling I love only you You'll never know it hurt me so How I hate to see you go Don't pass me by don't make me cry I'm sorry that I doubted you I was so unfair You were in a car crash And you lost your hair You said you would be late About an hour or two I said that's alright I'm waiting here Just waiting to hear from you.",
+        "lyrics_search_text": "i listen for your footsteps coming up the drive listen for your footsteps but they don t arrive waiting for your knock dear on my old front door i don t hear it does it mean you don t love me any more  i hear the clock a ticking on the mantel shelf see the hands a moving but i m by myself i wonder where you are tonight and why i m by myself i don t see you does it mean you don t love me any more  don t pass me by don t make me cry don t make me blue  cause you know darling i love only you you ll never know it hurt me so how i hate to see you go don t pass me by don t make me cry i m sorry that i doubted you i was so unfair you were in a car crash and you lost your hair you said you would be late about an hour or two i said that s alright i m waiting here just waiting to hear from you ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 53,
+      "song": {
+        "id": "beatles-053",
+        "source_row": 54,
+        "title": "Free as a bird",
+        "slug": "free-as-a-bird",
+        "year_raw": "1977/1994",
+        "timeline_year": 1977,
+        "secondary_year": 1994,
+        "album": "Anthology 1",
+        "album_type": "archival",
+        "songwriters_raw": "Lennon, with McCartney, Harrison and Starkey",
+        "writer_members": [
+          "John Lennon",
+          "Paul McCartney",
+          "George Harrison",
+          "Ringo Starr"
+        ],
+        "lead_vocals_raw": "Lennon, McCartney and Harrison",
+        "lead_vocal_members": [
+          "John Lennon",
+          "Paul McCartney",
+          "George Harrison"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Laid-Back/Mellow",
+          "Passionate",
+          "Rousing",
+          "Sentimental"
+        ],
+        "word_count": 135,
+        "char_count": 597,
+        "lyrics": "Free As A Bird, It's the next best thing to be Free as a bird. Home Home and dry Like a homing bird I fly, As a bird on wing Whatever happened to the life that we once knew Can we really live without each other? Where did we lose the touch That seemed to mean so much? It always made me feel so.... Free -- as a bird, It's the next best thing to be Free as a bird. Home Home and dry Like a homing bird I fly--as bird on wing Whatever happened to the life that we once knew It Always made me feel soooo Free Free as a bird It's the next best thing to be Free as a bird Free as a bird Free as a bird",
+        "lyrics_search_text": "free as a bird  it s the next best thing to be free as a bird  home home and dry like a homing bird i fly  as a bird on wing whatever happened to the life that we once knew can we really live without each other  where did we lose the touch that seemed to mean so much  it always made me feel so  free   as a bird  it s the next best thing to be free as a bird  home home and dry like a homing bird i fly as bird on wing whatever happened to the life that we once knew it always made me feel soooo free free as a bird it s the next best thing to be free as a bird free as a bird free as a bird",
+        "decade": 1970,
+        "era": "Late Beatles",
+        "story_act": "Afterword — The Story Wasn’t Quite Finished",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 58,
+      "song": {
+        "id": "beatles-058",
+        "source_row": 59,
+        "title": "Glass onion",
+        "slug": "glass-onion",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Psychedelic Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Psychedelic / Experimental"
+        ],
+        "styles": [
+          "British Psychedelia",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Hard Rock",
+          "Psychedelic/Garage",
+          "Rock & Roll"
+        ],
+        "themes": [
+          "Vacation"
+        ],
+        "theme_clusters": [
+          "Joy & Social Life"
+        ],
+        "moods": [
+          "Trippy",
+          "Freewheeling",
+          "Humorous",
+          "Irreverent",
+          "Playful",
+          "Quirky",
+          "Rollicking",
+          "Rousing",
+          "Whimsical",
+          "Enigmatic",
+          "Cynical/Sarcastic",
+          "Energetic",
+          "Sardonic",
+          "Witty"
+        ],
+        "word_count": 142,
+        "char_count": 710,
+        "lyrics": "I told you about strawberry fields You know the place where nothing is real Well here's another place you can go Where everything flows. Looking through the bent backed tulips To see how the other half live Looking through a glass onion. I told you about the walrus and me-man You know that we're as close as can be-man Well here's another clue for you all The walrus was Paul. Standing on the cast iron shore-yeah Lady Madonna trying to make ends meet-yeah Looking through a glass onion. I told you about the fool on the hill I tell you man he living there still Well here's another place you can be Listen to me. Fixing a hole in the ocean Trying to make a dove-tail joint-yeah Looking through a glass onion.",
+        "lyrics_search_text": "i told you about strawberry fields you know the place where nothing is real well here s another place you can go where everything flows  looking through the bent backed tulips to see how the other half live looking through a glass onion  i told you about the walrus and me man you know that we re as close as can be man well here s another clue for you all the walrus was paul  standing on the cast iron shore yeah lady madonna trying to make ends meet yeah looking through a glass onion  i told you about the fool on the hill i tell you man he living there still well here s another place you can be listen to me  fixing a hole in the ocean trying to make a dove tail joint yeah looking through a glass onion ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 62,
+      "song": {
+        "id": "beatles-062",
+        "source_row": 63,
+        "title": "Good night",
+        "slug": "good-night",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Starkey",
+        "lead_vocal_members": [
+          "Ringo Starr"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Orchestral Pop",
+          "Lullaby",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "Lullabies",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Baroque Pop"
+        ],
+        "themes": [
+          "Family Gatherings"
+        ],
+        "theme_clusters": [
+          "Joy & Social Life"
+        ],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Calm/Peaceful",
+          "Dreamy",
+          "Earnest",
+          "Laid-Back/Mellow",
+          "Lazy",
+          "Lush",
+          "Poignant",
+          "Sentimental",
+          "Sugary",
+          "Warm",
+          "Gentle",
+          "Elegant",
+          "Precious",
+          "Whimsical"
+        ],
+        "word_count": 107,
+        "char_count": 561,
+        "lyrics": "Now it's time to say good night Good night Sleep tight Now the sun turns out his light Good night Sleep tight Dream sweet dreams for me Dream sweet dreams for you. Close your eyes and I'll close mine Good night Sleep tight Now the moon begins to shine Good night Sleep tight Dream sweet dreams for me Dream sweet dreams for you. Close your eyes and I'll close mine Good night Sleep tight Now the sun turns out his light Good night Sleep tight Dream sweet dreams for me Dream sweet dreams for you. Good night Good night Everybody Everybody everywhere Good night.",
+        "lyrics_search_text": "now it s time to say good night good night sleep tight now the sun turns out his light good night sleep tight dream sweet dreams for me dream sweet dreams for you  close your eyes and i ll close mine good night sleep tight now the moon begins to shine good night sleep tight dream sweet dreams for me dream sweet dreams for you  close your eyes and i ll close mine good night sleep tight now the sun turns out his light good night sleep tight dream sweet dreams for me dream sweet dreams for you  good night good night everybody everybody everywhere good night ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 64,
+      "song": {
+        "id": "beatles-064",
+        "source_row": 65,
+        "title": "Happiness is a warm gun",
+        "slug": "happiness-is-a-warm-gun",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "British Psychedelia",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Psychedelic/Garage",
+          "Hard Rock",
+          "Prog-Rock"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Complex",
+          "Nocturnal",
+          "Ominous",
+          "Provocative",
+          "Sardonic",
+          "Snide",
+          "Acerbic",
+          "Cynical/Sarcastic",
+          "Druggy",
+          "Menacing",
+          "Quirky",
+          "Sprawling",
+          "Circular",
+          "Literate",
+          "Paranoid",
+          "Rousing",
+          "Wry"
+        ],
+        "word_count": 160,
+        "char_count": 760,
+        "lyrics": "She's not a girl who misses much Do do do do do do do do She's well acquainted with the touch of the velvet hand Like a lizard on a window pane. The man in the crowd with the multicoloured mirrors On his hobnail boots Lying with his eyes while his hands are busy Working overtime A soap impression of his wife which he ate And donated to the Nation Trust. I need a fix 'cause I'm going down Down to the bits that I left uptown I need a fix cause I'm going down Mother Superior jump the gun Mother Superior jump the gun Mother Superior jump the gun Mother Superior jump the gun. Happiness is a warm gun Happiness is a warm gun When I hold you in my arms And I feel my finger on your trigger I know no one can do me no harm Because happiness is a warm gun #NAME?",
+        "lyrics_search_text": "she s not a girl who misses much do do do do do do do do she s well acquainted with the touch of the velvet hand like a lizard on a window pane  the man in the crowd with the multicoloured mirrors on his hobnail boots lying with his eyes while his hands are busy working overtime a soap impression of his wife which he ate and donated to the nation trust  i need a fix  cause i m going down down to the bits that i left uptown i need a fix cause i m going down mother superior jump the gun mother superior jump the gun mother superior jump the gun mother superior jump the gun  happiness is a warm gun happiness is a warm gun when i hold you in my arms and i feel my finger on your trigger i know no one can do me no harm because happiness is a warm gun  name ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 67,
+      "song": {
+        "id": "beatles-067",
+        "source_row": 68,
+        "title": "Helter skelter",
+        "slug": "helter-skelter",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Hard Rock",
+          "Heavy Metal",
+          "Proto-Punk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Album Rock",
+          "Contemporary Pop/Rock",
+          "Hard Rock",
+          "Heavy Metal",
+          "Rock & Roll"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Aggressive",
+          "Fierce",
+          "Harsh",
+          "Hostile",
+          "Intense",
+          "Menacing",
+          "Nihilistic",
+          "Nocturnal",
+          "Ominous",
+          "Outrageous",
+          "Raucous",
+          "Rebellious",
+          "Reckless",
+          "Rousing",
+          "Rowdy",
+          "Suffocating",
+          "Visceral",
+          "Exciting",
+          "Fiery",
+          "Malevolent",
+          "Swaggering",
+          "Volatile",
+          "Freewheeling",
+          "Provocative",
+          "Unsettling",
+          "Bravado",
+          "Messy"
+        ],
+        "word_count": 246,
+        "char_count": 1064,
+        "lyrics": "When I get to the bottom I go back to the top of the slide Where I stop and I turn and I go for a ride Till I get to the bottom and I see you again. Do you, don't you want me to love you I'm coming down fast but I'm miles above you Tell me tell me tell me come on tell me the answer You may be a lover but you ain't no dancer. Helter skelter helter skelter Helter skelter. Will you, won't you want me to make you I'm coming down fast but don't let me break you Tell me tell me tell me the answer You may be a lover but you ain't no dancer. Look out helter skelter helter skelter Helter skelter Look out, cause here she comes. When I get to the bottom I go back to the top of the slide And I stop and I turn and I go for a ride And I get to the bottom and I see you again Well do you, don't you want me to make you I'm coming down fast but don't let me break you Tell me tell me tell me the answer You may be a lover but you ain't no dancer. Look out helter skelter helter skelter Helter skelter Look out helter skelter She's coming down fast Yes she is Yes she is.",
+        "lyrics_search_text": "when i get to the bottom i go back to the top of the slide where i stop and i turn and i go for a ride till i get to the bottom and i see you again  do you  don t you want me to love you i m coming down fast but i m miles above you tell me tell me tell me come on tell me the answer you may be a lover but you ain t no dancer  helter skelter helter skelter helter skelter  will you  won t you want me to make you i m coming down fast but don t let me break you tell me tell me tell me the answer you may be a lover but you ain t no dancer  look out helter skelter helter skelter helter skelter look out  cause here she comes  when i get to the bottom i go back to the top of the slide and i stop and i turn and i go for a ride and i get to the bottom and i see you again well do you  don t you want me to make you i m coming down fast but don t let me break you tell me tell me tell me the answer you may be a lover but you ain t no dancer  look out helter skelter helter skelter helter skelter look out helter skelter she s coming down fast yes she is yes she is ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 75,
+      "song": {
+        "id": "beatles-075",
+        "source_row": 76,
+        "title": "Honey pie",
+        "slug": "honey-pie",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Music Hall",
+          "Jazz",
+          "Ragtime",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Jazz / Other"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Carefree",
+          "Cheerful",
+          "Fun",
+          "Lush",
+          "Nostalgic",
+          "Playful",
+          "Precious",
+          "Theatrical",
+          "Whimsical",
+          "Campy",
+          "Innocent",
+          "Sophisticated",
+          "Quirky",
+          "Warm",
+          "Happy"
+        ],
+        "word_count": 150,
+        "char_count": 678,
+        "lyrics": "She was a working girl North of England way Now she's hit the big time In the U.S.A. And if she could only hear me This is what I'd say. Honey pie you are making me crazy I'm in love but I'm lazy So won't you please come home. Oh honey pie my position is tragic Come and show me the magic of your Hollywood song. You became a legend of the silver screen And now the thought of meeting you Makes me weak in the knee. Oh honey pie you are driving me frantic Sail across the Atlantic To be where you belong. Will the wind that blew her boat Across the sea Kindly send her sailing back to me. Honey pie you are making me crazy I'm in love but I'm lazy So won't you please come home.",
+        "lyrics_search_text": "she was a working girl north of england way now she s hit the big time in the u s a  and if she could only hear me this is what i d say  honey pie you are making me crazy i m in love but i m lazy so won t you please come home  oh honey pie my position is tragic come and show me the magic of your hollywood song  you became a legend of the silver screen and now the thought of meeting you makes me weak in the knee  oh honey pie you are driving me frantic sail across the atlantic to be where you belong  will the wind that blew her boat across the sea kindly send her sailing back to me  honey pie you are making me crazy i m in love but i m lazy so won t you please come home ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 88,
+      "song": {
+        "id": "beatles-088",
+        "source_row": 89,
+        "title": "I will",
+        "slug": "i-will",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Folk-Rock",
+          "Psychedelic/Garage",
+          "Singer/Songwriter"
+        ],
+        "themes": [
+          "In Love",
+          "New Love"
+        ],
+        "theme_clusters": [
+          "Love & Connection"
+        ],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Bright",
+          "Delicate",
+          "Intimate",
+          "Light",
+          "Playful",
+          "Precious",
+          "Sentimental",
+          "Soft/Quiet",
+          "Soothing",
+          "Sweet",
+          "Warm",
+          "Gentle",
+          "Cheerful",
+          "Earnest",
+          "Sparkling",
+          "Springlike"
+        ],
+        "word_count": 116,
+        "char_count": 515,
+        "lyrics": "Who knows how long I've loved you You know I love you still Will I wait a lonely lifetime If you want me to--I will. For if I ever saw you I didn't catch your name But it never really mattered I will always feel the same. Love you forever and forever Love you with all my heart Love you whenever we're together Love you when we're apart. And when at last I find you Your song will fill the air Sing it loud so I can hear you Make it easy to be near you For the things you do endear you to me You know I will I will.",
+        "lyrics_search_text": "who knows how long i ve loved you you know i love you still will i wait a lonely lifetime if you want me to i will  for if i ever saw you i didn t catch your name but it never really mattered i will always feel the same  love you forever and forever love you with all my heart love you whenever we re together love you when we re apart  and when at last i find you your song will fill the air sing it loud so i can hear you make it easy to be near you for the things you do endear you to me you know i will i will ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 95,
+      "song": {
+        "id": "beatles-095",
+        "source_row": 96,
+        "title": "I'm just happy to dance with you",
+        "slug": "i-m-just-happy-to-dance-with-you",
+        "year_raw": "1964",
+        "timeline_year": 1964,
+        "secondary_year": null,
+        "album": "A Hard Day's Night",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon and McCartney",
+        "writer_members": [
+          "John Lennon",
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "Harrison",
+        "lead_vocal_members": [
+          "George Harrison"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "British Invasion",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Merseybeat",
+          "Rock & Roll",
+          "Adult Contemporary",
+          "Alternative/Indie Rock",
+          "Britpop"
+        ],
+        "themes": [
+          "New Love",
+          "Awareness",
+          "Dance Party",
+          "In Love"
+        ],
+        "theme_clusters": [
+          "Love & Connection",
+          "Inner Life & Reflection"
+        ],
+        "moods": [
+          "Bright",
+          "Energetic",
+          "Fun",
+          "Happy",
+          "Joyous",
+          "Sweet",
+          "Warm",
+          "Innocent",
+          "Playful",
+          "Effervescent",
+          "Carefree",
+          "Cheerful",
+          "Lively",
+          "Optimistic",
+          "Positive",
+          "Sentimental"
+        ],
+        "word_count": 255,
+        "char_count": 1140,
+        "lyrics": "Before this dance is through I think I'll love you too I'm so happy when you dance with me I don't want or need to hold your hand Well it's only try and understand 'cause there's really nothing I would rather do 'cause I'm happy just to dance with you I don't need to kiss or hold you tight I just want to dance with you all night In this world there's nothing I would rather do 'cause I'm happy just to dance with you Just to dance with you It's everything I need Before this dance is through I think I'll love you too I'm so happy when you dance with me If somebody tries to take my place Let's pretend we just can't see his face In this world there's nothing I would rather do 'cause I'm happy just to dance with you Just to dance with you It's everything I need Before this dance is through I think I'll love you too I'm so happy when you dance with me If somebody tries to take my place Let's pretend we just can't see his face In this world there's nothing I would rather do 'cause I'm happy just to dance with you Just to dance with you It's everything I need I discovered I'm in love with you 'cause I'm happy just to dance with you",
+        "lyrics_search_text": "before this dance is through i think i ll love you too i m so happy when you dance with me i don t want or need to hold your hand well it s only try and understand  cause there s really nothing i would rather do  cause i m happy just to dance with you i don t need to kiss or hold you tight i just want to dance with you all night in this world there s nothing i would rather do  cause i m happy just to dance with you just to dance with you it s everything i need before this dance is through i think i ll love you too i m so happy when you dance with me if somebody tries to take my place let s pretend we just can t see his face in this world there s nothing i would rather do  cause i m happy just to dance with you just to dance with you it s everything i need before this dance is through i think i ll love you too i m so happy when you dance with me if somebody tries to take my place let s pretend we just can t see his face in this world there s nothing i would rather do  cause i m happy just to dance with you just to dance with you it s everything i need i discovered i m in love with you  cause i m happy just to dance with you",
+        "decade": 1960,
+        "era": "Early Beatles",
+        "story_act": "Act I — The Explosion",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 98,
+      "song": {
+        "id": "beatles-098",
+        "source_row": 99,
+        "title": "I'm so tired",
+        "slug": "i-m-so-tired",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Blues Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Hard Rock",
+          "Rock & Roll",
+          "British Psychedelia",
+          "Psychedelic/Garage"
+        ],
+        "themes": [
+          "Feeling Blue",
+          "Late Night"
+        ],
+        "theme_clusters": [
+          "Heartbreak & Conflict",
+          "Night / Atmosphere"
+        ],
+        "moods": [
+          "Bittersweet",
+          "Brooding",
+          "Melancholy",
+          "Nocturnal",
+          "Passionate",
+          "Weary",
+          "Yearning",
+          "Meandering",
+          "Searching",
+          "Anguished/Distraught",
+          "Atmospheric",
+          "Bitter",
+          "Insular",
+          "Reflective",
+          "Dramatic",
+          "Hypnotic"
+        ],
+        "word_count": 154,
+        "char_count": 623,
+        "lyrics": "I'm so tired, I haven't slept a wink I'm so tired, my mind is on the blink I wonder should I get up and fix myself a drink No,no,no. I'm so tired I don't know what to do I'm so tired my mind is set on you I wonder should I call you but I know what you'd do You'd say I'm putting you on But it's no joke, it's doing me harm You know I can't sleep, I can't stop my brain You know it's three weeks, I'm going insane You know I'd give you everything I've got for a little peace of mind I'm so tired, I'm feeling so upset Although I'm so tired I'll have another cigarette And curse Sir Walter Raleigh He was such a stupid guest.",
+        "lyrics_search_text": "i m so tired  i haven t slept a wink i m so tired  my mind is on the blink i wonder should i get up and fix myself a drink no no no  i m so tired i don t know what to do i m so tired my mind is set on you i wonder should i call you but i know what you d do you d say i m putting you on but it s no joke  it s doing me harm you know i can t sleep  i can t stop my brain you know it s three weeks  i m going insane you know i d give you everything i ve got for a little peace of mind i m so tired  i m feeling so upset although i m so tired i ll have another cigarette and curse sir walter raleigh he was such a stupid guest ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 107,
+      "song": {
+        "id": "beatles-107",
+        "source_row": 108,
+        "title": "Julia",
+        "slug": "julia",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Singer/Songwriter"
+        ],
+        "themes": [
+          "Heartache",
+          "Introspection",
+          "Reflection",
+          "Reminiscing"
+        ],
+        "theme_clusters": [
+          "Heartbreak & Conflict",
+          "Inner Life & Reflection"
+        ],
+        "moods": [
+          "Calm/Peaceful",
+          "Dreamy",
+          "Gentle",
+          "Intimate",
+          "Light",
+          "Poignant",
+          "Soothing",
+          "Passionate",
+          "Reflective",
+          "Searching",
+          "Sentimental",
+          "Sweet",
+          "Wistful",
+          "Plaintive",
+          "Yearning",
+          "Organic",
+          "Precious"
+        ],
+        "word_count": 114,
+        "char_count": 559,
+        "lyrics": "Half of what I say is meaningless But I say it just to reach you, Julia Julia, Julia, oceanchild, calls me So I sing a song of love, Julia Julia, seashell eyes, windy smile, calls me So I sing a song of love, Julia Her hair of floating sky is shimmering, glimmering, In the sun Julia, Julia, morning moon, touch me So I sing a song of love, Julia When I cannot sing my heart I can only speak my mind, Julia Julia, sleeping sand, silent cloud, touch me So I sing a song of love, Julia Hum hum hum hum...calls me So I sing a song of love for Julia, Julia, Julia",
+        "lyrics_search_text": "half of what i say is meaningless but i say it just to reach you  julia julia  julia  oceanchild  calls me so i sing a song of love  julia julia  seashell eyes  windy smile  calls me so i sing a song of love  julia her hair of floating sky is shimmering  glimmering  in the sun julia  julia  morning moon  touch me so i sing a song of love  julia when i cannot sing my heart i can only speak my mind  julia julia  sleeping sand  silent cloud  touch me so i sing a song of love  julia hum hum hum hum calls me so i sing a song of love for julia  julia  julia",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 114,
+      "song": {
+        "id": "beatles-114",
+        "source_row": 115,
+        "title": "Long, long, long",
+        "slug": "long-long-long",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Harrison",
+        "writer_members": [
+          "George Harrison"
+        ],
+        "lead_vocals_raw": "Harrison",
+        "lead_vocal_members": [
+          "George Harrison"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Psychedelic Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Psychedelic / Experimental"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Album Rock"
+        ],
+        "themes": [
+          "Introspection",
+          "Late Night",
+          "Rainy Day",
+          "Small Gathering"
+        ],
+        "theme_clusters": [
+          "Inner Life & Reflection",
+          "Night / Atmosphere"
+        ],
+        "moods": [
+          "Atmospheric",
+          "Dreamy",
+          "Enigmatic",
+          "Ethereal",
+          "Intimate",
+          "Lazy",
+          "Meandering",
+          "Melancholy",
+          "Nocturnal",
+          "Searching",
+          "Spacey",
+          "Yearning",
+          "Reflective",
+          "Trippy",
+          "Wistful",
+          "Bittersweet",
+          "Poignant",
+          "Quirky",
+          "Reserved"
+        ],
+        "word_count": 83,
+        "char_count": 350,
+        "lyrics": "It's been a long long long time, How could I ever have lost you When I loved you. It took a long long long time Now I'm so happy I found you How I love you So many tears I was searching, So many tears I was wasting, oh. Oh-- Now I can see you, be you How can I ever misplace you How I want you Oh I love you Your know that I need you. Ooh I love you.",
+        "lyrics_search_text": "it s been a long long long time  how could i ever have lost you when i loved you  it took a long long long time now i m so happy i found you how i love you so many tears i was searching  so many tears i was wasting  oh  oh  now i can see you  be you how can i ever misplace you how i want you oh i love you your know that i need you  ooh i love you ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 121,
+      "song": {
+        "id": "beatles-121",
+        "source_row": 122,
+        "title": "Martha my dear",
+        "slug": "martha-my-dear",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Music Hall",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "Baroque Pop",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock"
+        ],
+        "themes": [
+          "Affection/Fondness"
+        ],
+        "theme_clusters": [
+          "Love & Connection"
+        ],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Poignant",
+          "Precious",
+          "Sentimental",
+          "Soothing",
+          "Sophisticated",
+          "Sweet",
+          "Warm",
+          "Witty",
+          "Cheerful",
+          "Lush",
+          "Playful",
+          "Quirky",
+          "Stately",
+          "Elegant",
+          "Happy",
+          "Refined",
+          "Elaborate",
+          "Fun"
+        ],
+        "word_count": 143,
+        "char_count": 678,
+        "lyrics": "Martha my dear though I spend my days in conversation Please Remember me Martha my love Don't forget me Martha my dear Hold your head up you silly girl look what you've done When you find yourself in the thick of it Help yourself to a bit of what is all around you Silly Girl. Take a good look around you Take a good look you're bound to see That you and me were meant to be for each other Silly girl. Hold your hand out you silly girl see what you've done When you find yourself in the thick of it Help yourself to a bit of what is all around you Silly girl. Martha my dear you have always been my inspiration Please Be good to me Martha my love Don't forget me Martha my dear.",
+        "lyrics_search_text": "martha my dear though i spend my days in conversation please remember me martha my love don t forget me martha my dear hold your head up you silly girl look what you ve done when you find yourself in the thick of it help yourself to a bit of what is all around you silly girl  take a good look around you take a good look you re bound to see that you and me were meant to be for each other silly girl  hold your hand out you silly girl see what you ve done when you find yourself in the thick of it help yourself to a bit of what is all around you silly girl  martha my dear you have always been my inspiration please be good to me martha my love don t forget me martha my dear ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 128,
+      "song": {
+        "id": "beatles-128",
+        "source_row": 129,
+        "title": "Mother nature's son",
+        "slug": "mother-nature-s-son",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Singer/Songwriter",
+          "Folk-Rock",
+          "Psychedelic/Garage"
+        ],
+        "themes": [
+          "The Great Outdoors",
+          "Reflection",
+          "Relaxation"
+        ],
+        "theme_clusters": [
+          "Inner Life & Reflection"
+        ],
+        "moods": [
+          "Carefree",
+          "Delicate",
+          "Gentle",
+          "Innocent",
+          "Pastoral",
+          "Poignant",
+          "Organic",
+          "Playful",
+          "Precious",
+          "Summery",
+          "Sweet",
+          "Amiable/Good-Natured",
+          "Lush",
+          "Sophisticated",
+          "Whimsical",
+          "Elegant"
+        ],
+        "word_count": 63,
+        "char_count": 323,
+        "lyrics": "Born a poor young country boy--Mother Nature's son All day long I'm sitting singing songs for everyone. Sit beside a mountain stream--see her waters rise Listen to the pretty sound of music as she flies. Find me in my field of grass--Mother Nature's son Swaying daises sing a lazy song beneath the sun. Mother Nature's son.",
+        "lyrics_search_text": "born a poor young country boy mother nature s son all day long i m sitting singing songs for everyone  sit beside a mountain stream see her waters rise listen to the pretty sound of music as she flies  find me in my field of grass mother nature s son swaying daises sing a lazy song beneath the sun  mother nature s son ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 143,
+      "song": {
+        "id": "beatles-143",
+        "source_row": 144,
+        "title": "Piggies",
+        "slug": "piggies",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Harrison",
+        "writer_members": [
+          "George Harrison"
+        ],
+        "lead_vocals_raw": "Harrison",
+        "lead_vocal_members": [
+          "George Harrison"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Baroque Pop",
+          "Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Baroque Pop",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "British Psychedelia",
+          "Psychedelic/Garage"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Acerbic",
+          "Angry",
+          "Bitter",
+          "Dramatic",
+          "Humorous",
+          "Indulgent",
+          "Irreverent",
+          "Quirky",
+          "Sardonic",
+          "Silly",
+          "Snide",
+          "Theatrical",
+          "Malevolent",
+          "Nihilistic",
+          "Playful",
+          "Cold",
+          "Elaborate",
+          "Lush",
+          "Rousing",
+          "Bright"
+        ],
+        "word_count": 114,
+        "char_count": 615,
+        "lyrics": "Have you seen the little piggies Crawling in the dirt And for all the little piggies Life is getting worse Always having dirt to play around in. Have you seen the bigger piggies In their starched white shirts You will find the bigger piggies Stirring up the dirt Always have clean shirts to play around in. In their styes with all their backing They don't care what goes on around In their eyes there's something lacking What they need's a damn good whacking. Everywhere there's lots of piggies Living piggy lives You can see them out for dinner With their piggy wives Clutching forks and knives to eat their bacon.",
+        "lyrics_search_text": "have you seen the little piggies crawling in the dirt and for all the little piggies life is getting worse always having dirt to play around in  have you seen the bigger piggies in their starched white shirts you will find the bigger piggies stirring up the dirt always have clean shirts to play around in  in their styes with all their backing they don t care what goes on around in their eyes there s something lacking what they need s a damn good whacking  everywhere there s lots of piggies living piggy lives you can see them out for dinner with their piggy wives clutching forks and knives to eat their bacon ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 144,
+      "song": {
+        "id": "beatles-144",
+        "source_row": 145,
+        "title": "Please Mr. Postman",
+        "slug": "please-mr-postman",
+        "year_raw": "1963",
+        "timeline_year": 1963,
+        "secondary_year": null,
+        "album": "With the Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Dobbins, Garrett, Holland, Bateman, Gorman",
+        "writer_members": [],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": true,
+        "is_instrumental": false,
+        "genres": [
+          "Rock and Roll",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Beat / Rock & Roll",
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "British Invasion",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Merseybeat",
+          "Rock & Roll"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Bright",
+          "Fun",
+          "Lively",
+          "Rousing",
+          "Cheerful",
+          "Warm",
+          "Yearning"
+        ],
+        "word_count": 168,
+        "char_count": 814,
+        "lyrics": "Wait, oh yes wait a minute mister postman Wait, wait mister postman Mister postman look and see You got a letter in your bag for me I been waiting such a long time Since I heard from that girl of mine There must be some word today From my girlfriend so far away Please mister postman look and see If there's a letter, a letter for me I been standing here waiting mister postman So patiently For just a card or just a letter Saying she's returning home to me So many days you passed me by See the tear standing in my eye You didn't stop to make me feel better By leaving me a card or a letter You gotta wait a minute, wait a minute You gotta wait a minute, wait a minute You gotta wait a minute, wait a minute You gotta check it and see, one more time for me Wait Wait Wait Deliver the letter, the sooner the better",
+        "lyrics_search_text": "wait  oh yes wait a minute mister postman wait  wait mister postman mister postman look and see you got a letter in your bag for me i been waiting such a long time since i heard from that girl of mine there must be some word today from my girlfriend so far away please mister postman look and see if there s a letter  a letter for me i been standing here waiting mister postman so patiently for just a card or just a letter saying she s returning home to me so many days you passed me by see the tear standing in my eye you didn t stop to make me feel better by leaving me a card or a letter you gotta wait a minute  wait a minute you gotta wait a minute  wait a minute you gotta wait a minute  wait a minute you gotta check it and see  one more time for me wait wait wait deliver the letter  the sooner the better",
+        "decade": 1960,
+        "era": "Early Beatles",
+        "story_act": "Act I — The Explosion",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 148,
+      "song": {
+        "id": "beatles-148",
+        "source_row": 149,
+        "title": "Real love",
+        "slug": "real-love",
+        "year_raw": "1980/1995",
+        "timeline_year": 1980,
+        "secondary_year": 1995,
+        "album": "Anthology 2",
+        "album_type": "archival",
+        "songwriters_raw": "Lennon, with McCartney, Harrison, Starkey",
+        "writer_members": [
+          "John Lennon",
+          "Paul McCartney",
+          "George Harrison",
+          "Ringo Starr"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [],
+        "themes": [
+          "In Love"
+        ],
+        "theme_clusters": [
+          "Love & Connection"
+        ],
+        "moods": [
+          "Romantic"
+        ],
+        "word_count": 176,
+        "char_count": 789,
+        "lyrics": "All my little plans and schemes Lost like some forgotten dream Seems like all I really was doing Was waiting for you Just like little girls and boys Playing with their little toys Seems like all they really were doing Was waiting for you Don't need to be alone No need to be alone It's real love It's real, yes it's real love It's real From this moment on I know Exactly where my life will go Seems that all I really was doing Was waiting for love Don't need to be afraid No need to be afraid It's real love It's real, yes it's real love It's real Thought I'd been in love before, But in my heart I wanted more Seems like all I really was doing Was waiting for you Don't need to be alone No need to be alone It's real love Yes it's real, yes it's real love It's real, yes it's real love...",
+        "lyrics_search_text": "all my little plans and schemes lost like some forgotten dream seems like all i really was doing was waiting for you just like little girls and boys playing with their little toys seems like all they really were doing was waiting for you don t need to be alone no need to be alone it s real love it s real  yes it s real love it s real from this moment on i know exactly where my life will go seems that all i really was doing was waiting for love don t need to be afraid no need to be afraid it s real love it s real  yes it s real love it s real thought i d been in love before  but in my heart i wanted more seems like all i really was doing was waiting for you don t need to be alone no need to be alone it s real love yes it s real  yes it s real love it s real  yes it s real love ",
+        "decade": 1980,
+        "era": "Late Beatles",
+        "story_act": "Afterword — The Story Wasn’t Quite Finished",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 151,
+      "song": {
+        "id": "beatles-151",
+        "source_row": 152,
+        "title": "Rocky raccoon",
+        "slug": "rocky-raccoon",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney, with Lennon",
+        "writer_members": [
+          "John Lennon",
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Country",
+          "Folk Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Folk-Rock",
+          "Psychedelic/Garage",
+          "Singer/Songwriter"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Amiable/Good-Natured",
+          "Freewheeling",
+          "Fun",
+          "Humorous",
+          "Irreverent",
+          "Light",
+          "Lively",
+          "Playful",
+          "Quirky",
+          "Ramshackle",
+          "Rollicking",
+          "Rousing",
+          "Whimsical",
+          "Indulgent",
+          "Cheerful",
+          "Happy",
+          "Meandering",
+          "Silly",
+          "Summery",
+          "Bright",
+          "Giddy",
+          "Precious"
+        ],
+        "word_count": 244,
+        "char_count": 1170,
+        "lyrics": "Now somewhere in the black mountain hills of Dakota There lived a young boy named Rocky Raccoon And one day his woman ran off with another guy Hit young Rocky in the eye Rocky didn't like that He said I'm gonna get that boy So one day he walked into town Booked himself a room in the local saloon. Rocky Raccoon checked into his room Only to find Gideon's bible Rocky had come equipped with a gun To shoot off the legs of his rival His rival it seems had broken his dreams By stealing the girl of his fancy. Her name was Magil and she called herself Lil But everyone knew her as Nancy. Now she and her man who called himself Dan Were in the next room at the hoe down Rocky burst in and grinning a grin He said Danny boy this is a showdown But Daniel was hot-he drew first and shot And Rocky collapsed in the corner. Now the doctor came in stinking of gin And proceeded to lie on the table He said Rocky you met your match And Rocky said, Doc it's only a scratch And I'll be better I'll be better doc as soon as I am able. Now Rocky Raccoon he fell back in his room Only to find Gideon's bible Gideon checked out and he left it no doubt To help with good Rocky's revival.",
+        "lyrics_search_text": "now somewhere in the black mountain hills of dakota there lived a young boy named rocky raccoon and one day his woman ran off with another guy hit young rocky in the eye rocky didn t like that he said i m gonna get that boy so one day he walked into town booked himself a room in the local saloon  rocky raccoon checked into his room only to find gideon s bible rocky had come equipped with a gun to shoot off the legs of his rival his rival it seems had broken his dreams by stealing the girl of his fancy  her name was magil and she called herself lil but everyone knew her as nancy  now she and her man who called himself dan were in the next room at the hoe down rocky burst in and grinning a grin he said danny boy this is a showdown but daniel was hot he drew first and shot and rocky collapsed in the corner  now the doctor came in stinking of gin and proceeded to lie on the table he said rocky you met your match and rocky said  doc it s only a scratch and i ll be better i ll be better doc as soon as i am able  now rocky raccoon he fell back in his room only to find gideon s bible gideon checked out and he left it no doubt to help with good rocky s revival ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 154,
+      "song": {
+        "id": "beatles-154",
+        "source_row": 155,
+        "title": "Savoy truffle",
+        "slug": "savoy-truffle",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Harrison",
+        "writer_members": [
+          "George Harrison"
+        ],
+        "lead_vocals_raw": "Harrison",
+        "lead_vocal_members": [
+          "George Harrison"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Soul",
+          "Blues Rock",
+          "Hard Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Beat / Rock & Roll",
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Album Rock",
+          "British Psychedelia",
+          "Psychedelic/Garage"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Freewheeling",
+          "Irreverent",
+          "Playful",
+          "Quirky",
+          "Rollicking",
+          "Rousing",
+          "Stylish",
+          "Cheerful",
+          "Lively",
+          "Swaggering",
+          "Effervescent",
+          "Tense/Anxious",
+          "Brash"
+        ],
+        "word_count": 178,
+        "char_count": 885,
+        "lyrics": "Creme tangerine and montelimat A ginger sling with a pineapple heart A coffee dessert--yes you know it's good news But you'll have to have them all pulled out After the Savoy truffle. Cool cherry cream and a nice apple tart I feel your taste all the time we're apart Coconut fudge--really blows down those blues But you'll have to have them all pulled out After the Savoy truffle. You might not feel it now But when the pain cuts through You're going to know and how The sweat is going to fill your head When it becomes too much You're going to shout aloud #NAME? You know that what you eat you are, But what is sweet now, turns so sour-- We all know Obla-Di-Bla-Da But can you show me, where you are?.. Creme tangerine and montelimat A ginger sling with a pineapple heart A coffee dessert--yes you know its good news But you'll have to have them all pulled out After the Savoy Truffle",
+        "lyrics_search_text": "creme tangerine and montelimat a ginger sling with a pineapple heart a coffee dessert yes you know it s good news but you ll have to have them all pulled out after the savoy truffle  cool cherry cream and a nice apple tart i feel your taste all the time we re apart coconut fudge really blows down those blues but you ll have to have them all pulled out after the savoy truffle  you might not feel it now but when the pain cuts through you re going to know and how the sweat is going to fill your head when it becomes too much you re going to shout aloud  name  you know that what you eat you are  but what is sweet now  turns so sour  we all know obla di bla da but can you show me  where you are  creme tangerine and montelimat a ginger sling with a pineapple heart a coffee dessert yes you know its good news but you ll have to have them all pulled out after the savoy truffle",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 155,
+      "song": {
+        "id": "beatles-155",
+        "source_row": 156,
+        "title": "Sexy Sadie",
+        "slug": "sexy-sadie",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Album Rock",
+          "British Psychedelia",
+          "Psychedelic/Garage"
+        ],
+        "themes": [
+          "Late Night"
+        ],
+        "theme_clusters": [
+          "Night / Atmosphere"
+        ],
+        "moods": [
+          "Acerbic",
+          "Atmospheric",
+          "Dreamy",
+          "Enigmatic",
+          "Lush",
+          "Sardonic",
+          "Angry",
+          "Bitter",
+          "Literate",
+          "Quirky",
+          "Sexy",
+          "Stylish",
+          "Trippy",
+          "Eccentric",
+          "Meandering",
+          "Nocturnal",
+          "Weary",
+          "Swaggering",
+          "Freewheeling"
+        ],
+        "word_count": 176,
+        "char_count": 859,
+        "lyrics": "Sexy Sadie what have you done You made a fool of everyone You made a fool of everyone Sexy Sadie ooh what have you done. Sexy Sadie you broke the rules You layed it down for all to see You layed it down for all to see Sexy Sadie oooh you broke the rules. One sunny day the world was waiting for a lover She came along to turn on everyone Sexy Sadie the greatest of them all. Sexy Sadie how did you know The world was waiting just for you The world was waiting just for you Sexy Sadie oooh how did you know. Sexy Sadie you'll get yours yet However big you think you are However big you think you are Sexy Sadie oooh you'll get yours yet. We gave her everything we owned just to sit at her table Just a smile would lighten everything Sexy Sadie she's the latest and the greatest of them all. She made a fool of everyone Sexy Sadie. However big you think you are",
+        "lyrics_search_text": "sexy sadie what have you done you made a fool of everyone you made a fool of everyone sexy sadie ooh what have you done  sexy sadie you broke the rules you layed it down for all to see you layed it down for all to see sexy sadie oooh you broke the rules  one sunny day the world was waiting for a lover she came along to turn on everyone sexy sadie the greatest of them all  sexy sadie how did you know the world was waiting just for you the world was waiting just for you sexy sadie oooh how did you know  sexy sadie you ll get yours yet however big you think you are however big you think you are sexy sadie oooh you ll get yours yet  we gave her everything we owned just to sit at her table just a smile would lighten everything sexy sadie she s the latest and the greatest of them all  she made a fool of everyone sexy sadie  however big you think you are",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 174,
+      "song": {
+        "id": "beatles-174",
+        "source_row": 175,
+        "title": "The continuing story of Bungalow Bill",
+        "slug": "the-continuing-story-of-bungalow-bill",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon, with Starkey",
+        "lead_vocal_members": [
+          "John Lennon",
+          "Ringo Starr"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Folk Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Folk / Country"
+        ],
+        "styles": [],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [],
+        "word_count": 137,
+        "char_count": 724,
+        "lyrics": "Hey, Bungalow Bill What did you kill Bungalow Bill? He went out tiger hunting with his elephant and gun In case of accidents he always took his mom He's the all American bullet-headed saxon mother's son. All the children sing Hey Bungalow Bill What did you kill Bungalow Bill? Deep in the jungle where the mighty tiger lies Bill and his elephants were taken by surprise So Captain Marvel zapped in right between the eyes All the children sing Hey, Bungalow Bill What did you kill Bungalow Bill? The children asked him if to kill was not a sin Not when he looked so fierce, his mother butted in If looks could kill it would have been us instead of him All the children sing Hey, Bungalow Bill What did you kill Bungalow Bill?",
+        "lyrics_search_text": "hey  bungalow bill what did you kill bungalow bill  he went out tiger hunting with his elephant and gun in case of accidents he always took his mom he s the all american bullet headed saxon mother s son  all the children sing hey bungalow bill what did you kill bungalow bill  deep in the jungle where the mighty tiger lies bill and his elephants were taken by surprise so captain marvel zapped in right between the eyes all the children sing hey  bungalow bill what did you kill bungalow bill  the children asked him if to kill was not a sin not when he looked so fierce  his mother butted in if looks could kill it would have been us instead of him all the children sing hey  bungalow bill what did you kill bungalow bill ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 196,
+      "song": {
+        "id": "beatles-196",
+        "source_row": 197,
+        "title": "Why don't we do it in the road?",
+        "slug": "why-don-t-we-do-it-in-the-road",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Rock",
+          "Blues",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Rock & Roll",
+          "Hard Rock",
+          "Blues-Rock"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Brash",
+          "Bravado",
+          "Energetic",
+          "Freewheeling",
+          "Fun",
+          "Humorous",
+          "Irreverent",
+          "Playful",
+          "Quirky",
+          "Rollicking",
+          "Rousing",
+          "Silly",
+          "Sleazy",
+          "Nocturnal",
+          "Rebellious",
+          "Outrageous",
+          "Trashy",
+          "Exuberant"
+        ],
+        "word_count": 24,
+        "char_count": 90,
+        "lyrics": "Why don't we do it in the road? No one will be watching us Why don't we do it in the road?",
+        "lyrics_search_text": "why don t we do it in the road  no one will be watching us why don t we do it in the road ",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 197,
+      "song": {
+        "id": "beatles-197",
+        "source_row": 198,
+        "title": "Wild honey pie",
+        "slug": "wild-honey-pie",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "McCartney",
+        "writer_members": [
+          "Paul McCartney"
+        ],
+        "lead_vocals_raw": "McCartney",
+        "lead_vocal_members": [
+          "Paul McCartney"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Experimental pop",
+          "Lo-Fi",
+          "Psychedelic Folk",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Psychedelic / Experimental"
+        ],
+        "styles": [
+          "British Psychedelia",
+          "Contemporary Pop/Rock",
+          "Early Pop/Rock",
+          "Psychedelic/Garage"
+        ],
+        "themes": [],
+        "theme_clusters": [],
+        "moods": [
+          "Freewheeling",
+          "Humorous",
+          "Irreverent",
+          "Playful",
+          "Quirky",
+          "Rollicking",
+          "Silly",
+          "Unsettling",
+          "Eerie",
+          "Trippy"
+        ],
+        "word_count": 9,
+        "char_count": 43,
+        "lyrics": "Honey Pie, Honey Pie, I love you, Honey Pie",
+        "lyrics_search_text": "honey pie  honey pie  i love you  honey pie",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    },
+    {
+      "datasetId": 202,
+      "song": {
+        "id": "beatles-202",
+        "source_row": 203,
+        "title": "Yer blues",
+        "slug": "yer-blues",
+        "year_raw": "1968",
+        "timeline_year": 1968,
+        "secondary_year": null,
+        "album": "The Beatles",
+        "album_type": "core_catalogue",
+        "songwriters_raw": "Lennon",
+        "writer_members": [
+          "John Lennon"
+        ],
+        "lead_vocals_raw": "Lennon",
+        "lead_vocal_members": [
+          "John Lennon"
+        ],
+        "is_cover": false,
+        "is_instrumental": false,
+        "genres": [
+          "Blues Rock",
+          "Hard Rock",
+          "Pop/Rock"
+        ],
+        "genre_families": [
+          "Pop / Songcraft",
+          "Heavy / Blues Rock"
+        ],
+        "styles": [
+          "Blues-Rock",
+          "British Blues",
+          "Contemporary Pop/Rock",
+          "Hard Rock",
+          "Regional Blues",
+          "Rock & Roll",
+          "Album Rock"
+        ],
+        "themes": [
+          "Feeling Blue",
+          "Guys Night Out",
+          "Late Night"
+        ],
+        "theme_clusters": [
+          "Heartbreak & Conflict",
+          "Night / Atmosphere"
+        ],
+        "moods": [
+          "Acerbic",
+          "Brash",
+          "Cynical/Sarcastic",
+          "Freewheeling",
+          "Ironic",
+          "Irreverent",
+          "Messy",
+          "Nihilistic",
+          "Nocturnal",
+          "Ramshackle",
+          "Rousing",
+          "Cathartic",
+          "Raucous",
+          "Swaggering",
+          "Visceral",
+          "Aggressive",
+          "Angst-Ridden",
+          "Bravado",
+          "Fiery",
+          "Meandering",
+          "Urgent",
+          "Volatile"
+        ],
+        "word_count": 158,
+        "char_count": 716,
+        "lyrics": "Yes I'm lonely wanna die Yes I'm lonely wanna die If I ain't dead already Ooh girl you know the reason why. In the morning wanna die In the evening wanna die If I ain't dead already Ooh girl you know the reason why. My mother was of the sky My father was of the earth But I am of the universe And you know what it's worth I'm lonely wanna die If I ain't dead already Ooh girl you know the reason why. The eagle picks my eye The worm he licks my bone I feel so suicidal Just like Dylan's Mr. Jones Lonely wanna die If I ain't dead already Ooh girl you know the reason why. Black cloud crossed my mind Blue mist round my soul Feel so suicidal Even hate my rock and roll Wanna die yeah wanna die If I ain't dead already",
+        "lyrics_search_text": "yes i m lonely wanna die yes i m lonely wanna die if i ain t dead already ooh girl you know the reason why  in the morning wanna die in the evening wanna die if i ain t dead already ooh girl you know the reason why  my mother was of the sky my father was of the earth but i am of the universe and you know what it s worth i m lonely wanna die if i ain t dead already ooh girl you know the reason why  the eagle picks my eye the worm he licks my bone i feel so suicidal just like dylan s mr  jones lonely wanna die if i ain t dead already ooh girl you know the reason why  black cloud crossed my mind blue mist round my soul feel so suicidal even hate my rock and roll wanna die yeah wanna die if i ain t dead already",
+        "decade": 1960,
+        "era": "Late Beatles",
+        "story_act": "Act IV — Four Voices, One Band",
+        "metadata_patch": false
+      }
+    }
+  ]
+}

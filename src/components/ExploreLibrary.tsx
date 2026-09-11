@@ -286,7 +286,7 @@ export const ExploreLibrary: React.FC<ExploreLibraryProps> = ({ onSelectSong }) 
                   className="accent-[#C43A2F]"
                 />
                 <span className="text-[11px] text-[#151515] font-bold">
-                  Playable Only (14 verified embeds)
+                  Playable Only ({allSongs.filter(s => getMediaForSong(s)).length} songs)
                 </span>
               </label>
             </div>
