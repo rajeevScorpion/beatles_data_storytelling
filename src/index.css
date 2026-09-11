@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #F2EBDD;
+    --ink: #151515;
+    --accent: #C43A2F;
+    --muted: #8E877C;
+    --border: #D8D0C2;
+    --card-bg: #EAE1D2;
+  }
+
+  body {
+    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-display {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-editorial {
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Retro Print Texture & Registration Marks */
+.registration-mark {
+  position: relative;
+}
+
+.registration-mark::before {
+  content: "⌖";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 10px;
+  opacity: 0.35;
+  font-family: 'Space Mono', monospace;
+}
+
+.print-border {
+  border: 1px solid #C8C0B2;
+}
+
+.print-border-thick {
+  border: 2px solid #151515;
+}
+
+.print-shadow {
+  box-shadow: 4px 4px 0px rgba(21, 21, 21, 0.9);
+}
+
+.print-shadow-sm {
+  box-shadow: 2px 2px 0px rgba(21, 21, 21, 0.85);
+}
+
+.print-shadow-red {
+  box-shadow: 4px 4px 0px #C43A2F;
+}
+
+/* Halftone / Dot pattern */
+.bg-newsprint-dots {
+  background-image: radial-gradient(#151515 0.75px, transparent 0.75px);
+  background-size: 8px 8px;
+}
+
+.bg-newsprint-dots-light {
+  background-image: radial-gradient(#B8B1A6 0.75px, transparent 0.75px);
+  background-size: 10px 10px;
+}
+
+/* Grooves & Record Effects */
+.vinyl-grooves {
+  background: repeating-radial-gradient(
+    circle at center,
+    #181818 0px,
+    #181818 2px,
+    #242424 3px,
+    #181818 4px
+  );
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8DECB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B8B1A6;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C43A2F;
+}

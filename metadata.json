@@ -1,0 +1,6 @@
+{
+  "name": "The Beatles: Eight Years That Changed the Sound",
+  "description": "A deep interactive data story tracking the sonic evolution of The Beatles across 213 songs from 1962 to 1970.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
