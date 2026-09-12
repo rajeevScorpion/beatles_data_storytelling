@@ -122,7 +122,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartStory, onExplore, onFindAWord
             </div>
 
             {/* Sleeve caption */}
-            <div className="mt-3 flex items-center justify-between font-mono-code text-[11px] text-[#555]">
+            <div className="mt-3 flex items-center justify-between font-mono-code text-[11px] text-[#555] flex-wrap gap-1">
               <span>SIDE A: 1962–1966</span>
               <span className="text-[#C43A2F] font-bold">SIDE B: 1967–1970</span>
             </div>
@@ -132,10 +132,10 @@ export const Hero: React.FC<HeroProps> = ({ onStartStory, onExplore, onFindAWord
 
       {/* Bottom Timeline Ribbon: 1962 -> 1970 */}
       <div className="max-w-7xl mx-auto w-full pt-6 border-t border-[#D8D0C2]">
-        <div className="flex items-center justify-between text-xs font-mono-code text-[#7A7267] mb-2">
-          <span>1962: "LOVE ME DO"</span>
-          <span className="font-bold text-[#151515]">EIGHT-YEAR TIMELINE PROGRESSION</span>
-          <span>1970: "LET IT BE"</span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[10.5px] sm:text-xs font-mono-code text-[#7A7267] mb-2">
+          <span className="truncate">1962: "LOVE ME DO"</span>
+          <span className="font-bold text-[#151515] text-left sm:text-center">EIGHT-YEAR TIMELINE PROGRESSION</span>
+          <span className="truncate text-left sm:text-right">1970: "LET IT BE"</span>
         </div>
         <div className="grid grid-cols-9 gap-1 h-3 bg-[#E0D7C7] p-0.5 border border-[#C8C0B2]">
           {['1962', '1963', '1964', '1965', '1966', '1967', '1968', '1969', '1970'].map((yr, idx) => (

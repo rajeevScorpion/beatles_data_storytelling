@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { allSongs, storyMetrics, ERA_METADATA } from '../lib/data';
 import { SongRecord } from '../types';
 import { Calendar, Disc, Music, ArrowRight, Play } from 'lucide-react';
@@ -84,7 +85,13 @@ export const EightYearRush: React.FC<EightYearRushProps> = ({ onSelectSong }) =>
     <section id="eight-year-rush" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#EAE1D2]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Section Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#151515] text-white font-bold">
               ACT I · CHAPTER 01
@@ -100,16 +107,23 @@ export const EightYearRush: React.FC<EightYearRushProps> = ({ onSelectSong }) =>
             In eight short years, The Beatles didn’t merely release 213 songs; they re-invented pop music,
             recording techniques, and their own identities nine consecutive times.
           </p>
-        </div>
+        </motion.div>
 
         {/* Interactive Year Scrubber Strip */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center justify-between font-mono-code text-xs text-[#7A7267]">
-            <span>SELECT A YEAR TO EXAMINE THE TRANSFORMATION:</span>
-            <span className="font-bold text-[#151515]">ACTIVE: {selectedYear}</span>
+            <span className="hidden sm:inline">SELECT A YEAR TO EXAMINE THE TRANSFORMATION:</span>
+            <span className="sm:hidden text-[11px]">SELECT A YEAR:</span>
+            <span className="font-bold text-[#151515] text-[11px] sm:text-xs">ACTIVE: {selectedYear}</span>
           </div>
 
-          <div className="grid grid-cols-3 sm:grid-cols-9 gap-2">
+          <div className="grid grid-cols-3 sm:grid-cols-9 gap-1.5 sm:gap-2">
             {years.map(yr => {
               const isSelected = yr === selectedYear;
               const yrEra = YEAR_DETAILS[yr].era;
@@ -131,10 +145,16 @@ export const EightYearRush: React.FC<EightYearRushProps> = ({ onSelectSong }) =>
               );
             })}
           </div>
-        </div>
+        </motion.div>
 
         {/* Year Spotlight Card */}
-        <div className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
+        >
           {/* Left Column: Big Year & Milestone */}
           <div className="lg:col-span-6 space-y-4">
             <div className="flex items-baseline gap-4">
@@ -236,7 +256,7 @@ export const EightYearRush: React.FC<EightYearRushProps> = ({ onSelectSong }) =>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

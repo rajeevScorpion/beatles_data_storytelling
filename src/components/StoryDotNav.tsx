@@ -26,12 +26,12 @@ export const StoryDotNav: React.FC<StoryDotNavProps> = ({ activeSection, onNavig
   return (
     <nav
       aria-label="Story chapter navigation"
-      className="fixed right-2 sm:right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center select-none bg-[#F2EBDD]/85 backdrop-blur-sm px-1.5 py-3 rounded-full border border-[#C8C0B2]/60 shadow-md"
+      className="fixed right-1.5 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center select-none bg-[#F2EBDD]/90 backdrop-blur-sm px-1 py-2 sm:px-1.5 sm:py-3 rounded-full border border-[#C8C0B2]/70 shadow-md touch-manipulation"
     >
       {/* Background connector line */}
-      <div className="absolute top-4 bottom-4 w-px bg-[#151515]/20 -z-10" />
+      <div className="absolute top-3 bottom-3 w-px bg-[#151515]/20 -z-10" />
 
-      <div className="flex flex-col gap-4 py-1">
+      <div className="flex flex-col gap-3 sm:gap-4 py-0.5">
         {CHAPTERS.map(chapter => {
           const isActive = activeSection === chapter.id;
           const isHovered = hoveredId === chapter.id;
@@ -43,9 +43,9 @@ export const StoryDotNav: React.FC<StoryDotNavProps> = ({ activeSection, onNavig
               onMouseEnter={() => setHoveredId(chapter.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              {/* Tooltip on hover */}
+              {/* Tooltip on hover (desktop/tablet) */}
               <div
-                className={`absolute right-7 pointer-events-none transition-all duration-200 flex items-center ${
+                className={`absolute right-6 sm:right-7 pointer-events-none transition-all duration-200 hidden sm:flex items-center ${
                   isHovered
                     ? 'opacity-100 translate-x-0'
                     : 'opacity-0 translate-x-2'
@@ -79,7 +79,7 @@ export const StoryDotNav: React.FC<StoryDotNavProps> = ({ activeSection, onNavig
                   className={`transition-all duration-300 rounded-full ${
                     isActive
                       ? 'w-3.5 h-3.5 bg-[#C43A2F] ring-4 ring-[#C43A2F]/25 shadow-sm scale-110'
-                      : 'w-2.5 h-2.5 bg-[#151515]/30 hover:bg-[#151515] hover:scale-125 border border-[#151515]/40'
+                      : 'w-2 h-2 sm:w-2.5 sm:h-2.5 bg-[#151515]/30 hover:bg-[#151515] hover:scale-125 border border-[#151515]/40'
                   }`}
                 />
               </button>

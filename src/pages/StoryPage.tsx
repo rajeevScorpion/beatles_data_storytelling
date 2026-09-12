@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Hero } from '../components/Hero';
 import { EightYearRush } from '../components/EightYearRush';
 import { CoversDisappear } from '../components/CoversDisappear';
@@ -57,7 +58,13 @@ export const StoryPage: React.FC<StoryPageProps> = ({
       {/* Deep-Dive Portal Bridge to the Two Dedicated Pages */}
       <section className="py-20 px-4 sm:px-8 bg-[#EAE1D2] border-b-2 border-[#151515]">
         <div className="max-w-7xl mx-auto space-y-8">
-          <div className="space-y-2">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="space-y-2"
+          >
             <div className="flex items-center gap-3">
               <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#151515] text-white font-bold">
                 CONTINUE EXPLORING
@@ -72,11 +79,17 @@ export const StoryPage: React.FC<StoryPageProps> = ({
             <p className="font-editorial text-base sm:text-lg text-[#555] max-w-2xl leading-relaxed">
               The story covers eight years of transformation. Delve directly into the raw records or search every single word spoken and sung.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card 1: Explore 213 */}
-            <div className="bg-[#F2EBDD] border-2 border-[#151515] p-6 sm:p-8 print-shadow space-y-4 flex flex-col justify-between">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-[#F2EBDD] border-2 border-[#151515] p-6 sm:p-8 print-shadow space-y-4 flex flex-col justify-between"
+            >
               <div className="space-y-3">
                 <div className="w-10 h-10 bg-[#151515] text-white flex items-center justify-center">
                   <Search className="w-5 h-5 text-[#C43A2F]" />
@@ -96,10 +109,16 @@ export const StoryPage: React.FC<StoryPageProps> = ({
                 <span>OPEN EXPLORE 213</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
-            </div>
+            </motion.div>
 
             {/* Card 2: Find a Word */}
-            <div className="bg-[#F2EBDD] border-2 border-[#151515] p-6 sm:p-8 print-shadow space-y-4 flex flex-col justify-between">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-[#F2EBDD] border-2 border-[#151515] p-6 sm:p-8 print-shadow space-y-4 flex flex-col justify-between"
+            >
               <div className="space-y-3">
                 <div className="w-10 h-10 bg-[#151515] text-white flex items-center justify-center">
                   <BookOpen className="w-5 h-5 text-[#C43A2F]" />
@@ -119,7 +138,7 @@ export const StoryPage: React.FC<StoryPageProps> = ({
                 <span>OPEN FIND A WORD</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

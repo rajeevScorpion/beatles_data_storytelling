@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { allSongs, storyMetrics } from '../lib/data';
 import { SongRecord } from '../types';
 import { Disc, Radio, Sparkles, Filter, Music } from 'lucide-react';
@@ -63,7 +64,13 @@ export const GenreUniverse: React.FC<GenreUniverseProps> = ({ onSelectSong }) =>
     <section id="genre-universe" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#EAE1D2]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#151515] text-white font-bold">
               ACT III · CHAPTER 08
@@ -79,15 +86,23 @@ export const GenreUniverse: React.FC<GenreUniverseProps> = ({ onSelectSong }) =>
             Starting from straightforward Merseybeat pop, The Beatles dismantled the boundaries of popular music,
             eventually branching into over 70 distinct stylistic genres.
           </p>
-        </div>
+        </motion.div>
 
         {/* Six Genre Family Orbit Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {GENRE_FAMILIES.map(family => {
+          {GENRE_FAMILIES.map((family, index) => {
             const isSelected = family.name === selectedFamilyName;
             return (
-              <button
+              <motion.button
                 key={family.name}
+                initial={{ opacity: 0, y: 22 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.55,
+                  delay: 0.1 + index * 0.06,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 onClick={() => setSelectedFamilyName(family.name)}
                 className={`p-5 text-left border-2 transition-all flex flex-col justify-between ${
                   isSelected
@@ -125,13 +140,19 @@ export const GenreUniverse: React.FC<GenreUniverseProps> = ({ onSelectSong }) =>
                     </span>
                   ))}
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>
 
         {/* Selected Genre Detail Card */}
-        <div className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6"
+        >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#D8D0C2]">
             <div>
               <div className="flex items-center gap-2">
@@ -172,7 +193,7 @@ export const GenreUniverse: React.FC<GenreUniverseProps> = ({ onSelectSong }) =>
               </button>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

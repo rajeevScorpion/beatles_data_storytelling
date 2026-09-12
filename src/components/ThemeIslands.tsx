@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { allSongs, storyMetrics, getMediaForSong } from '../lib/data';
 import { SongRecord } from '../types';
 import { Tag, Play, Music, ArrowRight, Sparkles, Filter } from 'lucide-react';
@@ -90,7 +91,13 @@ export const ThemeIslands: React.FC<ThemeIslandsProps> = ({ onSelectSong }) => {
     <section id="theme-islands" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#F2EBDD]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#C43A2F] text-white font-bold">
               ACT II · CHAPTER 05
@@ -106,15 +113,23 @@ export const ThemeIslands: React.FC<ThemeIslandsProps> = ({ onSelectSong }) => {
             The themes mapped across 213 songs reveal an extraordinary journey from teenage crush anthems
             toward deep introspection, surreal narratives, and philosophical reflection.
           </p>
-        </div>
+        </motion.div>
 
         {/* Typographic Theme Islands Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-          {THEME_CLUSTERS.map(cluster => {
+          {THEME_CLUSTERS.map((cluster, index) => {
             const isSelected = cluster.id === selectedClusterId;
             return (
-              <button
+              <motion.button
                 key={cluster.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.55,
+                  delay: 0.1 + index * 0.05,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 onClick={() => setSelectedClusterId(cluster.id)}
                 className={`p-4 text-left border-2 transition-all flex flex-col justify-between min-h-[140px] ${
                   isSelected
@@ -136,13 +151,19 @@ export const ThemeIslands: React.FC<ThemeIslandsProps> = ({ onSelectSong }) => {
                   <span className="opacity-75">SURFACE</span>
                   <span className="font-bold">{cluster.count} SONGS</span>
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>
 
         {/* Island Details & Flowing Songs Container */}
-        <div className="bg-[#F6F1E7] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#F6F1E7] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6"
+        >
           {/* Active Island Meta Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#D8D0C2]">
             <div className="space-y-1">
@@ -240,7 +261,7 @@ export const ThemeIslands: React.FC<ThemeIslandsProps> = ({ onSelectSong }) => {
               Note: 139 of 213 songs (65.3%) carry explicit theme tags in the source dataset. Absence of a tag reflects source boundaries, not lack of poetic meaning.
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

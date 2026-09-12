@@ -141,18 +141,18 @@ export const PlaylistDrawer: React.FC<PlaylistDrawerProps> = ({ onSelectSong }) 
       <div className="absolute inset-0" onClick={closePlaylistDrawer} />
 
       {/* Drawer Container */}
-      <div className="relative w-full max-w-2xl bg-[#F6F1E7] h-full shadow-2xl flex flex-col border-l-2 border-[#151515] animate-in slide-in-from-right duration-300">
+      <div className="relative w-full max-w-full sm:max-w-2xl bg-[#F6F1E7] h-full shadow-2xl flex flex-col border-l-2 border-[#151515] animate-in slide-in-from-right duration-300">
         {/* Header */}
-        <div className="sticky top-0 z-20 bg-[#151515] text-[#F4F4F5] px-6 py-4 border-b-2 border-[#151515] flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-[#C43A2F] text-white flex items-center justify-center font-black">
-              <Disc3 className="w-5 h-5" />
+        <div className="sticky top-0 z-20 bg-[#151515] text-[#F4F4F5] px-4 sm:px-6 py-3 sm:py-4 border-b-2 border-[#151515] flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-[#C43A2F] text-white flex items-center justify-center font-black shrink-0">
+              <Disc3 className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div>
-              <h2 className="font-display text-base sm:text-lg uppercase tracking-wider font-black text-white leading-tight">
+            <div className="min-w-0">
+              <h2 className="font-display text-sm sm:text-base md:text-lg uppercase tracking-wider font-black text-white leading-tight truncate">
                 CURATED PLAYLISTS & MIXTAPES
               </h2>
-              <p className="font-mono-code text-[10px] text-[#A1A1AA] uppercase tracking-wider">
+              <p className="font-mono-code text-[9px] sm:text-[10px] text-[#A1A1AA] uppercase tracking-wider">
                 {playlists.length} {playlists.length === 1 ? 'COLLECTION' : 'COLLECTIONS'} · SAVED LOCALLY
               </p>
             </div>
@@ -160,7 +160,7 @@ export const PlaylistDrawer: React.FC<PlaylistDrawerProps> = ({ onSelectSong }) 
 
           <button
             onClick={closePlaylistDrawer}
-            className="p-1.5 hover:bg-[#27272A] text-[#A1A1AA] hover:text-white transition-colors border border-[#3F3F46]"
+            className="p-1.5 hover:bg-[#27272A] text-[#A1A1AA] hover:text-white transition-colors border border-[#3F3F46] shrink-0"
             title="Close drawer (Esc)"
           >
             <X className="w-5 h-5" />
@@ -168,7 +168,7 @@ export const PlaylistDrawer: React.FC<PlaylistDrawerProps> = ({ onSelectSong }) 
         </div>
 
         {/* Playlists Tabs Bar */}
-        <div className="bg-[#EFE7D8] border-b border-[#D8D0C2] px-6 py-2 flex items-center justify-between gap-2 overflow-x-auto">
+        <div className="bg-[#EFE7D8] border-b border-[#D8D0C2] px-3 sm:px-6 py-2 flex items-center justify-between gap-2 overflow-x-auto">
           <div className="flex items-center gap-1.5 overflow-x-auto py-1">
             {playlists.map(pl => {
               const isSelected = pl.id === activePlaylist?.id;

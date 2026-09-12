@@ -98,28 +98,28 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Drawer panel */}
-      <div className="relative w-full max-w-xl bg-[#F6F1E7] h-full shadow-2xl overflow-y-auto flex flex-col border-l-2 border-[#151515] animate-in slide-in-from-right duration-300">
+      <div className="relative w-full max-w-full sm:max-w-xl bg-[#F6F1E7] h-full shadow-2xl overflow-y-auto flex flex-col border-l-2 border-[#151515] animate-in slide-in-from-right duration-300">
         {/* Drawer Header */}
-        <div className="sticky top-0 z-10 bg-[#EFE7D8] px-6 py-4 border-b border-[#D8D0C2] flex items-center justify-between">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="font-mono-code text-[11px] uppercase tracking-wider text-[#766E65] border border-[#C8C0B2] px-2 py-0.5 bg-[#F6F1E7]">
+        <div className="sticky top-0 z-10 bg-[#EFE7D8] px-4 sm:px-6 py-3 sm:py-4 border-b border-[#D8D0C2] flex items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <span className="font-mono-code text-[10px] sm:text-[11px] uppercase tracking-wider text-[#766E65] border border-[#C8C0B2] px-2 py-0.5 bg-[#F6F1E7]">
               {song.era}
             </span>
-            <span className="font-mono-code text-[11px] text-[#766E65]">
+            <span className="font-mono-code text-[10px] sm:text-[11px] text-[#766E65]">
               {song.timeline_year}
             </span>
             {song.is_cover && (
-              <span className="font-mono-code text-[10px] bg-[#C43A2F] text-white px-1.5 py-0.5 font-bold uppercase">
+              <span className="font-mono-code text-[9.5px] sm:text-[10px] bg-[#C43A2F] text-white px-1.5 py-0.5 font-bold uppercase">
                 Cover
               </span>
             )}
             {song.is_instrumental && (
-              <span className="font-mono-code text-[10px] bg-[#5B824D] text-white px-1.5 py-0.5 font-bold uppercase">
+              <span className="font-mono-code text-[9.5px] sm:text-[10px] bg-[#5B824D] text-white px-1.5 py-0.5 font-bold uppercase">
                 Instrumental
               </span>
             )}
             {song.metadata_patch && (
-              <span className="font-mono-code text-[10px] bg-[#B48639] text-white px-1.5 py-0.5 font-bold uppercase">
+              <span className="font-mono-code text-[9.5px] sm:text-[10px] bg-[#B48639] text-white px-1.5 py-0.5 font-bold uppercase">
                 Archival Patch
               </span>
             )}
@@ -127,7 +127,7 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
 
           <button
             onClick={onClose}
-            className="p-1.5 hover:bg-[#DDD4C3] border border-[#C8C0B2] text-[#151515] transition-colors"
+            className="p-1.5 hover:bg-[#DDD4C3] border border-[#C8C0B2] text-[#151515] transition-colors shrink-0"
             title="Close drawer (Esc)"
           >
             <X className="w-5 h-5" />
@@ -135,11 +135,11 @@ export const SongDrawer: React.FC<SongDrawerProps> = ({
         </div>
 
         {/* Content Body */}
-        <div className="p-6 space-y-6 flex-1">
+        <div className="p-4 sm:p-6 space-y-5 sm:space-y-6 flex-1">
           {/* Title and Play action */}
           <div>
-            <div className="flex items-start justify-between gap-4">
-              <h2 className="font-display text-4xl sm:text-5xl font-black uppercase tracking-tight text-[#151515] leading-none">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-[#151515] leading-none break-words">
                 {song.title}
               </h2>
               <div className="flex items-center gap-2 shrink-0">

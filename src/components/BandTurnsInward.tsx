@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Play, Disc, ArrowDown, Quote } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 import { mediaManifest, allSongs } from '../lib/data';
@@ -17,7 +18,13 @@ export const BandTurnsInward: React.FC<BandTurnsInwardProps> = ({ onSelectSong }
     <section id="band-turns-inward" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#E8DECB] transition-colors">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#B48639] text-white font-bold">
               ACT II · NARRATIVE INTERLUDE
@@ -33,12 +40,18 @@ export const BandTurnsInward: React.FC<BandTurnsInwardProps> = ({ onSelectSong }
             Exhausted by stadiums of screaming fans who drowned out their instruments, The Beatles abandoned the road
             and transformed Abbey Road Studios from a recording room into an artistic sanctuary.
           </p>
-        </div>
+        </motion.div>
 
         {/* Two-Column Editorial Feature */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Historical Press Image */}
-          <div className="lg:col-span-5">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-5"
+          >
             <div className="bg-[#DDCFB8] border-2 border-[#171714] print-shadow p-3 space-y-2">
               <div className="relative aspect-4/3 overflow-hidden border border-[#171714] bg-black">
                 <img
@@ -48,15 +61,21 @@ export const BandTurnsInward: React.FC<BandTurnsInwardProps> = ({ onSelectSong }
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="font-mono-code text-[10px] text-[#555] flex items-center justify-between">
+              <div className="font-mono-code text-[9.5px] sm:text-[10px] text-[#555] flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                 <span>Metropolitan Stadium, Minnesota · 21 Aug 1965</span>
-                <span className="text-[#B48639] font-bold">MINNESOTA HISTORICAL SOCIETY (CC BY-SA 2.0)</span>
+                <span className="text-[#B48639] font-bold">MINNESOTA HISTORICAL SOCIETY</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Editorial Analysis and Milestone Breakdown */}
-          <div className="lg:col-span-7 space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-7 space-y-6"
+          >
             <div className="space-y-3">
               <span className="font-mono-code text-xs uppercase tracking-widest text-[#B48639] font-bold block">
                 FROM POP SENSATION TO STUDIO POETS
@@ -126,7 +145,7 @@ export const BandTurnsInward: React.FC<BandTurnsInwardProps> = ({ onSelectSong }
                 </div>
               </div>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

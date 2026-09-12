@@ -101,7 +101,7 @@ export const App: React.FC = () => {
   return (
     <PlayerProvider>
       <PlaylistProvider>
-        <div className="min-h-screen bg-[#F2EBDD] text-[#151515] flex flex-col font-sans selection:bg-[#C43A2F] selection:text-white relative">
+        <div className="min-h-screen bg-[#F2EBDD] text-[#151515] flex flex-col font-sans selection:bg-[#C43A2F] selection:text-white relative w-full max-w-full overflow-x-hidden">
           {/* Persistent Sticky Navigation */}
           <Navigation
             currentPage={currentPage}
@@ -110,7 +110,7 @@ export const App: React.FC = () => {
           />
 
           {/* Main Pages */}
-          <main className="flex-1">
+          <main className="flex-1 w-full max-w-full overflow-x-hidden">
             {currentPage === 'story' && (
               <StoryPage
                 activeSection={activeSection}

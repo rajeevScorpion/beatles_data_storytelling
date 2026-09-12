@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { allSongs, storyMetrics } from '../lib/data';
 import { SongRecord } from '../types';
 import { Disc, Layers, ShieldCheck, ChevronRight, X, Music } from 'lucide-react';
@@ -29,7 +30,13 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
     <section id="covers-disappear" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#F2EBDD]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#C43A2F] text-white font-bold">
               ACT I · CHAPTER 02
@@ -45,10 +52,16 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
             In 1963, 40% of their recorded songs were written by American rock & roll and Motown idols.
             By 1966, outside material had completely vanished.
           </p>
-        </div>
+        </motion.div>
 
         {/* Narrative Stats Bar & Interactive Toggle */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-[#EAE1D2] border-2 border-[#151515]">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-[#EAE1D2] border-2 border-[#151515]"
+        >
           <div className="flex items-center gap-6 font-mono-code text-xs">
             <div>
               <span className="text-[#7A7267] block uppercase text-[10px]">TOTAL COVERS</span>
@@ -71,10 +84,16 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
             <span>INSPECT ALL 25 COVERS</span>
             <ChevronRight className="w-3.5 h-3.5" />
           </button>
-        </div>
+        </motion.div>
 
         {/* The Covers Drop-off Chart */}
-        <div className="bg-[#F6F1E7] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-8">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#F6F1E7] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-8"
+        >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h3 className="font-display text-2xl font-bold uppercase text-[#151515]">
@@ -115,8 +134,8 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
           </div>
 
           {/* Bar Visualization */}
-          <div className="grid grid-cols-9 gap-2 sm:gap-4 items-end h-64 pt-6 pb-2 border-b border-[#D8D0C2]">
-            {coverYears.map(item => {
+          <div className="grid grid-cols-9 gap-1 sm:gap-2 md:gap-4 items-end h-64 pt-6 pb-2 border-b border-[#D8D0C2]">
+            {coverYears.map((item, index) => {
               const heightPct = item.pct; // 0 to 40%
               const normalizedHeight = (item.pct / 40) * 100;
 
@@ -128,16 +147,27 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
                   </div>
 
                   {/* Percentage label */}
-                  <span className="font-mono-code text-[11px] font-bold text-[#151515] mb-1">
+                  <span className="font-mono-code text-[8.5px] sm:text-[11px] font-bold text-[#151515] mb-1">
                     {item.pct > 0 ? `${item.pct}%` : '0%'}
                   </span>
 
                   {/* Visual Bar Stack */}
                   <div className="w-full max-w-[48px] h-48 bg-[#EAE1D2] border border-[#C8C0B2] flex flex-col justify-end overflow-hidden">
-                    {/* Covers portion */}
-                    <div
-                      style={{ height: `${normalizedHeight}%` }}
-                      className={`w-full transition-all duration-500 ${
+                    {/* Covers portion with museum rising animation */}
+                    <motion.div
+                      initial={{ scaleY: 0 }}
+                      whileInView={{ scaleY: 1 }}
+                      viewport={{ once: true, amount: 0.2 }}
+                      transition={{
+                        duration: 0.7,
+                        delay: 0.2 + index * 0.05,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      style={{
+                        transformOrigin: 'bottom',
+                        height: `${normalizedHeight}%`,
+                      }}
+                      className={`w-full transition-colors duration-500 ${
                         filterMode === 'originals'
                           ? 'bg-[#EAE1D2]'
                           : item.covers > 0
@@ -171,7 +201,7 @@ export const CoversDisappear: React.FC<CoversDisappearProps> = ({ onSelectSong }
               40% → 0% IN 36 MONTHS
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Modal / Overlay of all 25 Covers */}
         {showCoversModal && (

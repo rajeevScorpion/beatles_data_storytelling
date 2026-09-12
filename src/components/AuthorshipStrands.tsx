@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { allSongs, storyMetrics } from '../lib/data';
 import { SongRecord, BeatlesMember } from '../types';
 import { Users, PenTool, Mic, ChevronRight, Sparkles, Play } from 'lucide-react';
@@ -59,7 +60,13 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
     <section id="authorship" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#EAE1D2]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#151515] text-white font-bold">
               ACT I & II · CHAPTER 03
@@ -75,10 +82,16 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
             The Lennon–McCartney partnership began as a collaborative juggernaut, but as the years progressed,
             individual voices emerged—culminating in George Harrison’s stunning late-period songwriting breakthrough.
           </p>
-        </div>
+        </motion.div>
 
         {/* Mode Switcher: Written vs Sung */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-[#F2EBDD] border-2 border-[#151515]">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-[#F2EBDD] border-2 border-[#151515]"
+        >
           <span className="font-mono-code text-xs uppercase font-bold text-[#151515]">
             ANALYZE PERSPECTIVE:
           </span>
@@ -106,11 +119,11 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
               <span>LEAD VOCALS BY</span>
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Four Member Strands Interactive Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {MEMBERS.map(member => {
+          {MEMBERS.map((member, index) => {
             const isSelected = member.name === selectedMember;
             const presenceMap =
               activeMode === 'written'
@@ -120,8 +133,16 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
             const totalCount = eras.reduce((sum, era) => sum + (presenceMap[era]?.[member.name] || 0), 0);
 
             return (
-              <button
+              <motion.button
                 key={member.name}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.12 + index * 0.07,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 onClick={() => setSelectedMember(member.name)}
                 className={`p-5 text-left border-2 transition-all flex flex-col justify-between ${
                   isSelected
@@ -163,13 +184,19 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
                     );
                   })}
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>
 
         {/* Selected Member Detail & Songs Field */}
-        <div className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#F2EBDD] border-2 border-[#151515] print-shadow p-6 sm:p-8 space-y-6"
+        >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#D8D0C2]">
             <div>
               <div className="flex items-center gap-2">
@@ -225,7 +252,7 @@ export const AuthorshipStrands: React.FC<AuthorshipStrandsProps> = ({ onSelectSo
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

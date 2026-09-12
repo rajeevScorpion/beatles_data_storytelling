@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Play, Sparkles, Disc, ArrowRight } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 import { mediaManifest, allSongs } from '../lib/data';
@@ -53,7 +54,13 @@ export const FourVoices: React.FC<FourVoicesProps> = ({ onSelectSong }) => {
     <section id="four-voices" className="py-20 px-4 sm:px-8 border-b-2 border-[#151515] bg-[#F5F3EC]">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-3">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-3"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#5B824D] text-white font-bold">
               ACT IV · CHAPTER 10 & 11
@@ -69,10 +76,16 @@ export const FourVoices: React.FC<FourVoicesProps> = ({ onSelectSong }) => {
             By 1968, The Beatles were no longer a single unified pop unit; they were four distinct creative titans
             capable of composing masterpieces in isolation, yet elevating each other when gathered at Abbey Road.
           </p>
-        </div>
+        </motion.div>
 
         {/* George Harrison Growth Callout Banner */}
-        <div className="bg-[#EAE6DC] border-2 border-[#151515] print-shadow p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-[#EAE6DC] border-2 border-[#151515] print-shadow p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6"
+        >
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#B48639]" />
@@ -94,13 +107,21 @@ export const FourVoices: React.FC<FourVoicesProps> = ({ onSelectSong }) => {
             <span className="font-display text-4xl font-black text-[#5B824D]">15 TRACKS</span>
             <span className="block text-[10px] text-[#7A7267] mt-0.5">FROM 1 IN 1963</span>
           </div>
-        </div>
+        </motion.div>
 
         {/* Landmark Late-Era Tracks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {lateTracks.map((item, idx) => (
-            <div
+            <motion.div
               key={idx}
+              initial={{ opacity: 0, y: 22 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.55,
+                delay: 0.1 + idx * 0.07,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="p-5 bg-[#EAE6DC] border-2 border-[#151515] print-shadow flex flex-col justify-between space-y-4 hover:border-[#5B824D] transition-colors"
             >
               <div>
@@ -139,7 +160,7 @@ export const FourVoices: React.FC<FourVoicesProps> = ({ onSelectSong }) => {
                   </button>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

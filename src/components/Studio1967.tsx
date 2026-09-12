@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Play, Sparkles, Disc, Radio, Sliders, Volume2, ArrowRight } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 import { mediaManifest, allSongs } from '../lib/data';
@@ -26,7 +27,13 @@ export const Studio1967: React.FC<Studio1967Props> = ({ onSelectSong }) => {
 
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         {/* Section Header */}
-        <div className="space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-4"
+        >
           <div className="flex items-center gap-3">
             <span className="font-mono-code text-xs uppercase px-2 py-0.5 bg-[#F4E747] text-[#151329] font-black">
               ACT III · CHAPTER 09
@@ -43,13 +50,19 @@ export const Studio1967: React.FC<Studio1967Props> = ({ onSelectSong }) => {
             Unburdened by the need to recreate songs in live concert halls, Abbey Road Studio 2 became a canvas of 
             tape manipulations, pitch-varied overdubs, Mellotrons, and orchestral cataclysms.
           </p>
-        </div>
+        </motion.div>
 
         {/* Dual Playable Landmark Anchors */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Strawberry Fields Forever */}
           {strawberryFieldsMedia && (
-            <div className="bg-[#231F42] border-2 border-[#3B3363] p-6 sm:p-8 flex flex-col justify-between space-y-6 print-shadow group hover:border-[#F4E747] transition-all">
+            <motion.div
+              initial={{ opacity: 0, y: 24, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-[#231F42] border-2 border-[#3B3363] p-6 sm:p-8 flex flex-col justify-between space-y-6 print-shadow group hover:border-[#F4E747] transition-all"
+            >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="font-mono-code text-[11px] uppercase tracking-wider text-[#F4E747] font-bold">
@@ -87,12 +100,18 @@ export const Studio1967: React.FC<Studio1967Props> = ({ onSelectSong }) => {
                   </button>
                 )}
               </div>
-            </div>
+            </motion.div>
           )}
 
           {/* A Day in the Life */}
           {dayInTheLifeMedia && (
-            <div className="bg-[#231F42] border-2 border-[#3B3363] p-6 sm:p-8 flex flex-col justify-between space-y-6 print-shadow group hover:border-[#C63D85] transition-all">
+            <motion.div
+              initial={{ opacity: 0, y: 24, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-[#231F42] border-2 border-[#3B3363] p-6 sm:p-8 flex flex-col justify-between space-y-6 print-shadow group hover:border-[#C63D85] transition-all"
+            >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="font-mono-code text-[11px] uppercase tracking-wider text-[#C63D85] font-bold">
@@ -130,12 +149,18 @@ export const Studio1967: React.FC<Studio1967Props> = ({ onSelectSong }) => {
                   </button>
                 )}
               </div>
-            </div>
+            </motion.div>
           )}
         </div>
 
         {/* 4 Multi-Track Studio Innovations */}
-        <div className="space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.65, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="space-y-4"
+        >
           <span className="font-mono-code text-xs uppercase font-bold text-[#F4E747] tracking-wider block">
             HOW GEOFF EMERICK & GEORGE MARTIN EXPANDED 4-TRACK TAPE:
           </span>
@@ -166,7 +191,7 @@ export const Studio1967: React.FC<Studio1967Props> = ({ onSelectSong }) => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
