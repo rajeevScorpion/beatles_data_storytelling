@@ -6,12 +6,31 @@ interface ShareModalProps {
   onClose: () => void;
 }
 
+const PUBLIC_SHARED_URL = 'https://ais-pre-anxiqmpfp7uypy5vnfzzsv-363922778059.asia-southeast1.run.app';
+
 export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   const [isCopied, setIsCopied] = useState(false);
 
   if (!isOpen) return null;
 
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : 'https://thebeatles.datastory';
+  // Resolve canonical URL for social crawlers (avoiding localhost or private dev iframe URLs)
+  const getCanonicalUrl = (): string => {
+    if (typeof window === 'undefined') return PUBLIC_SHARED_URL;
+    const href = window.location.href;
+    const host = window.location.hostname;
+    if (
+      host === 'localhost' ||
+      host === '127.0.0.1' ||
+      host.includes('local') ||
+      host.includes('ais-dev-') ||
+      host.includes('cloudshell')
+    ) {
+      return PUBLIC_SHARED_URL;
+    }
+    return href;
+  };
+
+  const shareUrl = getCanonicalUrl();
   const shareTitle = 'The Beatles: Eight Years That Changed the Sound';
   const shareDescription = 'An interactive data investigation into 213 Beatles songs from 1962 to 1970, tracking the sonic evolution from Liverpool club pop to studio orchestration.';
   const shareText = `Explore "${shareTitle}" — ${shareDescription}\n\n${shareUrl}`;
@@ -239,6 +258,12 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
                   </>
                 )}
               </button>
+            </div>
+
+            {/* Crawler & WhatsApp Preview Info */}
+            <div className="p-2.5 bg-[#EAE1D2] border border-[#C8C0B2] text-[10px] font-mono-code text-[#666] leading-relaxed">
+              <span className="font-bold text-[#151515] block mb-0.5">WHATSAPP PREVIEW NOTE:</span>
+              WhatsApp's link scraper requires a public URL to fetch the preview card. If testing inside the Google AI Studio development container, make sure to publish via the <strong className="text-[#C43A2F]">Share</strong> button in AI Studio so external crawlers can access the site without Google authentication.
             </div>
           </div>
         </div>
