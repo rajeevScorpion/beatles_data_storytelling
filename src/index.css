@@ -10,8 +10,8 @@
     --card-bg: #EAE1D2;
   }
 
-  html {
-    overflow-x: hidden;
+  html, body, #root {
+    overflow-x: clip;
     max-width: 100%;
     width: 100%;
     -webkit-text-size-adjust: 100%;
@@ -21,18 +21,9 @@
     font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: var(--paper);
     color: var(--ink);
-    overflow-x: hidden;
-    max-width: 100%;
-    width: 100%;
     position: relative;
     margin: 0;
     padding: 0;
-  }
-
-  #root {
-    overflow-x: hidden;
-    max-width: 100%;
-    width: 100%;
   }
 }
 

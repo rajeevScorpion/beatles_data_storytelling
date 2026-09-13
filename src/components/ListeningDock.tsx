@@ -32,17 +32,54 @@ export const ListeningDock: React.FC = () => {
   } = usePlayer();
   const { openPlaylistDrawer } = usePlaylists();
 
-  const [isMinimized, setIsMinimized] = useState(false);
+  // Detect mobile viewport (< 640px)
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 640;
+    }
+    return false;
+  });
+
+  // On mobile the youtube player starts in collapsed mode
+  const [isMinimized, setIsMinimized] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 640;
+    }
+    return false;
+  });
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
-  // Position state for dragging
+  // Position state for dragging (desktop only)
   const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   const dragOffsetRef = useRef<{ offsetX: number; offsetY: number }>({ offsetX: 0, offsetY: 0 });
 
-  // Handle Drag Pointer Down on Header / Grip
+  // Whenever a track starts/changes on mobile, start in collapsed mode
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth < 640) {
+      setIsMinimized(true);
+    }
+  }, [currentTrack?.video_id]);
+
+  // Keep track of mobile viewport resize & clear custom drag coordinates when switching to mobile
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 640;
+      setIsMobile(mobile);
+      if (mobile) {
+        setPosition(null);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Handle Drag Pointer Down on Header / Grip (Desktop only)
   const handlePointerDown = (e: React.PointerEvent) => {
+    // On mobile, stick strictly to bottom-center (no free dragging)
+    if (isMobile) return;
+
     // Don't drag if user clicked a button or anchor
     if ((e.target as HTMLElement).closest('button') || (e.target as HTMLElement).closest('a')) {
       return;
@@ -64,9 +101,9 @@ export const ListeningDock: React.FC = () => {
     setIsDragging(true);
   };
 
-  // Window pointer listeners while dragging
+  // Window pointer listeners while dragging (Desktop only)
   useEffect(() => {
-    if (!isDragging) return;
+    if (!isDragging || isMobile) return;
 
     const handlePointerMove = (e: PointerEvent) => {
       const dock = dockRef.current;
@@ -99,11 +136,12 @@ export const ListeningDock: React.FC = () => {
       window.removeEventListener('pointerup', handlePointerUp);
       window.removeEventListener('pointercancel', handlePointerUp);
     };
-  }, [isDragging]);
+  }, [isDragging, isMobile]);
 
-  // Keep inside viewport on window resize
+  // Keep inside viewport on window resize (Desktop only)
   useEffect(() => {
     const handleResize = () => {
+      if (isMobile) return;
       setPosition(prev => {
         if (!prev || !dockRef.current) return prev;
         const dockWidth = dockRef.current.offsetWidth;
@@ -120,21 +158,21 @@ export const ListeningDock: React.FC = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [isMobile]);
 
   if (!isDockOpen || !currentTrack) return null;
 
   return (
     <>
       {/* Invisible global backdrop while actively dragging so iframes don't swallow pointer events */}
-      {isDragging && (
+      {isDragging && !isMobile && (
         <div className="fixed inset-0 z-50 cursor-grabbing select-none" />
       )}
 
       <div
         ref={dockRef}
         style={
-          position
+          !isMobile && position
             ? {
                 left: `${position.x}px`,
                 top: `${position.y}px`,
@@ -143,27 +181,31 @@ export const ListeningDock: React.FC = () => {
               }
             : undefined
         }
-        className={`fixed ${
-          position ? '' : 'bottom-4 right-4'
-        } z-50 w-full max-w-[340px] sm:max-w-sm transition-shadow duration-200 select-none ${
-          isDragging ? 'opacity-95 shadow-2xl scale-[1.01]' : ''
-        }`}
+        className={`fixed z-50 transition-all duration-200 select-none ${
+          !isMobile && position
+            ? 'w-full max-w-[340px] sm:max-w-sm'
+            : 'bottom-2 sm:bottom-4 left-1/2 sm:left-auto -translate-x-1/2 sm:translate-x-0 sm:right-4 w-[calc(100%-1.25rem)] max-w-sm sm:w-full'
+        } ${isDragging ? 'opacity-95 shadow-2xl scale-[1.01]' : ''}`}
       >
-        <div className="bg-[#18181B] text-[#F4F4F5] border-2 border-[#151515] print-shadow p-3 font-mono-code text-xs">
-          {/* Draggable Header bar */}
+        <div className="bg-[#18181B] text-[#F4F4F5] border-2 border-[#151515] print-shadow p-3 font-mono-code text-xs max-h-[90vh] overflow-y-auto">
+          {/* Draggable Header bar (drag disabled on mobile to stay bottom-center) */}
           <div
             onPointerDown={handlePointerDown}
-            className="flex items-center justify-between pb-2 border-b border-[#3F3F46] cursor-grab active:cursor-grabbing group select-none"
-            title="Drag to reposition player anywhere on screen"
+            className={`flex items-center justify-between pb-2 border-b border-[#3F3F46] select-none ${
+              isMobile ? 'cursor-default' : 'cursor-grab active:cursor-grabbing group'
+            }`}
+            title={isMobile ? 'Listening Dock Player' : 'Drag to reposition player anywhere on screen'}
           >
-            <div className="flex items-center gap-2">
-              <GripHorizontal className="w-3.5 h-3.5 text-[#71717A] group-hover:text-[#A1A1AA] transition-colors shrink-0" />
+            <div className="flex items-center gap-2 min-w-0">
+              {!isMobile && (
+                <GripHorizontal className="w-3.5 h-3.5 text-[#71717A] group-hover:text-[#A1A1AA] transition-colors shrink-0" />
+              )}
               <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#C43A2F] animate-pulse shrink-0" />
-              <span className="font-display text-xs sm:text-sm tracking-wider uppercase font-bold text-[#F4F4F5]">
+              <span className="font-display text-xs sm:text-sm tracking-wider uppercase font-bold text-[#F4F4F5] truncate">
                 LISTENING DOCK
               </span>
               {isMinimized && (
-                <span className="hidden xs:inline-flex items-center gap-1 text-[9px] text-[#A1A1AA] bg-[#27272A] px-1.5 py-0.2 border border-[#3F3F46]">
+                <span className="inline-flex items-center gap-1 text-[9px] text-[#A1A1AA] bg-[#27272A] px-1.5 py-0.2 border border-[#3F3F46] shrink-0">
                   <Volume2 className="w-2.5 h-2.5 text-[#C43A2F]" />
                   PLAYING
                 </span>
@@ -317,14 +359,17 @@ export const ListeningDock: React.FC = () => {
 
           {/* Minimized Quick Hint */}
           {isMinimized && (
-            <div className="pt-1 border-t border-[#27272A] flex items-center justify-between text-[9px] text-[#71717A]">
-              <span>Drag to move anywhere</span>
+            <div className="pt-1.5 border-t border-[#27272A] flex items-center justify-between text-[9.5px] text-[#71717A]">
+              <span className="truncate">
+                {isMobile ? 'Audio playing · Tap to watch' : 'Drag to move anywhere'}
+              </span>
               <button
                 type="button"
                 onClick={() => setIsMinimized(false)}
-                className="text-[#C43A2F] hover:underline font-bold uppercase"
+                className="text-[#C43A2F] hover:underline font-bold uppercase shrink-0 flex items-center gap-1 ml-2"
               >
-                Expand Video
+                <span>Expand Video</span>
+                <ChevronUp className="w-3 h-3" />
               </button>
             </div>
           )}

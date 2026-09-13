@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Disc3, Search, Info, BookOpen, ListMusic, Compass, Menu, X, ArrowRight } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 import { usePlaylists } from '../context/PlaylistContext';
@@ -19,6 +19,36 @@ export const Navigation: React.FC<NavigationProps> = ({
   const { currentTrack, isDockOpen, openDock } = usePlayer();
   const { playlists, openPlaylistDrawer } = usePlaylists();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(true);
+  const lastScrollYRef = useRef(0);
+
+  // Mobile scroll direction detection: hide on scroll down, show on scroll towards top
+  useEffect(() => {
+    lastScrollYRef.current = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const diff = currentScrollY - lastScrollYRef.current;
+
+      // Always show near the very top of the page
+      if (currentScrollY <= 45) {
+        setShowMobileNav(true);
+      } else if (diff > 8) {
+        // Scrolling downwards -> hide on mobile if menu is not open
+        if (!isMobileMenuOpen) {
+          setShowMobileNav(false);
+        }
+      } else if (diff < -8) {
+        // Scrolling towards top -> show on mobile
+        setShowMobileNav(true);
+      }
+
+      lastScrollYRef.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isMobileMenuOpen]);
 
   const handleLogoClick = () => {
     setIsMobileMenuOpen(false);
@@ -45,7 +75,13 @@ export const Navigation: React.FC<NavigationProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#F2EBDD]/95 backdrop-blur-md border-b border-[#C8C0B2] transition-colors w-full max-w-full">
+    <header
+      className={`sticky top-0 z-40 bg-[#F2EBDD]/95 backdrop-blur-md border-b border-[#C8C0B2] w-full max-w-full transition-transform duration-300 ease-in-out ${
+        !showMobileNav && !isMobileMenuOpen
+          ? '-translate-y-full md:translate-y-0'
+          : 'translate-y-0'
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 px-3 sm:px-6 lg:px-8 py-2.5">
         {/* Logo / Lockup */}
         <button
