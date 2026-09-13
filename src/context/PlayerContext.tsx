@@ -22,7 +22,11 @@ interface PlayerContextType {
   closeDock: () => void;
   openDock: () => void;
   togglePlay: () => void;
+  musicPlayCount: number;
 }
+
+const START_MUSIC_PLAY_COUNT = 315;
+const MUSIC_PLAY_STORAGE_KEY = 'beatles_archive_music_play_count';
 
 const PlayerContext = createContext<PlayerContextType | undefined>(undefined);
 
@@ -35,6 +39,31 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [playlistIndex, setPlaylistIndex] = useState<number>(-1);
   const [playlistName, setPlaylistName] = useState<string | null>(null);
 
+  // Persistent music playback counter (starting at 315)
+  const [musicPlayCount, setMusicPlayCount] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem(MUSIC_PLAY_STORAGE_KEY);
+      if (saved) {
+        const parsed = parseInt(saved, 10);
+        if (!isNaN(parsed) && parsed >= START_MUSIC_PLAY_COUNT) {
+          return parsed;
+        }
+      }
+    } catch {}
+    return START_MUSIC_PLAY_COUNT;
+  });
+
+  const recordPlayEvent = useCallback(() => {
+    setMusicPlayCount(prev => {
+      const next = prev + 1;
+      try {
+        localStorage.setItem(MUSIC_PLAY_STORAGE_KEY, String(next));
+        window.dispatchEvent(new CustomEvent('beatles:play-count-updated', { detail: next }));
+      } catch {}
+      return next;
+    });
+  }, []);
+
   const playSong = useCallback((song: SongRecord) => {
     const media = getMediaForSong(song);
     if (media) {
@@ -45,8 +74,9 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       setPlaylistQueue([song]);
       setPlaylistIndex(0);
       setPlaylistName(null);
+      recordPlayEvent();
     }
-  }, []);
+  }, [recordPlayEvent]);
 
   const playTrack = useCallback((track: MediaManifestItem, song?: SongRecord) => {
     setCurrentTrack(track);
@@ -58,7 +88,8 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     setIsPlaying(true);
     setIsDockOpen(true);
     setPlaylistName(null);
-  }, []);
+    recordPlayEvent();
+  }, [recordPlayEvent]);
 
   const playPlaylistQueue = useCallback((songs: SongRecord[], startIndex: number = 0, playlistTitle?: string) => {
     if (!songs.length) return;
@@ -73,8 +104,9 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       setCurrentSong(targetSong);
       setIsPlaying(true);
       setIsDockOpen(true);
+      recordPlayEvent();
     }
-  }, []);
+  }, [recordPlayEvent]);
 
   const playNext = useCallback(() => {
     if (playlistIndex >= 0 && playlistIndex < playlistQueue.length - 1) {
@@ -86,9 +118,10 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentSong(nextSong);
         setCurrentTrack(media);
         setIsPlaying(true);
+        recordPlayEvent();
       }
     }
-  }, [playlistIndex, playlistQueue]);
+  }, [playlistIndex, playlistQueue, recordPlayEvent]);
 
   const playPrev = useCallback(() => {
     if (playlistIndex > 0) {
@@ -100,9 +133,10 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentSong(prevSong);
         setCurrentTrack(media);
         setIsPlaying(true);
+        recordPlayEvent();
       }
     }
-  }, [playlistIndex, playlistQueue]);
+  }, [playlistIndex, playlistQueue, recordPlayEvent]);
 
   const hasNext = playlistIndex >= 0 && playlistIndex < playlistQueue.length - 1;
   const hasPrev = playlistIndex > 0;
@@ -150,6 +184,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         closeDock,
         openDock,
         togglePlay,
+        musicPlayCount,
       }}
     >
       {children}

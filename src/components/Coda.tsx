@@ -1,13 +1,97 @@
-import React from 'react';
-import { ArrowUp, BookOpen, ExternalLink, Disc, Heart } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ArrowUp, BookOpen, ExternalLink, Disc, Heart, Music } from 'lucide-react';
 import { storyMetrics } from '../lib/data';
+import { usePlayer } from '../context/PlayerContext';
 
 interface CodaProps {
   onOpenCredits: () => void;
   onScrollToTop: () => void;
 }
 
+const START_VISIT_COUNT = 746;
+const VISIT_STORAGE_KEY = 'beatles_archive_visit_count';
+const START_MUSIC_PLAY_COUNT = 315;
+
 export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
+  const { musicPlayCount } = usePlayer();
+
+  // Visit counter state (starts at 746, records every visit & repeated visits automatically)
+  const [visitCount, setVisitCount] = useState<number>(START_VISIT_COUNT);
+  const [displayVisitCount, setDisplayVisitCount] = useState<number>(START_VISIT_COUNT - 6);
+  const hasCountedVisitRef = useRef(false);
+
+  // Music played counter state (starts at 315, tracks each track playback)
+  const [displayMusicCount, setDisplayMusicCount] = useState<number>(
+    () => Math.max(0, (musicPlayCount || START_MUSIC_PLAY_COUNT) - 6)
+  );
+
+  // Automatically record visit on every visit, including repeated visits
+  useEffect(() => {
+    if (hasCountedVisitRef.current) return;
+    hasCountedVisitRef.current = true;
+
+    let current = START_VISIT_COUNT;
+    try {
+      const saved = localStorage.getItem(VISIT_STORAGE_KEY);
+      if (saved) {
+        const parsed = parseInt(saved, 10);
+        if (!isNaN(parsed) && parsed >= START_VISIT_COUNT) {
+          // Count repeated visits automatically on every visit
+          current = parsed + 1;
+        } else {
+          current = START_VISIT_COUNT;
+        }
+      } else {
+        current = START_VISIT_COUNT;
+      }
+      localStorage.setItem(VISIT_STORAGE_KEY, String(current));
+    } catch {
+      current = START_VISIT_COUNT;
+    }
+
+    setVisitCount(current);
+
+    // Mechanical odometer roll-up animation on visit count
+    const startNum = Math.max(0, current - 6);
+    setDisplayVisitCount(startNum);
+
+    let val = startNum;
+    const timer = setInterval(() => {
+      val += 1;
+      if (val >= current) {
+        setDisplayVisitCount(current);
+        clearInterval(timer);
+      } else {
+        setDisplayVisitCount(val);
+      }
+    }, 80);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Mechanical odometer roll-up animation on initial load & reactive update for music played counter
+  useEffect(() => {
+    const target = musicPlayCount || START_MUSIC_PLAY_COUNT;
+    const startNum = Math.max(0, target - 6);
+    let val = startNum;
+    setDisplayMusicCount(startNum);
+
+    const timer = setInterval(() => {
+      val += 1;
+      if (val >= target) {
+        setDisplayMusicCount(target);
+        clearInterval(timer);
+      } else {
+        setDisplayMusicCount(val);
+      }
+    }, 80);
+
+    return () => clearInterval(timer);
+  }, [musicPlayCount]);
+
+  // 5-digit odometer display formats (e.g., "00746" and "00315")
+  const formattedVisitDigits = String(displayVisitCount).padStart(5, '0').slice(-5).split('');
+  const formattedMusicDigits = String(displayMusicCount).padStart(5, '0').slice(-5).split('');
   return (
     <footer id="coda" className="py-24 px-4 sm:px-8 bg-[#151515] text-[#F2EBDD] relative overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-16">
@@ -73,6 +157,86 @@ export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
                 <ExternalLink className="w-3 h-3" />
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* Studer Tape Console · Archival Telemetry & Counters */}
+        <div className="pt-8 border-t border-[#262626] flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 font-mono-code text-xs text-left w-full">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-5 sm:gap-7">
+            
+            {/* 1. Visit Counter (starts at 746, records automatically on every visit & repeated visits) */}
+            <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <span className="inline-block w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
+                <span className="text-[#888] uppercase tracking-wider text-[11px] font-bold">
+                  VISIT LOG:
+                </span>
+              </div>
+              <div
+                role="status"
+                className="inline-flex items-center bg-[#0C0C0C] px-1.5 py-1 border border-[#333] rounded-xs shadow-inner select-none"
+                aria-label={`Visit counter: ${formattedVisitDigits.join('')}`}
+              >
+                <div className="flex items-center gap-0.5">
+                  {formattedVisitDigits.map((digit, i) => (
+                    <div
+                      key={i}
+                      className="w-5 h-6 bg-[#18181B] border border-[#27272A] text-[#F2EBDD] flex items-center justify-center font-mono-code font-bold text-xs shadow-inner relative overflow-hidden"
+                    >
+                      {/* Mechanical drum split / shadow effect */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 pointer-events-none" />
+                      <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-black/40 pointer-events-none" />
+                      <span className="relative z-10 font-bold">{digit}</span>
+                    </div>
+                  ))}
+                </div>
+                <span className="ml-1.5 text-[9px] text-[#666] uppercase tracking-widest">
+                  VISITS
+                </span>
+              </div>
+            </div>
+
+            {/* Subtle Divider */}
+            <span className="hidden sm:inline text-[#333]">|</span>
+
+            {/* 2. Music Played Counter (starts at 315, records each audio track play, 5 digits) */}
+            <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <span className="inline-block w-2 h-2 rounded-full bg-[#C43A2F] animate-pulse" />
+                <span className="text-[#888] uppercase tracking-wider text-[11px] font-bold">
+                  MUSIC PLAYED:
+                </span>
+              </div>
+              <div
+                role="status"
+                className="inline-flex items-center bg-[#0C0C0C] px-1.5 py-1 border border-[#333] rounded-xs shadow-inner select-none"
+                aria-label={`Music played counter: ${formattedMusicDigits.join('')}`}
+              >
+                <div className="flex items-center gap-0.5">
+                  {formattedMusicDigits.map((digit, i) => (
+                    <div
+                      key={i}
+                      className="w-5 h-6 bg-[#18181B] border border-[#27272A] text-[#F2EBDD] flex items-center justify-center font-mono-code font-bold text-xs shadow-inner relative overflow-hidden"
+                    >
+                      {/* Mechanical drum split / shadow effect */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 pointer-events-none" />
+                      <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-black/40 pointer-events-none" />
+                      <span className="relative z-10 font-bold">{digit}</span>
+                    </div>
+                  ))}
+                </div>
+                <span className="ml-1.5 text-[9px] text-[#C43A2F] font-bold uppercase tracking-widest">
+                  SPINS
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="text-[#666] text-[11px] flex items-center gap-2 shrink-0">
+            <span>STUDER J37 TELEMETRY</span>
+            <span className="text-[#444]">·</span>
+            <span className="text-[#888]">ABBEY ROAD ARCHIVES</span>
           </div>
         </div>
 
