@@ -77,11 +77,11 @@ export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#262626] flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs text-[#777]">
-          <div className="flex flex-wrap items-center gap-3">
-            <span>EIGHT YEARS THAT CHANGED THE SOUND · THE BEATLES DATA STORY (1962–1970)</span>
+        <div className="pt-8 border-t border-[#262626] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-mono-code text-xs text-[#777] text-left w-full">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-2 sm:gap-3 text-left">
+            <span className="text-left">EIGHT YEARS THAT CHANGED THE SOUND · THE BEATLES DATA STORY (1962–1970)</span>
             <span className="hidden sm:inline text-[#444]">·</span>
-            <div className="flex items-center gap-1.5 text-[#AAA]">
+            <div className="flex items-center gap-1.5 text-[#AAA] text-left">
               <span>Created by <strong className="text-white font-medium">Rajeev Kumar</strong></span>
               <span className="text-[#444]">|</span>
               <a
@@ -99,10 +99,10 @@ export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 shrink-0">
+          <div className="flex flex-wrap items-center justify-start gap-4 shrink-0 text-left">
             <button
               onClick={onOpenCredits}
-              className="text-[#BBB] hover:text-white transition-colors"
+              className="text-[#BBB] hover:text-white transition-colors text-left"
             >
               SOURCES & CITATIONS
             </button>
