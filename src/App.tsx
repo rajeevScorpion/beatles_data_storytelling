@@ -8,6 +8,7 @@ import { FindAWordPage } from './pages/FindAWordPage';
 import { SongDrawer } from './components/SongDrawer';
 import { PlaylistDrawer } from './components/PlaylistDrawer';
 import { CreditsModal } from './components/CreditsModal';
+import { ShareModal } from './components/ShareModal';
 import { ListeningDock } from './components/ListeningDock';
 import { SongRecord } from './types';
 
@@ -23,6 +24,7 @@ export const App: React.FC = () => {
   const [selectedSong, setSelectedSong] = useState<SongRecord | null>(null);
   const [highlightQuery, setHighlightQuery] = useState<string>('');
   const [isCreditsOpen, setIsCreditsOpen] = useState<boolean>(false);
+  const [isShareOpen, setIsShareOpen] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>('eight-year-rush');
 
   // Handle URL hash changes (back/forward navigation)
@@ -107,6 +109,7 @@ export const App: React.FC = () => {
             currentPage={currentPage}
             onNavigatePage={handleNavigatePage}
             onOpenCredits={() => setIsCreditsOpen(true)}
+            onOpenShare={() => setIsShareOpen(true)}
           />
 
           {/* Main Pages */}
@@ -151,6 +154,11 @@ export const App: React.FC = () => {
           <CreditsModal
             isOpen={isCreditsOpen}
             onClose={() => setIsCreditsOpen(false)}
+          />
+
+          <ShareModal
+            isOpen={isShareOpen}
+            onClose={() => setIsShareOpen(false)}
           />
 
           <ListeningDock />

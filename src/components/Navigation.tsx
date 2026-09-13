@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Disc3, Search, Info, BookOpen, ListMusic, Compass, Menu, X, ArrowRight } from 'lucide-react';
+import { Disc3, Search, Info, BookOpen, ListMusic, Compass, Menu, X, ArrowRight, Share2 } from 'lucide-react';
 import { usePlayer } from '../context/PlayerContext';
 import { usePlaylists } from '../context/PlaylistContext';
 
@@ -9,12 +9,14 @@ interface NavigationProps {
   currentPage: PageRoute;
   onNavigatePage: (page: PageRoute) => void;
   onOpenCredits: () => void;
+  onOpenShare: () => void;
 }
 
 export const Navigation: React.FC<NavigationProps> = ({
   currentPage,
   onNavigatePage,
   onOpenCredits,
+  onOpenShare,
 }) => {
   const { currentTrack, isDockOpen, openDock } = usePlayer();
   const { playlists, openPlaylistDrawer } = usePlaylists();
@@ -72,6 +74,11 @@ export const Navigation: React.FC<NavigationProps> = ({
   const handleOpenCredits = () => {
     setIsMobileMenuOpen(false);
     onOpenCredits();
+  };
+
+  const handleOpenShare = () => {
+    setIsMobileMenuOpen(false);
+    onOpenShare();
   };
 
   return (
@@ -184,6 +191,16 @@ export const Navigation: React.FC<NavigationProps> = ({
             aria-label="Dossier Credits & Sources"
           >
             <Info className="w-4 h-4" />
+          </button>
+
+          {/* Share Button (Desktop & Mobile) */}
+          <button
+            onClick={handleOpenShare}
+            className="flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 bg-[#EAE1D2] hover:bg-[#C43A2F] text-[#151515] hover:text-white border border-[#151515] font-mono-code text-[10px] sm:text-[11px] uppercase font-bold tracking-wider print-shadow-sm transition-all group"
+            title="Share investigation (WhatsApp, Twitter, Link)"
+          >
+            <Share2 className="w-3.5 h-3.5 text-[#C43A2F] group-hover:text-white transition-colors" />
+            <span className="hidden sm:inline">SHARE</span>
           </button>
 
           {/* Mobile Menu Toggle Button (< md) */}
@@ -306,24 +323,35 @@ export const Navigation: React.FC<NavigationProps> = ({
             </button>
 
             {/* Mobile Auxiliary Actions */}
-            <div className="pt-2 border-t border-[#D8D0C2] grid grid-cols-2 gap-2">
+            <div className="pt-2 border-t border-[#D8D0C2] space-y-2">
               <button
                 type="button"
-                onClick={handleOpenPlaylists}
-                className="p-2.5 bg-[#EAE1D2] border border-[#151515] text-[#151515] flex items-center justify-center gap-2 font-mono-code text-[11px] font-bold uppercase tracking-wider"
+                onClick={handleOpenShare}
+                className="w-full p-2.5 bg-[#C43A2F] hover:bg-[#A82D23] text-white border-2 border-[#151515] flex items-center justify-center gap-2 font-mono-code text-[11px] font-bold uppercase tracking-wider print-shadow-sm transition-all"
               >
-                <ListMusic className="w-3.5 h-3.5 text-[#C43A2F]" />
-                <span>PLAYLISTS ({playlists.length})</span>
+                <Share2 className="w-4 h-4" />
+                <span>SHARE (WHATSAPP & SOCIAL MEDIA)</span>
               </button>
 
-              <button
-                type="button"
-                onClick={handleOpenCredits}
-                className="p-2.5 bg-[#EAE1D2] border border-[#C8C0B2] text-[#555] hover:text-[#151515] flex items-center justify-center gap-2 font-mono-code text-[11px] font-bold uppercase tracking-wider"
-              >
-                <Info className="w-3.5 h-3.5" />
-                <span>CREDITS</span>
-              </button>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={handleOpenPlaylists}
+                  className="p-2.5 bg-[#EAE1D2] border border-[#151515] text-[#151515] flex items-center justify-center gap-2 font-mono-code text-[11px] font-bold uppercase tracking-wider"
+                >
+                  <ListMusic className="w-3.5 h-3.5 text-[#C43A2F]" />
+                  <span>PLAYLISTS ({playlists.length})</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleOpenCredits}
+                  className="p-2.5 bg-[#EAE1D2] border border-[#C8C0B2] text-[#555] hover:text-[#151515] flex items-center justify-center gap-2 font-mono-code text-[11px] font-bold uppercase tracking-wider"
+                >
+                  <Info className="w-3.5 h-3.5" />
+                  <span>CREDITS</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
