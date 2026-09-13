@@ -2,91 +2,80 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ArrowUp, BookOpen, ExternalLink, Disc, Heart, Music } from 'lucide-react';
 import { storyMetrics } from '../lib/data';
 import { usePlayer } from '../context/PlayerContext';
+import {
+  recordServerVisit,
+  fetchServerTelemetry,
+  BASELINE_VISITS,
+  BASELINE_PLAYS,
+  TelemetryData,
+} from '../lib/telemetry';
 
 interface CodaProps {
   onOpenCredits: () => void;
   onScrollToTop: () => void;
 }
 
-const START_VISIT_COUNT = 746;
-const VISIT_STORAGE_KEY = 'beatles_archive_visit_count';
-const START_MUSIC_PLAY_COUNT = 315;
-
 export const Coda: React.FC<CodaProps> = ({ onOpenCredits, onScrollToTop }) => {
   const { musicPlayCount } = usePlayer();
 
-  // Visit counter state (starts at 746, records every visit & repeated visits automatically)
-  const [visitCount, setVisitCount] = useState<number>(START_VISIT_COUNT);
-  const [displayVisitCount, setDisplayVisitCount] = useState<number>(START_VISIT_COUNT - 6);
+  // Visit counter state (starts at 746, records automatically on the server on every visit)
+  const [visitCount, setVisitCount] = useState<number>(BASELINE_VISITS);
+  const [displayVisitCount, setDisplayVisitCount] = useState<number>(BASELINE_VISITS - 6);
   const hasCountedVisitRef = useRef(false);
 
-  // Music played counter state (starts at 315, tracks each track playback)
+  // Music played counter state (starts at 315, records automatically on server on each track playback)
   const [displayMusicCount, setDisplayMusicCount] = useState<number>(
-    () => Math.max(0, (musicPlayCount || START_MUSIC_PLAY_COUNT) - 6)
+    () => Math.max(0, (musicPlayCount || BASELINE_PLAYS) - 6)
   );
 
-  // Automatically record visit on every visit, including repeated visits
+  // Automatically record visit on server on every visit (including different browser sessions)
   useEffect(() => {
     if (hasCountedVisitRef.current) return;
     hasCountedVisitRef.current = true;
 
-    let current = START_VISIT_COUNT;
-    try {
-      const saved = localStorage.getItem(VISIT_STORAGE_KEY);
-      if (saved) {
-        const parsed = parseInt(saved, 10);
-        if (!isNaN(parsed) && parsed >= START_VISIT_COUNT) {
-          // Count repeated visits automatically on every visit
-          current = parsed + 1;
-        } else {
-          current = START_VISIT_COUNT;
+    // Send visit ping to server
+    recordServerVisit().then(data => {
+      if (data && typeof data.visits === 'number') {
+        setVisitCount(data.visits);
+        animateRollTo(data.visits, setDisplayVisitCount);
+      }
+    });
+
+    const handleTelemetryUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<TelemetryData>;
+      if (customEvent.detail) {
+        if (typeof customEvent.detail.visits === 'number') {
+          setVisitCount(customEvent.detail.visits);
+          setDisplayVisitCount(customEvent.detail.visits);
         }
-      } else {
-        current = START_VISIT_COUNT;
       }
-      localStorage.setItem(VISIT_STORAGE_KEY, String(current));
-    } catch {
-      current = START_VISIT_COUNT;
-    }
+    };
 
-    setVisitCount(current);
-
-    // Mechanical odometer roll-up animation on visit count
-    const startNum = Math.max(0, current - 6);
-    setDisplayVisitCount(startNum);
-
-    let val = startNum;
-    const timer = setInterval(() => {
-      val += 1;
-      if (val >= current) {
-        setDisplayVisitCount(current);
-        clearInterval(timer);
-      } else {
-        setDisplayVisitCount(val);
-      }
-    }, 80);
-
-    return () => clearInterval(timer);
+    window.addEventListener('beatles:telemetry-updated', handleTelemetryUpdate);
+    return () => window.removeEventListener('beatles:telemetry-updated', handleTelemetryUpdate);
   }, []);
 
-  // Mechanical odometer roll-up animation on initial load & reactive update for music played counter
-  useEffect(() => {
-    const target = musicPlayCount || START_MUSIC_PLAY_COUNT;
+  // Animate roll-up helper
+  const animateRollTo = (target: number, setter: React.Dispatch<React.SetStateAction<number>>) => {
     const startNum = Math.max(0, target - 6);
     let val = startNum;
-    setDisplayMusicCount(startNum);
+    setter(startNum);
 
     const timer = setInterval(() => {
       val += 1;
       if (val >= target) {
-        setDisplayMusicCount(target);
+        setter(target);
         clearInterval(timer);
       } else {
-        setDisplayMusicCount(val);
+        setter(val);
       }
     }, 80);
+  };
 
-    return () => clearInterval(timer);
+  // Mechanical odometer roll-up animation on initial load & reactive update for music played counter
+  useEffect(() => {
+    const target = musicPlayCount || BASELINE_PLAYS;
+    animateRollTo(target, setDisplayMusicCount);
   }, [musicPlayCount]);
 
   // 5-digit odometer display formats (e.g., "00746" and "00315")

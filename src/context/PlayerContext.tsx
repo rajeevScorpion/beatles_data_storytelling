@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 import { MediaManifestItem, SongRecord } from '../types';
 import { getMediaForSong } from '../lib/data';
+import { fetchServerTelemetry, recordServerPlay, BASELINE_PLAYS, TelemetryData } from '../lib/telemetry';
 
 interface PlayerContextType {
   currentTrack: MediaManifestItem | null;
@@ -25,9 +26,6 @@ interface PlayerContextType {
   musicPlayCount: number;
 }
 
-const START_MUSIC_PLAY_COUNT = 315;
-const MUSIC_PLAY_STORAGE_KEY = 'beatles_archive_music_play_count';
-
 const PlayerContext = createContext<PlayerContextType | undefined>(undefined);
 
 export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -39,28 +37,36 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [playlistIndex, setPlaylistIndex] = useState<number>(-1);
   const [playlistName, setPlaylistName] = useState<string | null>(null);
 
-  // Persistent music playback counter (starting at 315)
-  const [musicPlayCount, setMusicPlayCount] = useState<number>(() => {
-    try {
-      const saved = localStorage.getItem(MUSIC_PLAY_STORAGE_KEY);
-      if (saved) {
-        const parsed = parseInt(saved, 10);
-        if (!isNaN(parsed) && parsed >= START_MUSIC_PLAY_COUNT) {
-          return parsed;
-        }
+  // Server-backed music playback counter (starting at baseline 315)
+  const [musicPlayCount, setMusicPlayCount] = useState<number>(BASELINE_PLAYS);
+
+  // Synchronize with server on mount & listen to telemetry updates across tabs/components
+  useEffect(() => {
+    fetchServerTelemetry().then(data => {
+      if (data && typeof data.plays === 'number') {
+        setMusicPlayCount(data.plays);
       }
-    } catch {}
-    return START_MUSIC_PLAY_COUNT;
-  });
+    });
+
+    const handleUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent<TelemetryData>;
+      if (customEvent.detail && typeof customEvent.detail.plays === 'number') {
+        setMusicPlayCount(customEvent.detail.plays);
+      }
+    };
+
+    window.addEventListener('beatles:telemetry-updated', handleUpdate);
+    return () => window.removeEventListener('beatles:telemetry-updated', handleUpdate);
+  }, []);
 
   const recordPlayEvent = useCallback(() => {
-    setMusicPlayCount(prev => {
-      const next = prev + 1;
-      try {
-        localStorage.setItem(MUSIC_PLAY_STORAGE_KEY, String(next));
-        window.dispatchEvent(new CustomEvent('beatles:play-count-updated', { detail: next }));
-      } catch {}
-      return next;
+    // Optimistic UI update
+    setMusicPlayCount(prev => prev + 1);
+    // Persist to server
+    recordServerPlay().then(data => {
+      if (data && typeof data.plays === 'number') {
+        setMusicPlayCount(data.plays);
+      }
     });
   }, []);
 
